@@ -1,0 +1,574 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Troubleshooting"
+  description="Fix common issues with Hollow Knight: Silksong badges not appearing, Steam trading cards missing, Twitch drop problems, and achievement troubleshooting."
+  keywords="silksong badge not showing, steam trading cards missing, twitch badge not appearing, achievement not unlocking, troubleshooting"
+>
+  <!-- Header Section -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+          <span class="gradient-text">Troubleshooting Hub</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Quick fixes and solutions for common badge and achievement issues in Hollow Knight: Silksong
+        </p>
+
+        <!-- Quick Search -->
+        <div class="max-w-2xl mx-auto mb-8">
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Describe your problem (e.g., 'badge not showing', 'achievement stuck')..."
+              class="w-full search-box pl-12 py-4 text-lg"
+              id="problem-search"
+            />
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <svg class="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Most Common Issues -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Most <span class="gradient-text">Common Issues</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Badge Not Appearing -->
+          <div class="card hover:border-red-500 transition-colors cursor-pointer" data-issue="badge-not-appearing">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Badge Not Appearing</h3>
+                <p class="text-gray-400 text-sm">Most reported issue</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">Badges or achievements not showing up after completing requirements</p>
+            <div class="text-silksong-blue font-medium">Click for solutions →</div>
+          </div>
+
+          <!-- Steam Trading Cards Missing -->
+          <div class="card hover:border-blue-500 transition-colors cursor-pointer" data-issue="steam-cards-missing">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 4v10a2 2 0 002 2h6a2 2 0 002-2V8M9 8h6" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Steam Cards Missing</h3>
+                <p class="text-gray-400 text-sm">Platform specific</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">Trading cards not dropping or missing from inventory</p>
+            <div class="text-silksong-blue font-medium">Click for solutions →</div>
+          </div>
+
+          <!-- Twitch Badge Issues -->
+          <div class="card hover:border-purple-500 transition-colors cursor-pointer" data-issue="twitch-badge-issues">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Twitch Badge Issues</h3>
+                <p class="text-gray-400 text-sm">Campaign ended</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">Hornet badge problems or missed campaign information</p>
+            <div class="text-silksong-blue font-medium">Click for solutions →</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Solutions -->
+      <div class="space-y-16">
+
+        <!-- Badge Not Appearing Solutions -->
+        <div class="solution-section hidden" id="badge-not-appearing">
+          <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-8">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">
+              <svg class="w-8 h-8 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+              </svg>
+              Badge Not Appearing - Solutions
+            </h2>
+
+            <div class="space-y-8">
+              <!-- Pin Badge Issues -->
+              <div class="bg-silksong-darker rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Pin Badge Not Received After Defeating Pinstress</h3>
+
+                <div class="space-y-4">
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">1</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Verify Boss Defeat</h4>
+                        <p class="text-gray-300">Check if you received the "Fatal Resolve" quest completion notification. The Pin Badge is awarded immediately after defeating Pinstress.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">2</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Check Inventory</h4>
+                        <p class="text-gray-300">Open your tools menu and look in the Blue Tools section. The Pin Badge should appear as a blue emblem with needle iconography.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">3</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Restart Game</h4>
+                        <p class="text-gray-300">Exit to main menu and reload your save. Some badges have a slight delay in appearing due to save system timing.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold">!</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">If Still Missing</h4>
+                        <p class="text-gray-300">This indicates a potential save file corruption. Try defeating Pinstress again if possible, or load an earlier save before the fight.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Achievement Not Unlocking -->
+              <div class="bg-silksong-darker rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-silksong-blue">Achievement Not Unlocking</h3>
+
+                <div class="space-y-4">
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">1</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Check Requirements</h4>
+                        <p class="text-gray-300">Verify you've met all achievement requirements. Some achievements have hidden or specific conditions.</p>
+                        <div class="mt-2">
+                          <a href="/achievements" class="text-silksong-blue hover:text-silksong-purple">View complete achievement list →</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">2</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Platform Sync</h4>
+                        <p class="text-gray-300">Steam achievements may take up to 24 hours to sync. Check your Steam profile achievements page.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">3</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Offline Mode Issues</h4>
+                        <p class="text-gray-300">If you were playing offline, achievements won't unlock until you're back online and the game syncs.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Steam Cards Missing Solutions -->
+        <div class="solution-section hidden" id="steam-cards-missing">
+          <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-8">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">
+              <svg class="w-8 h-8 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 4v10a2 2 0 002 2h6a2 2 0 002-2V8M9 8h6" />
+              </svg>
+              Steam Trading Cards - Solutions
+            </h2>
+
+            <div class="space-y-8">
+              <!-- Cards Not Dropping -->
+              <div class="bg-silksong-darker rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-blue-400">Trading Cards Not Dropping</h3>
+
+                <div class="space-y-4">
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">1</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Check Playtime</h4>
+                        <p class="text-gray-300">Steam trading cards typically start dropping after 2-3 hours of gameplay. Check your total playtime in Steam.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">2</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Verify Game Ownership</h4>
+                        <p class="text-gray-300">Cards only drop if you own the game (not playing via Family Sharing). Check your Steam library ownership status.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">3</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Check Drop Limit</h4>
+                        <p class="text-gray-300">You can receive 5 cards maximum through gameplay. Remaining 4 cards must be obtained through trading or market.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-silksong-blue rounded-full flex items-center justify-center text-white text-sm font-bold">4</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Steam Level Requirement</h4>
+                        <p class="text-gray-300">Your Steam account must be level 5+ to receive booster pack drops. Level up by crafting badges or playing games.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Badge Crafting Issues -->
+              <div class="bg-silksong-darker rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-green-400">Badge Crafting Problems</h3>
+
+                <div class="space-y-4">
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">1</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Complete Set Required</h4>
+                        <p class="text-gray-300">You need all 9 unique Silksong trading cards to craft the Everbloom badge. Missing cards can be purchased from Steam Community Market.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">2</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Badge Page Access</h4>
+                        <p class="text-gray-300">Go to your Steam badges page and find Hollow Knight: Silksong. The craft badge button should appear when you have all cards.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Twitch Badge Issues Solutions -->
+        <div class="solution-section hidden" id="twitch-badge-issues">
+          <div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-8">
+            <h2 class="text-3xl font-bold mb-6 flex items-center">
+              <svg class="w-8 h-8 text-purple-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              Twitch Badge Issues - Solutions
+            </h2>
+
+            <div class="space-y-8">
+              <!-- Campaign Ended -->
+              <div class="bg-silksong-darker rounded-lg p-6 border-l-4 border-red-500">
+                <h3 class="text-xl font-semibold mb-4 text-red-400">Campaign Has Ended</h3>
+                <p class="text-gray-300 mb-4">
+                  The official Twitch Hornet Badge campaign ended on September 13, 2025. This badge is no longer obtainable through official means.
+                </p>
+
+                <div class="bg-red-500/10 border border-red-500/30 rounded p-4">
+                  <h4 class="font-semibold mb-2">Important Information:</h4>
+                  <ul class="space-y-1 text-gray-300">
+                    <li>• Campaign Period: September 4-13, 2025</li>
+                    <li>• Final Eligibility: September 13, 6:59 AM UTC</li>
+                    <li>• No future campaigns announced</li>
+                    <li>• Badge is now considered rare/exclusive</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- For Those Who Participated -->
+              <div class="bg-silksong-darker rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-purple-400">If You Subscribed During Campaign</h3>
+
+                <div class="space-y-4">
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">1</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Check Badge Settings</h4>
+                        <p class="text-gray-300">Go to any Twitch stream, click the chat settings (gear icon), and check your chat identity badges.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">2</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Verify Subscription</h4>
+                        <p class="text-gray-300">Check your subscription history. Prime subscriptions did NOT count for this campaign - only paid subscriptions.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-bold">3</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">Wait for Processing</h4>
+                        <p class="text-gray-300">Badges could take up to 48 hours to appear after subscribing. If you subscribed on the last day, check for several days.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="step">
+                    <div class="flex items-start space-x-3">
+                      <span class="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold">!</span>
+                      <div>
+                        <h4 class="font-semibold mb-1">If Badge Still Missing</h4>
+                        <p class="text-gray-300 mb-2">Contact Twitch Support with your subscription proof and campaign participation details.</p>
+                        <a href="https://help.twitch.tv" class="text-purple-400 hover:text-purple-300" target="_blank" rel="noopener">
+                          Twitch Support Center →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Alternative Options -->
+              <div class="bg-silksong-darker rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-yellow-400">Alternative Badge Options</h3>
+                <p class="text-gray-300 mb-4">
+                  While the official Hornet badge is no longer available, consider these alternatives:
+                </p>
+
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-center">
+                    <span class="w-2 h-2 bg-silksong-blue rounded-full mr-3"></span>
+                    Custom subscriber badges from Silksong streamers
+                  </li>
+                  <li class="flex items-center">
+                    <span class="w-2 h-2 bg-silksong-blue rounded-full mr-3"></span>
+                    Discord server role badges for 100% completion
+                  </li>
+                  <li class="flex items-center">
+                    <span class="w-2 h-2 bg-silksong-blue rounded-full mr-3"></span>
+                    Physical collectible pins and badges
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mt-16">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Frequently Asked <span class="gradient-text">Questions</span>
+        </h2>
+
+        <div class="max-w-4xl mx-auto space-y-6">
+          <div class="faq-item bg-silksong-dark rounded-lg">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-silksong-blue/10 transition-colors">
+              <span class="font-semibold">Why isn't my achievement unlocking even though I completed the requirements?</span>
+              <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+              <p>Achievement unlock delays can occur due to several factors: Steam sync issues (up to 24 hours), playing in offline mode, or missing hidden requirements. Try restarting the game, ensuring you're online, and double-checking the complete achievement requirements in our achievement guide.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-silksong-dark rounded-lg">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-silksong-blue/10 transition-colors">
+              <span class="font-semibold">Can I still get the Twitch Hornet badge somehow?</span>
+              <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+              <p>No, the official Twitch Hornet badge campaign ended permanently on September 13, 2025. There are no announced plans for future campaigns. The badge is now considered a rare exclusive collectible for those who participated during the campaign period.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-silksong-dark rounded-lg">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-silksong-blue/10 transition-colors">
+              <span class="font-semibold">My Steam trading cards aren't dropping. What should I do?</span>
+              <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+              <p>Ensure you own the game (not Family Sharing), have played for 2+ hours, and haven't reached the 5-card drop limit. Cards drop randomly during gameplay. If you need the remaining 4 cards, you'll need to trade or purchase them from the Steam Community Market.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-silksong-dark rounded-lg">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-silksong-blue/10 transition-colors">
+              <span class="font-semibold">Is there a way to track which badges I'm missing?</span>
+              <svg class="w-5 h-5 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden p-6 pt-0 text-gray-300">
+              <p>Yes! Use our interactive <a href="/checklist" class="text-silksong-blue hover:text-silksong-purple">Progress Checklist</a> to track all badges, achievements, and collectibles. It saves your progress locally and shows exactly what you still need to complete.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Support Section -->
+  <section class="py-16 bg-silksong-dark/30">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6">Still Need Help?</h2>
+      <p class="text-gray-300 text-lg mb-8">
+        If your issue isn't covered above, try these additional resources
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/guides" class="bg-silksong-dark p-6 rounded-lg hover:bg-silksong-blue/10 transition-colors">
+          <h3 class="font-semibold mb-2">Check Our Guides</h3>
+          <p class="text-gray-400 text-sm">Detailed walkthroughs for every badge</p>
+        </a>
+
+        <a href="#" class="bg-silksong-dark p-6 rounded-lg hover:bg-silksong-blue/10 transition-colors">
+          <h3 class="font-semibold mb-2">Join Discord</h3>
+          <p class="text-gray-400 text-sm">Community help and support</p>
+        </a>
+
+        <a href="/badges" class="bg-silksong-dark p-6 rounded-lg hover:bg-silksong-blue/10 transition-colors">
+          <h3 class="font-semibold mb-2">Browse Collection</h3>
+          <p class="text-gray-400 text-sm">Complete badge database</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Issue card clicks
+    const issueCards = document.querySelectorAll('[data-issue]');
+    const solutionSections = document.querySelectorAll('.solution-section');
+
+    issueCards.forEach(card => {
+      card.addEventListener('click', function() {
+        const issue = this.dataset.issue;
+
+        // Hide all solution sections
+        solutionSections.forEach(section => {
+          section.classList.add('hidden');
+        });
+
+        // Show selected solution
+        const targetSection = document.getElementById(issue);
+        if (targetSection) {
+          targetSection.classList.remove('hidden');
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // FAQ functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      const icon = item.querySelector('.faq-icon');
+
+      question.addEventListener('click', function() {
+        const isOpen = !answer.classList.contains('hidden');
+
+        // Close all other FAQs
+        faqItems.forEach(otherItem => {
+          otherItem.querySelector('.faq-answer').classList.add('hidden');
+          otherItem.querySelector('.faq-icon').classList.remove('rotate-180');
+        });
+
+        // Toggle current FAQ
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // Search functionality
+    const searchInput = document.getElementById('problem-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+
+        // Simple search highlighting and filtering
+        issueCards.forEach(card => {
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          const description = card.querySelector('p').textContent.toLowerCase();
+
+          if (title.includes(query) || description.includes(query)) {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          } else if (query.length > 2) {
+            card.style.opacity = '0.3';
+            card.style.transform = 'scale(0.95)';
+          } else {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          }
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  .step {
+    @apply transition-all duration-200 hover:bg-silksong-blue/5 rounded p-2 -m-2;
+  }
+
+  .faq-icon {
+    transition: transform 0.2s ease;
+  }
+
+  .solution-section {
+    scroll-margin-top: 2rem;
+  }
+</style>

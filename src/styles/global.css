@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+
+  body {
+    @apply bg-silksong-darker text-white font-sans;
+    background-image:
+      radial-gradient(circle at 25% 25%, rgba(123, 104, 238, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(74, 144, 226, 0.1) 0%, transparent 50%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  a {
+    @apply text-silksong-blue hover:text-silksong-purple transition-colors duration-200;
+  }
+
+  code {
+    @apply font-mono text-sm bg-silksong-dark px-2 py-1 rounded;
+  }
+
+  pre {
+    @apply bg-silksong-dark p-4 rounded-lg overflow-x-auto;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-silksong-blue to-silksong-purple bg-clip-text text-transparent;
+  }
+
+  .badge-glow {
+    @apply shadow-lg;
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.3);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-silksong-blue to-silksong-purple text-white font-medium px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-200 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-silksong-dark text-white border border-silksong-blue font-medium px-6 py-3 rounded-lg hover:bg-silksong-blue transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-silksong-dark border border-gray-700 rounded-lg p-6 hover:border-silksong-blue transition-all duration-200;
+  }
+
+  .badge-card {
+    @apply card cursor-pointer transform hover:scale-105 hover:shadow-xl;
+  }
+
+  .nav-link {
+    @apply text-gray-300 hover:text-white font-medium transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-silksong-blue transition-all duration-200;
+    content: '';
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .search-box {
+    @apply bg-silksong-dark border border-gray-600 rounded-lg px-4 py-2 focus:border-silksong-blue focus:outline-none transition-colors duration-200;
+  }
+}

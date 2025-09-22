@@ -1,0 +1,409 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Achievements Guide"
+  description="Complete guide to all 52 achievements in Hollow Knight: Silksong including missable trophies, Steel Soul mode, and speedrun strategies."
+  keywords="silksong achievements, hollow knight achievements, missable trophies, steel soul mode, speedrunner achievement"
+>
+  <!-- Header Section -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+          <span class="gradient-text">Achievement Guide</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Complete walkthrough for all 52 achievements in Hollow Knight: Silksong
+        </p>
+
+        <!-- Progress Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-silksong-blue mb-1">52</div>
+            <div class="text-gray-400 text-sm">Total Achievements</div>
+          </div>
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-red-400 mb-1">2</div>
+            <div class="text-gray-400 text-sm">Missable</div>
+          </div>
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-yellow-400 mb-1">21</div>
+            <div class="text-gray-400 text-sm">Boss Related</div>
+          </div>
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-green-400 mb-1">18</div>
+            <div class="text-gray-400 text-sm">Collection</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Critical Missable Achievements Warning -->
+      <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-8 mb-16">
+        <h2 class="text-2xl font-bold text-red-400 mb-6 flex items-center">
+          <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+          </svg>
+          ⚠️ CRITICAL: Missable Achievements
+        </h2>
+        <p class="text-gray-300 mb-6">
+          These are the ONLY missable achievements in Silksong. Complete these before progressing too far in the story!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-silksong-darker rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">Pharloom's Welcome</h3>
+            <p class="text-gray-300 mb-4">Defeat Lace in the Deep Docks before advancing the main story.</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Location:</span>
+                <span class="text-white">Deep Docks</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Window:</span>
+                <span class="text-red-400">Early Game Only</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Difficulty:</span>
+                <span class="text-yellow-400">Medium</span>
+              </div>
+            </div>
+            <a href="/guides/achievements/pharloom-welcome" class="btn-primary w-full text-center mt-4">View Guide</a>
+          </div>
+
+          <div class="bg-silksong-darker rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">Twisted Child</h3>
+            <p class="text-gray-300 mb-4">Defeat Grand Mother Silk while cursed. Get cursed from Greyroot in Shellwood first.</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Requirement:</span>
+                <span class="text-white">Cursed Status</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Curse Source:</span>
+                <span class="text-purple-400">Greyroot (Shellwood)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Difficulty:</span>
+                <span class="text-red-400">Very Hard</span>
+              </div>
+            </div>
+            <a href="/guides/achievements/twisted-child" class="btn-primary w-full text-center mt-4">View Guide</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement Categories -->
+      <div class="space-y-16">
+
+        <!-- Story Achievements -->
+        <div class="bg-silksong-dark/30 rounded-lg p-8">
+          <h2 class="text-2xl font-bold mb-6 flex items-center">
+            <span class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+              📖
+            </span>
+            Story Achievements
+          </h2>
+          <p class="text-gray-300 mb-6">
+            These achievements unlock naturally as you progress through the main story. Most are unmissable.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="achievement-card">
+              <h3 class="font-semibold mb-2">First Steps</h3>
+              <p class="text-gray-400 text-sm mb-3">Complete the tutorial area and enter the main world.</p>
+              <div class="achievement-rarity common">Story</div>
+            </div>
+
+            <div class="achievement-card">
+              <h3 class="font-semibold mb-2">Woven Song</h3>
+              <p class="text-gray-400 text-sm mb-3">Complete the main storyline of Hollow Knight: Silksong.</p>
+              <div class="achievement-rarity epic">Main Quest</div>
+            </div>
+
+            <div class="achievement-card">
+              <h3 class="font-semibold mb-2">Bell Ringer</h3>
+              <p class="text-gray-400 text-sm mb-3">Ring the great bell and awaken the sleeping city.</p>
+              <div class="achievement-rarity rare">Story</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boss Achievements -->
+        <div class="bg-silksong-dark/30 rounded-lg p-8">
+          <h2 class="text-2xl font-bold mb-6 flex items-center">
+            <span class="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center mr-3">
+              ⚔️
+            </span>
+            Boss Achievements (21 Total)
+          </h2>
+          <p class="text-gray-300 mb-6">
+            Defeat all major bosses and optional encounters throughout Pharloom.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="achievement-card boss">
+              <h3 class="font-semibold mb-2">Fatal Resolve</h3>
+              <p class="text-gray-400 text-sm mb-3">Defeat the Pinstress in Mount Fay. Unlocks Pin Badge.</p>
+              <div class="achievement-rarity legendary">Boss + Tool</div>
+            </div>
+
+            <div class="achievement-card boss">
+              <h3 class="font-semibold mb-2">Woven Hunter</h3>
+              <p class="text-gray-400 text-sm mb-3">Defeat Lace in combat (different from Pharloom's Welcome).</p>
+              <div class="achievement-rarity epic">Boss</div>
+            </div>
+
+            <div class="achievement-card boss">
+              <h3 class="font-semibold mb-2">Silk Weaver's End</h3>
+              <p class="text-gray-400 text-sm mb-3">Defeat Grand Mother Silk, the final boss.</p>
+              <div class="achievement-rarity legendary">Final Boss</div>
+            </div>
+
+            <div class="achievement-card boss">
+              <h3 class="font-semibold mb-2">All Bosses Defeated</h3>
+              <p class="text-gray-400 text-sm mb-3">Defeat all 21 bosses in the game.</p>
+              <div class="achievement-rarity legendary">Complete</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection Achievements -->
+        <div class="bg-silksong-dark/30 rounded-lg p-8">
+          <h2 class="text-2xl font-bold mb-6 flex items-center">
+            <span class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
+              💎
+            </span>
+            Collection Achievements (18 Total)
+          </h2>
+          <p class="text-gray-300 mb-6">
+            Collect various items, tools, and collectibles throughout your journey.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="achievement-card collection">
+              <h3 class="font-semibold mb-2">Tool Collector</h3>
+              <p class="text-gray-400 text-sm mb-3">Collect all 57 tools (Blue, Red, and Yellow).</p>
+              <div class="achievement-rarity legendary">57 Items</div>
+            </div>
+
+            <div class="achievement-card collection">
+              <h3 class="font-semibold mb-2">Mask Bearer</h3>
+              <p class="text-gray-400 text-sm mb-3">Collect all 20 Mask Shards (5 full masks).</p>
+              <div class="achievement-rarity epic">20 Shards</div>
+            </div>
+
+            <div class="achievement-card collection">
+              <h3 class="font-semibold mb-2">Silk Spinner</h3>
+              <p class="text-gray-400 text-sm mb-3">Collect all 18 Spool Fragments (9 full spools).</p>
+              <div class="achievement-rarity epic">18 Fragments</div>
+            </div>
+
+            <div class="achievement-card collection">
+              <h3 class="font-semibold mb-2">Flea Savior</h3>
+              <p class="text-gray-400 text-sm mb-3">Rescue all 30 Lost Fleas scattered throughout Pharloom.</p>
+              <div class="achievement-rarity rare">30 Rescues</div>
+            </div>
+
+            <div class="achievement-card collection">
+              <h3 class="font-semibold mb-2">Cartographer</h3>
+              <p class="text-gray-400 text-sm mb-3">Purchase all 28 area maps from Cordy.</p>
+              <div class="achievement-rarity rare">28 Maps</div>
+            </div>
+
+            <div class="achievement-card collection">
+              <h3 class="font-semibold mb-2">Heart Seeker</h3>
+              <p class="text-gray-400 text-sm mb-3">Find all 3 Silk Hearts to maximize silk capacity.</p>
+              <div class="achievement-rarity epic">3 Hearts</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Challenge Achievements -->
+        <div class="bg-silksong-dark/30 rounded-lg p-8">
+          <h2 class="text-2xl font-bold mb-6 flex items-center">
+            <span class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center mr-3">
+              🏆
+            </span>
+            Challenge Achievements
+          </h2>
+          <p class="text-gray-300 mb-6">
+            The most difficult achievements requiring skill, speed, and dedication.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="achievement-card challenge">
+              <h3 class="font-semibold mb-3 text-yellow-400">Steel Soul</h3>
+              <p class="text-gray-400 text-sm mb-4">Complete the entire game in Steel Soul mode (permadeath). You cannot die even once.</p>
+              <div class="space-y-2 text-xs mb-4">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Mode:</span>
+                  <span class="text-red-400">Permadeath</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Deaths Allowed:</span>
+                  <span class="text-red-400">0</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Difficulty:</span>
+                  <span class="text-red-400">Extreme</span>
+                </div>
+              </div>
+              <div class="achievement-rarity legendary">Ultimate</div>
+            </div>
+
+            <div class="achievement-card challenge">
+              <h3 class="font-semibold mb-3 text-yellow-400">Steel Heart</h3>
+              <p class="text-gray-400 text-sm mb-4">Achieve 100% completion in Steel Soul mode. The ultimate challenge.</p>
+              <div class="space-y-2 text-xs mb-4">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Completion:</span>
+                  <span class="text-green-400">100%</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Mode:</span>
+                  <span class="text-red-400">Permadeath</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Difficulty:</span>
+                  <span class="text-red-400">Extreme+</span>
+                </div>
+              </div>
+              <div class="achievement-rarity legendary">Ultimate</div>
+            </div>
+
+            <div class="achievement-card challenge">
+              <h3 class="font-semibold mb-3 text-yellow-400">Speedrunner</h3>
+              <p class="text-gray-400 text-sm mb-4">Complete the game in under 5 hours. Focus on main path only.</p>
+              <div class="space-y-2 text-xs mb-4">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Time Limit:</span>
+                  <span class="text-yellow-400">< 5 Hours</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Route:</span>
+                  <span class="text-blue-400">Main Story</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Difficulty:</span>
+                  <span class="text-yellow-400">Hard</span>
+                </div>
+              </div>
+              <div class="achievement-rarity epic">Speed</div>
+            </div>
+
+            <div class="achievement-card challenge">
+              <h3 class="font-semibold mb-3 text-yellow-400">Speed Completion</h3>
+              <p class="text-gray-400 text-sm mb-4">Achieve 100% completion in under 30 hours. Efficient collection required.</p>
+              <div class="space-y-2 text-xs mb-4">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Time Limit:</span>
+                  <span class="text-yellow-400">< 30 Hours</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Completion:</span>
+                  <span class="text-green-400">100%</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Difficulty:</span>
+                  <span class="text-yellow-400">Hard</span>
+                </div>
+              </div>
+              <div class="achievement-rarity epic">Speed + Complete</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Completion Tips -->
+      <div class="mt-16 bg-silksong-dark/30 rounded-lg p-8">
+        <h2 class="text-2xl font-bold mb-6">
+          <span class="gradient-text">Achievement Hunting Tips</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-blue-400">Recommended Playthrough Order</h3>
+            <ol class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <span class="bg-silksong-blue text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">1</span>
+                <span>First Run: Casual exploration + grab missable achievements</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-silksong-blue text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">2</span>
+                <span>Second Run: 100% completion focus</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-silksong-blue text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">3</span>
+                <span>Third Run: Steel Soul and speed challenges</span>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-purple-400">General Tips</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-2">•</span>
+                <span>Use our <a href="/checklist" class="text-silksong-blue hover:text-silksong-purple">Progress Checklist</a> to track items</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-2">•</span>
+                <span>Save frequently, especially before boss fights</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-2">•</span>
+                <span>Practice difficult bosses in normal mode first</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-2">•</span>
+                <span>Learn speedrun routes for timed achievements</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .achievement-card {
+    @apply bg-silksong-darker rounded-lg p-4 border border-gray-700 hover:border-silksong-blue transition-all duration-200;
+  }
+
+  .achievement-card.boss {
+    @apply border-red-500/30 hover:border-red-500;
+  }
+
+  .achievement-card.collection {
+    @apply border-purple-500/30 hover:border-purple-500;
+  }
+
+  .achievement-card.challenge {
+    @apply border-yellow-500/30 hover:border-yellow-500;
+  }
+
+  .achievement-rarity {
+    @apply px-2 py-1 rounded text-xs font-medium w-fit;
+  }
+
+  .achievement-rarity.common {
+    @apply bg-gray-600 text-gray-200;
+  }
+
+  .achievement-rarity.rare {
+    @apply bg-blue-600 text-blue-100;
+  }
+
+  .achievement-rarity.epic {
+    @apply bg-purple-600 text-purple-100;
+  }
+
+  .achievement-rarity.legendary {
+    @apply bg-yellow-600 text-yellow-100;
+  }
+</style>

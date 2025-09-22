@@ -1,0 +1,347 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Platform Badges"
+  description="Complete collection of platform-specific badges for Hollow Knight: Silksong across Steam, Twitch, Discord, and other gaming platforms."
+  keywords="platform badges, steam badges, twitch badges, discord badges, xbox achievements, playstation trophies"
+>
+  <section class="py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Platform Badges</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Exclusive badges and achievements across all gaming platforms
+        </p>
+      </div>
+
+      <!-- Platform Overview -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+        <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6 text-center">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">💨</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-blue-400">Steam</h3>
+          <div class="text-2xl font-bold text-blue-400 mb-2">5</div>
+          <p class="text-sm text-gray-400">Community Badges</p>
+        </div>
+
+        <div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-6 text-center">
+          <div class="w-16 h-16 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🦂</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-purple-400">Twitch</h3>
+          <div class="text-2xl font-bold text-red-400 mb-2">1</div>
+          <p class="text-sm text-gray-400">Expired Campaign</p>
+        </div>
+
+        <div class="bg-indigo-500/10 border border-indigo-500/30 rounded-lg p-6 text-center">
+          <div class="w-16 h-16 bg-indigo-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">💬</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-indigo-400">Discord</h3>
+          <div class="text-2xl font-bold text-green-400 mb-2">4</div>
+          <p class="text-sm text-gray-400">Active Badges</p>
+        </div>
+
+        <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-6 text-center">
+          <div class="w-16 h-16 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🎮</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 text-green-400">Console</h3>
+          <div class="text-2xl font-bold text-green-400 mb-2">52</div>
+          <p class="text-sm text-gray-400">Achievements</p>
+        </div>
+
+      </div>
+
+      <!-- Steam Platform -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Steam Platform</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="bg-silksong-dark rounded-lg p-6 border border-blue-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">🌸</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400">Everbloom Badge</h3>
+                <p class="text-sm text-gray-400">Community Badge</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Craft from 9 Silksong trading cards. Includes emoticons, backgrounds, and Steam XP.
+            </p>
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-gray-400">Cost:</span>
+              <span class="text-green-400">~$2.50</span>
+            </div>
+            <a href="/badges/steam" class="btn-primary w-full text-center">
+              View Details
+            </a>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-6 border border-gray-600">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-600 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">🏆</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">Achievement Showcase</h3>
+                <p class="text-sm text-gray-400">Profile Feature</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Display your Silksong achievements on your Steam profile. Unlock rare achievement showcases.
+            </p>
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-gray-400">Available:</span>
+              <span class="text-green-400">At Launch</span>
+            </div>
+            <a href="/achievements" class="btn-secondary w-full text-center">
+              View Achievements
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Twitch Platform -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Twitch Platform</h2>
+        <div class="bg-red-900/20 border border-red-400/30 rounded-lg p-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-white text-xl">🦂</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-purple-400">Hornet Badge</h3>
+                  <p class="text-sm text-red-400">Campaign Ended</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mb-4">
+                Limited-time campaign featuring Hornet badge for Twitch subscribers.
+                Campaign ran from August 1 - September 13, 2025.
+              </p>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Participants:</span>
+                  <span>847,291 users</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Streamers:</span>
+                  <span>1,247 channels</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mx-auto mb-4 flex items-center justify-center relative">
+                <span class="text-4xl">🦂</span>
+                <div class="absolute -top-2 -right-2 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                  <span class="text-white text-xs">✕</span>
+                </div>
+              </div>
+              <a href="/badges/twitch" class="btn-secondary">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Discord Platform -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Discord Platform</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <div class="bg-silksong-dark rounded-lg p-4 border border-green-500/30">
+            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <span class="text-white">🎉</span>
+            </div>
+            <h4 class="font-semibold text-center mb-2 text-green-400">Welcome</h4>
+            <p class="text-xs text-gray-400 text-center">Automatic</p>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-4 border border-blue-500/30">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <span class="text-white">💬</span>
+            </div>
+            <h4 class="font-semibold text-center mb-2 text-blue-400">Active Member</h4>
+            <p class="text-xs text-gray-400 text-center">100+ Messages</p>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-4 border border-purple-500/30">
+            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <span class="text-white">🎨</span>
+            </div>
+            <h4 class="font-semibold text-center mb-2 text-purple-400">Art Contributor</h4>
+            <p class="text-xs text-gray-400 text-center">Share Artwork</p>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-4 border border-yellow-500/30">
+            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <span class="text-white">🏆</span>
+            </div>
+            <h4 class="font-semibold text-center mb-2 text-yellow-400">Event Champion</h4>
+            <p class="text-xs text-gray-400 text-center">Win Contests</p>
+          </div>
+
+        </div>
+        <div class="text-center mt-6">
+          <a href="/badges/discord" class="btn-primary">
+            Join Discord Community
+          </a>
+        </div>
+      </div>
+
+      <!-- Console Achievements -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Console Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="bg-silksong-dark rounded-lg p-6 border border-green-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">🎮</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-green-400">Xbox</h3>
+                <p class="text-sm text-gray-400">Achievement System</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm mb-4">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Total Achievements:</span>
+                <span>52</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Total Gamerscore:</span>
+                <span class="text-green-400">1,000 G</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Rare Achievements:</span>
+                <span class="text-yellow-400">8</span>
+              </div>
+            </div>
+            <a href="/achievements" class="btn-primary w-full text-center">
+              View All
+            </a>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-6 border border-blue-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">🏆</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400">PlayStation</h3>
+                <p class="text-sm text-gray-400">Trophy System</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm mb-4">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Total Trophies:</span>
+                <span>52</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Platinum Trophy:</span>
+                <span class="text-blue-400">1</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Ultra Rare:</span>
+                <span class="text-yellow-400">5</span>
+              </div>
+            </div>
+            <a href="/achievements" class="btn-primary w-full text-center">
+              View All
+            </a>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-6 border border-red-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">🎯</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-red-400">Nintendo Switch</h3>
+                <p class="text-sm text-gray-400">Achievement System</p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm mb-4">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Total Achievements:</span>
+                <span>52</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Profile Icons:</span>
+                <span class="text-red-400">12</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Special Frames:</span>
+                <span class="text-yellow-400">3</span>
+              </div>
+            </div>
+            <a href="/achievements" class="btn-primary w-full text-center">
+              View All
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Platform-Specific Tips -->
+      <div class="bg-silksong-dark/50 rounded-lg p-6 mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Platform Badge Tips</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold mb-2 text-silksong-blue">Maximize Your Collection</h4>
+            <ul class="space-y-1 text-sm text-gray-300">
+              <li>• Link all gaming accounts to track progress</li>
+              <li>• Join platform-specific communities</li>
+              <li>• Participate in limited-time events</li>
+              <li>• Follow official announcements</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2 text-silksong-purple">Cross-Platform Benefits</h4>
+            <ul class="space-y-1 text-sm text-gray-300">
+              <li>• Some achievements sync across platforms</li>
+              <li>• Community features enhance experience</li>
+              <li>• Share progress with friends</li>
+              <li>• Unlock exclusive content</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-between">
+        <a href="/badges" class="btn-secondary text-center">
+          ← Back to All Badges
+        </a>
+        <a href="/badges/physical" class="btn-primary text-center">
+          Physical Badges →
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>

@@ -1,0 +1,345 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Badge Collection"
+  description="Complete collection of all Hollow Knight: Silksong badges including in-game tools, platform badges, Steam items, and physical collectibles."
+  keywords="silksong badges, hollow knight badges, pin badge, twitch hornet badge, steam trading cards, collectibles"
+>
+  <!-- Header Section -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+          <span class="gradient-text">Badge Collection</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Comprehensive catalog of all available badges, tools, and collectibles in Hollow Knight: Silksong
+        </p>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+          <button class="filter-btn active" data-filter="all">All Badges</button>
+          <button class="filter-btn" data-filter="in-game">In-Game</button>
+          <button class="filter-btn" data-filter="platform">Platform</button>
+          <button class="filter-btn" data-filter="steam">Steam</button>
+          <button class="filter-btn" data-filter="physical">Physical</button>
+          <button class="filter-btn" data-filter="expired">Expired</button>
+        </div>
+      </div>
+
+      <!-- Badge Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Pin Badge (In-Game) -->
+        <div class="badge-item" data-category="in-game">
+          <div class="badge-card">
+            <div class="flex items-center justify-between mb-4">
+              <div class="badge-rarity legendary">Legendary</div>
+              <div class="badge-type">In-Game Tool</div>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Pin Badge</h3>
+              <p class="text-gray-400 text-sm mb-4">Blue offensive tool that reduces Needle Strike charge time by 50%. Obtained by defeating Pinstress boss in Mount Fay.</p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Location:</span>
+                  <span class="text-white">Mount Fay</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Requirement:</span>
+                  <span class="text-white">Defeat Pinstress</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Act:</span>
+                  <span class="text-white">Act 3</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Difficulty:</span>
+                  <span class="text-yellow-400">Hard</span>
+                </div>
+              </div>
+            </div>
+            <a href="/guides/pin-badge" class="btn-primary w-full text-center">View Guide</a>
+          </div>
+        </div>
+
+        <!-- Twitch Hornet Badge -->
+        <div class="badge-item" data-category="platform expired">
+          <div class="badge-card">
+            <div class="flex items-center justify-between mb-4">
+              <div class="badge-rarity epic">Epic</div>
+              <div class="badge-type">Platform Badge</div>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Twitch Hornet Badge</h3>
+              <p class="text-gray-400 text-sm mb-4">Limited-time Twitch badge featuring Hornet. Campaign ran September 4-13, 2025. No longer obtainable.</p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Platform:</span>
+                  <span class="text-white">Twitch</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Campaign:</span>
+                  <span class="text-red-400">Ended</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Duration:</span>
+                  <span class="text-white">Sept 4-13, 2025</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Status:</span>
+                  <span class="text-red-400">Unavailable</span>
+                </div>
+              </div>
+            </div>
+            <a href="/badges/twitch" class="btn-secondary w-full text-center">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Steam Everbloom Badge -->
+        <div class="badge-item" data-category="steam">
+          <div class="badge-card">
+            <div class="flex items-center justify-between mb-4">
+              <div class="badge-rarity rare">Rare</div>
+              <div class="badge-type">Steam Badge</div>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Everbloom Badge</h3>
+              <p class="text-gray-400 text-sm mb-4">Steam community badge crafted from collecting Silksong trading cards. Resembles the Delicate Flower from the original game.</p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Platform:</span>
+                  <span class="text-white">Steam</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Cards Needed:</span>
+                  <span class="text-white">9 Total</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Type:</span>
+                  <span class="text-white">Community Badge</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Availability:</span>
+                  <span class="text-green-400">Available</span>
+                </div>
+              </div>
+            </div>
+            <a href="/badges/steam" class="btn-primary w-full text-center">View Collection</a>
+          </div>
+        </div>
+
+        <!-- Official Pin (Physical) -->
+        <div class="badge-item" data-category="physical">
+          <div class="badge-card">
+            <div class="flex items-center justify-between mb-4">
+              <div class="badge-rarity legendary">Legendary</div>
+              <div class="badge-type">Physical</div>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Official Hornet Pin</h3>
+              <p class="text-gray-400 text-sm mb-4">High-quality enamel pin featuring Hornet. Sold through authorized retailers Fangamer and The Yetee.</p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Retailer:</span>
+                  <span class="text-white">Fangamer</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Price Range:</span>
+                  <span class="text-white">£15-25</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Material:</span>
+                  <span class="text-white">Enamel</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Availability:</span>
+                  <span class="text-green-400">In Stock</span>
+                </div>
+              </div>
+            </div>
+            <a href="/badges/physical" class="btn-primary w-full text-center">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- All Tools Collection -->
+        <div class="badge-item" data-category="in-game">
+          <div class="badge-card">
+            <div class="flex items-center justify-between mb-4">
+              <div class="badge-rarity epic">Epic</div>
+              <div class="badge-type">Collection</div>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Complete Tool Collection</h3>
+              <p class="text-gray-400 text-sm mb-4">All 57 tools including crests, silk skills, and utility items. Required for 100% completion.</p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Total Items:</span>
+                  <span class="text-white">57 Tools</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Categories:</span>
+                  <span class="text-white">Blue, Red, Yellow</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Achievement:</span>
+                  <span class="text-white">Tool Collector</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Completion:</span>
+                  <span class="text-yellow-400">Required</span>
+                </div>
+              </div>
+            </div>
+            <a href="/guides/tools" class="btn-primary w-full text-center">View Guide</a>
+          </div>
+        </div>
+
+        <!-- Discord Badge -->
+        <div class="badge-item" data-category="platform">
+          <div class="badge-card">
+            <div class="flex items-center justify-between mb-4">
+              <div class="badge-rarity common">Common</div>
+              <div class="badge-type">Platform Badge</div>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Discord Server Badge</h3>
+              <p class="text-gray-400 text-sm mb-4">Special role badge available in the official Hollow Knight Discord server for Silksong completion.</p>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Platform:</span>
+                  <span class="text-white">Discord</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Requirement:</span>
+                  <span class="text-white">100% Completion</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Verification:</span>
+                  <span class="text-white">Screenshot</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-400">Status:</span>
+                  <span class="text-green-400">Available</span>
+                </div>
+              </div>
+            </div>
+            <a href="/badges/discord" class="btn-secondary w-full text-center">Join Server</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Stats Section -->
+      <div class="mt-16 bg-silksong-dark/30 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-center mb-8">Collection Statistics</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-silksong-gold mb-2" id="total-badges">6</div>
+            <div class="text-gray-400">Total Badge Types</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-silksong-blue mb-2">57</div>
+            <div class="text-gray-400">In-Game Tools</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-silksong-purple mb-2">9</div>
+            <div class="text-gray-400">Steam Cards</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-red-400">1</div>
+            <div class="text-gray-400">Expired Events</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .filter-btn {
+    @apply px-4 py-2 rounded-lg bg-silksong-dark text-gray-300 hover:text-white hover:bg-silksong-blue transition-all duration-200 text-sm font-medium;
+  }
+
+  .filter-btn.active {
+    @apply bg-silksong-blue text-white;
+  }
+
+  .badge-rarity {
+    @apply px-2 py-1 rounded text-xs font-medium;
+  }
+
+  .badge-rarity.common {
+    @apply bg-gray-600 text-gray-200;
+  }
+
+  .badge-rarity.rare {
+    @apply bg-blue-600 text-blue-100;
+  }
+
+  .badge-rarity.epic {
+    @apply bg-purple-600 text-purple-100;
+  }
+
+  .badge-rarity.legendary {
+    @apply bg-yellow-600 text-yellow-100;
+  }
+
+  .badge-type {
+    @apply px-2 py-1 rounded text-xs font-medium bg-silksong-dark text-gray-300;
+  }
+
+  .badge-item {
+    @apply transition-all duration-300;
+  }
+
+  .badge-item.hidden {
+    @apply opacity-0 scale-95 pointer-events-none;
+  }
+</style>
+
+<script>
+  // Filter functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const badgeItems = document.querySelectorAll('.badge-item');
+    const totalBadgesCounter = document.getElementById('total-badges');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.dataset.filter;
+
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Filter items
+        let visibleCount = 0;
+        badgeItems.forEach(item => {
+          const categories = item.dataset.category.split(' ');
+
+          if (filter === 'all' || categories.includes(filter)) {
+            item.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        // Update counter
+        if (totalBadgesCounter) {
+          totalBadgesCounter.textContent = filter === 'all' ? '6' : visibleCount;
+        }
+      });
+    });
+  });
+</script>

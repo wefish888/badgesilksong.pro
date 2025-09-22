@@ -1,0 +1,376 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Get search query from URL params
+const url = new URL(Astro.request.url);
+const query = url.searchParams.get('q') || '';
+---
+
+<BaseLayout
+  title="Search Results"
+  description={`Search results for "${query}" - Find badges, guides, achievements, and troubleshooting help.`}
+  keywords="search, find badges, silksong search, guides search, troubleshooting"
+>
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Search Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Search Results</span>
+        </h1>
+        {query && (
+          <p class="text-xl text-gray-300 mb-8">
+            Results for: <span class="text-silksong-blue font-semibold">"{query}"</span>
+          </p>
+        )}
+
+        <!-- Search Box -->
+        <div class="max-w-2xl mx-auto mb-8">
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search badges, guides, achievements..."
+              class="w-full search-box pl-12 py-4 text-lg"
+              id="main-search"
+              value={query}
+            />
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <svg class="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {query ? (
+        <!-- Search Results -->
+        <div id="search-results">
+          <div class="mb-8">
+            <p class="text-gray-400" id="results-count">Searching...</p>
+          </div>
+
+          <!-- Results will be populated by JavaScript -->
+          <div id="results-container" class="space-y-6">
+            <!-- Loading state -->
+            <div class="text-center py-12">
+              <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-silksong-blue mx-auto mb-4"></div>
+              <p class="text-gray-400">Searching...</p>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <!-- No Query State -->
+        <div class="text-center py-12">
+          <div class="w-24 h-24 mx-auto bg-silksong-dark rounded-full flex items-center justify-center mb-6">
+            <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold mb-4">Start Your Search</h2>
+          <p class="text-gray-400 mb-8">Enter a search term to find badges, guides, achievements, and more.</p>
+
+          <!-- Popular Searches -->
+          <div class="max-w-2xl mx-auto">
+            <h3 class="text-lg font-semibold mb-4">Popular Searches:</h3>
+            <div class="flex flex-wrap gap-2 justify-center">
+              <button class="popular-search bg-silksong-dark hover:bg-silksong-blue px-4 py-2 rounded-lg text-sm transition-colors" data-query="pin badge">
+                Pin Badge
+              </button>
+              <button class="popular-search bg-silksong-dark hover:bg-silksong-blue px-4 py-2 rounded-lg text-sm transition-colors" data-query="twitch hornet">
+                Twitch Hornet Badge
+              </button>
+              <button class="popular-search bg-silksong-dark hover:bg-silksong-blue px-4 py-2 rounded-lg text-sm transition-colors" data-query="steam trading cards">
+                Steam Trading Cards
+              </button>
+              <button class="popular-search bg-silksong-dark hover:bg-silksong-blue px-4 py-2 rounded-lg text-sm transition-colors" data-query="missable achievements">
+                Missable Achievements
+              </button>
+              <button class="popular-search bg-silksong-dark hover:bg-silksong-blue px-4 py-2 rounded-lg text-sm transition-colors" data-query="100% completion">
+                100% Completion
+              </button>
+              <button class="popular-search bg-silksong-dark hover:bg-silksong-blue px-4 py-2 rounded-lg text-sm transition-colors" data-query="steel soul mode">
+                Steel Soul Mode
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <!-- Quick Links -->
+      <div class="mt-16 bg-silksong-dark/30 rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-center mb-8">Browse by Category</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="/badges" class="card text-center hover:border-silksong-blue transition-colors">
+            <div class="w-12 h-12 bg-silksong-gold rounded-lg flex items-center justify-center mx-auto mb-3">
+              🏆
+            </div>
+            <h3 class="font-semibold mb-2">All Badges</h3>
+            <p class="text-gray-400 text-sm">Complete collection</p>
+          </a>
+
+          <a href="/guides" class="card text-center hover:border-silksong-blue transition-colors">
+            <div class="w-12 h-12 bg-silksong-purple rounded-lg flex items-center justify-center mx-auto mb-3">
+              📖
+            </div>
+            <h3 class="font-semibold mb-2">Guides</h3>
+            <p class="text-gray-400 text-sm">Step-by-step tutorials</p>
+          </a>
+
+          <a href="/achievements" class="card text-center hover:border-silksong-blue transition-colors">
+            <div class="w-12 h-12 bg-silksong-blue rounded-lg flex items-center justify-center mx-auto mb-3">
+              🎯
+            </div>
+            <h3 class="font-semibold mb-2">Achievements</h3>
+            <p class="text-gray-400 text-sm">All 52 achievements</p>
+          </a>
+
+          <a href="/troubleshooting" class="card text-center hover:border-silksong-blue transition-colors">
+            <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              🛠️
+            </div>
+            <h3 class="font-semibold mb-2">Help</h3>
+            <p class="text-gray-400 text-sm">Troubleshooting</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ query }}>
+  // Search data - in a real app this would come from an API or be generated at build time
+  const searchData = [
+    // Badges
+    {
+      title: "Pin Badge",
+      description: "Blue offensive tool that reduces Needle Strike charge time by 50%. Obtained by defeating Pinstress boss in Mount Fay.",
+      url: "/guides/pin-badge",
+      category: "Badge",
+      tags: ["pin badge", "pinstress", "mount fay", "blue tool", "needle strike"]
+    },
+    {
+      title: "Twitch Hornet Badge",
+      description: "Limited-time Twitch badge featuring Hornet. Campaign ended September 13, 2025.",
+      url: "/badges/twitch",
+      category: "Platform Badge",
+      tags: ["twitch", "hornet badge", "expired", "limited time", "platform"]
+    },
+    {
+      title: "Steam Everbloom Badge",
+      description: "Steam community badge crafted from collecting 9 Silksong trading cards.",
+      url: "/badges/steam",
+      category: "Steam Badge",
+      tags: ["steam", "everbloom", "trading cards", "community badge", "craft"]
+    },
+
+    // Achievements
+    {
+      title: "Pharloom's Welcome (Missable)",
+      description: "Critical missable achievement - defeat Lace in Deep Docks before advancing story.",
+      url: "/achievements",
+      category: "Achievement",
+      tags: ["missable", "pharloom's welcome", "lace", "deep docks", "critical"]
+    },
+    {
+      title: "Twisted Child (Missable)",
+      description: "Defeat Grand Mother Silk while cursed. Get curse from Greyroot in Shellwood first.",
+      url: "/achievements",
+      category: "Achievement",
+      tags: ["missable", "twisted child", "grand mother silk", "cursed", "greyroot"]
+    },
+    {
+      title: "Steel Soul Mode",
+      description: "Complete the game in permadeath mode - no deaths allowed.",
+      url: "/achievements",
+      category: "Challenge",
+      tags: ["steel soul", "permadeath", "challenge", "no death", "extreme"]
+    },
+    {
+      title: "100% Completion Guide",
+      description: "Everything needed for complete game completion including all collectibles.",
+      url: "/guides",
+      category: "Guide",
+      tags: ["100%", "completion", "collectibles", "guide", "all items"]
+    },
+
+    // Troubleshooting
+    {
+      title: "Badge Not Appearing Fix",
+      description: "Solutions for badges not showing up after completing requirements.",
+      url: "/troubleshooting",
+      category: "Troubleshooting",
+      tags: ["badge not appearing", "not showing", "missing", "fix", "troubleshoot"]
+    },
+    {
+      title: "Steam Trading Cards Missing",
+      description: "Fix for Steam trading cards not dropping or missing from inventory.",
+      url: "/troubleshooting",
+      category: "Troubleshooting",
+      tags: ["steam cards", "not dropping", "missing", "inventory", "trading cards"]
+    },
+
+    // Guides
+    {
+      title: "All Tools Collection (57 Total)",
+      description: "Complete guide to collecting all 57 tools including Blue, Red, and Yellow categories.",
+      url: "/guides",
+      category: "Guide",
+      tags: ["tools", "57 total", "blue tools", "red tools", "yellow tools", "collection"]
+    }
+  ];
+
+  function performSearch(searchQuery) {
+    if (!searchQuery || searchQuery.trim().length < 2) {
+      return [];
+    }
+
+    const query = searchQuery.toLowerCase().trim();
+    const results = [];
+
+    searchData.forEach(item => {
+      let score = 0;
+
+      // Title exact match (highest score)
+      if (item.title.toLowerCase().includes(query)) {
+        score += 10;
+      }
+
+      // Description match
+      if (item.description.toLowerCase().includes(query)) {
+        score += 5;
+      }
+
+      // Tags match
+      item.tags.forEach(tag => {
+        if (tag.toLowerCase().includes(query)) {
+          score += 3;
+        }
+      });
+
+      // Category match
+      if (item.category.toLowerCase().includes(query)) {
+        score += 2;
+      }
+
+      if (score > 0) {
+        results.push({ ...item, score });
+      }
+    });
+
+    // Sort by score (highest first)
+    return results.sort((a, b) => b.score - a.score);
+  }
+
+  function displayResults(results, searchQuery) {
+    const container = document.getElementById('results-container');
+    const countElement = document.getElementById('results-count');
+
+    if (!container || !countElement) return;
+
+    // Update count
+    countElement.textContent = `Found ${results.length} result${results.length !== 1 ? 's' : ''} for "${searchQuery}"`;
+
+    if (results.length === 0) {
+      container.innerHTML = `
+        <div class="text-center py-12">
+          <div class="w-24 h-24 mx-auto bg-silksong-dark rounded-full flex items-center justify-center mb-6">
+            <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.239 0-4.236-.91-5.69-2.38C8.042 11.03 9.924 10 12 10s3.958 1.03 5.69 2.62A7.962 7.962 0 0112 15z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-semibold mb-4">No Results Found</h2>
+          <p class="text-gray-400 mb-6">Try adjusting your search terms or browse our categories below.</p>
+        </div>
+      `;
+      return;
+    }
+
+    // Display results
+    container.innerHTML = results.map(result => `
+      <div class="bg-silksong-dark rounded-lg p-6 hover:bg-silksong-blue/10 transition-colors">
+        <div class="flex items-start justify-between mb-3">
+          <h3 class="text-xl font-semibold text-white hover:text-silksong-blue">
+            <a href="${result.url}" class="hover:underline">${result.title}</a>
+          </h3>
+          <span class="px-2 py-1 bg-silksong-blue/20 text-silksong-blue rounded text-sm font-medium ml-4 flex-shrink-0">
+            ${result.category}
+          </span>
+        </div>
+        <p class="text-gray-300 mb-4">${result.description}</p>
+        <div class="flex items-center justify-between">
+          <div class="flex flex-wrap gap-1">
+            ${result.tags.slice(0, 3).map(tag => `
+              <span class="px-2 py-1 bg-silksong-darker text-gray-400 rounded text-xs">${tag}</span>
+            `).join('')}
+          </div>
+          <a href="${result.url}" class="text-silksong-blue hover:text-silksong-purple font-medium text-sm">
+            View →
+          </a>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('main-search');
+    const popularSearches = document.querySelectorAll('.popular-search');
+
+    // Perform initial search if query exists
+    if (query) {
+      const results = performSearch(query);
+      displayResults(results, query);
+    }
+
+    // Handle search input
+    if (searchInput) {
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          const newQuery = e.target.value.trim();
+          if (newQuery) {
+            window.location.href = `/search?q=${encodeURIComponent(newQuery)}`;
+          }
+        }
+      });
+
+      // Real-time search (optional)
+      let searchTimeout;
+      searchInput.addEventListener('input', function(e) {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          const newQuery = e.target.value.trim();
+          if (newQuery && newQuery.length >= 2) {
+            const results = performSearch(newQuery);
+            displayResults(results, newQuery);
+            // Update URL without reload
+            const newUrl = `/search?q=${encodeURIComponent(newQuery)}`;
+            window.history.replaceState(null, '', newUrl);
+          }
+        }, 300);
+      });
+    }
+
+    // Handle popular searches
+    popularSearches.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const searchQuery = this.dataset.query;
+        if (searchInput) {
+          searchInput.value = searchQuery;
+        }
+        window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
+      });
+    });
+  });
+</script>
+
+<style>
+  .popular-search:hover {
+    transform: translateY(-2px);
+  }
+
+  #results-container .bg-silksong-dark:hover {
+    border-left: 4px solid #4A90E2;
+  }
+</style>

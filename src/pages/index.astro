@@ -1,0 +1,266 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+  <!-- Hero Section -->
+  <section class="relative py-20 lg:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-silksong-blue/10 to-silksong-purple/10"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6">
+          <span class="gradient-text">Silksong Badge Hub</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Your complete guide to collecting all badges, achievements, and collectibles in
+          <span class="text-silksong-blue font-semibold">Hollow Knight: Silksong</span>
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/badges" class="btn-primary">
+            Explore Badge Collection
+          </a>
+          <a href="/guides" class="btn-secondary">
+            View Guides
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Cards Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">
+          Everything You Need to <span class="gradient-text">Collect Them All</span>
+        </h2>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+          From in-game tools to limited-time platform badges, we've got comprehensive guides for every type of Silksong collectible.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- In-Game Badges -->
+        <div class="badge-card">
+          <div class="mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-silksong-gold to-yellow-600 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">In-Game Badges</h3>
+            <p class="text-gray-400 mb-4">Complete guides for Pin Badge and all 57 tools, including boss strategies and location maps.</p>
+            <a href="/badges/in-game" class="text-silksong-blue hover:text-silksong-purple font-medium">
+              View In-Game Collection →
+            </a>
+          </div>
+        </div>
+
+        <!-- Platform Badges -->
+        <div class="badge-card">
+          <div class="mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-silksong-purple to-purple-600 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 4v10a2 2 0 002 2h6a2 2 0 002-2V8M9 8h6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Platform Badges</h3>
+            <p class="text-gray-400 mb-4">Twitch Hornet Badge, Steam Trading Cards, and Discord collectibles with acquisition guides.</p>
+            <a href="/badges/platform" class="text-silksong-blue hover:text-silksong-purple font-medium">
+              View Platform Badges →
+            </a>
+          </div>
+        </div>
+
+        <!-- Achievement Guide -->
+        <div class="badge-card">
+          <div class="mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-silksong-blue to-blue-600 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Achievement Guide</h3>
+            <p class="text-gray-400 mb-4">All 52 achievements including missable trophies, Steel Soul mode, and speedrun strategies.</p>
+            <a href="/achievements" class="text-silksong-blue hover:text-silksong-purple font-medium">
+              View Achievement Guide →
+            </a>
+          </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="badge-card">
+          <div class="mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Troubleshooting</h3>
+            <p class="text-gray-400 mb-4">Fix common issues with badges not appearing, Steam items missing, and Twitch drop problems.</p>
+            <a href="/troubleshooting" class="text-silksong-blue hover:text-silksong-purple font-medium">
+              Get Help →
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Checklist -->
+        <div class="badge-card">
+          <div class="mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Progress Checklist</h3>
+            <p class="text-gray-400 mb-4">Track your collection progress with our interactive checklist for 100% completion.</p>
+            <a href="/checklist" class="text-silksong-blue hover:text-silksong-purple font-medium">
+              Track Progress →
+            </a>
+          </div>
+        </div>
+
+        <!-- Physical Collectibles -->
+        <div class="badge-card">
+          <div class="mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Physical Collectibles</h3>
+            <p class="text-gray-400 mb-4">Official pins, merchandise, and third-party collectibles with purchase guides and pricing.</p>
+            <a href="/badges/physical" class="text-silksong-blue hover:text-silksong-purple font-medium">
+              View Merchandise →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Section -->
+  <section class="py-16 bg-silksong-dark/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">
+          <span class="gradient-text">By the Numbers</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-silksong-gold mb-2">57</div>
+          <div class="text-gray-400">Total Tools</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-silksong-blue mb-2">52</div>
+          <div class="text-gray-400">Achievements</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-silksong-purple mb-2">9</div>
+          <div class="text-gray-400">Trading Cards</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-bold text-silksong-gold mb-2">2</div>
+          <div class="text-gray-400">Missable Items</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">
+          Latest <span class="gradient-text">Updates</span>
+        </h2>
+        <p class="text-gray-400 text-lg">Stay updated with the latest badge discoveries and guide improvements</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card">
+          <div class="flex items-center mb-4">
+            <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+            <span class="text-sm text-gray-400">September 22, 2025</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Twitch Badge Campaign Ended</h3>
+          <p class="text-gray-400 mb-4">The Hornet Badge promotion has officially ended. Added alternative acquisition guides for collectors who missed it.</p>
+          <a href="/badges/twitch" class="text-silksong-blue hover:text-silksong-purple font-medium">
+            Learn More →
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="flex items-center mb-4">
+            <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+            <span class="text-sm text-gray-400">September 20, 2025</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Pin Badge Guide Updated</h3>
+          <p class="text-gray-400 mb-4">Enhanced the Pinstress boss fight guide with video walkthroughs and advanced strategies.</p>
+          <a href="/guides/pin-badge" class="text-silksong-blue hover:text-silksong-purple font-medium">
+            View Guide →
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="flex items-center mb-4">
+            <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+            <span class="text-sm text-gray-400">September 18, 2025</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Steam Items Database</h3>
+          <p class="text-gray-400 mb-4">Added comprehensive database of all Steam trading cards and community items with detailed descriptions.</p>
+          <a href="/badges/steam" class="text-silksong-blue hover:text-silksong-purple font-medium">
+            Explore Items →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-silksong-blue/20 to-silksong-purple/20"></div>
+    <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">
+        Ready to Start Your <span class="gradient-text">Collection Journey</span>?
+      </h2>
+      <p class="text-xl text-gray-300 mb-8">
+        Join thousands of collectors who have achieved 100% completion using our comprehensive guides.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/checklist" class="btn-primary">
+          Start Progress Tracking
+        </a>
+        <a href="/guides" class="btn-secondary">
+          Browse All Guides
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Add subtle animations on scroll */
+  .badge-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+
+  .badge-card:nth-child(1) { animation-delay: 0.1s; }
+  .badge-card:nth-child(2) { animation-delay: 0.2s; }
+  .badge-card:nth-child(3) { animation-delay: 0.3s; }
+  .badge-card:nth-child(4) { animation-delay: 0.4s; }
+  .badge-card:nth-child(5) { animation-delay: 0.5s; }
+  .badge-card:nth-child(6) { animation-delay: 0.6s; }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

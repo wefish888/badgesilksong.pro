@@ -1,0 +1,155 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogImage?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title,
+  description = "Your comprehensive guide to collecting all badges, achievements, and collectibles in Hollow Knight: Silksong.",
+  keywords = "hollow knight silksong, badges, achievements, guide, collectibles, twitch drops, steam trading cards",
+  ogImage = "/images/og-image.jpg",
+  canonicalURL = Astro.url.href
+} = Astro.props;
+
+const fullTitle = title === 'Home' ? 'Silksong Badge Hub - Complete Badge Collection Guide' : `${title} | Silksong Badge Hub`;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={fullTitle} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Silksong Badge Hub" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Silksong Badge Hub",
+        "description": "Complete guide to Hollow Knight: Silksong badges, achievements, and collectibles",
+        "url": "https://silksong-badge-hub.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://silksong-badge-hub.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <title>{fullTitle}</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <Navigation />
+
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+    <Footer />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPY0XP1FB3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KPY0XP1FB3');
+    </script>
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="badgesilksong.pro" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4682727857509322" crossorigin="anonymous"></script>
+
+    <!-- Performance monitoring -->
+    <script>
+      // Monitor Core Web Vitals
+      if ('loading' in HTMLImageElement.prototype) {
+        // Browser supports native lazy loading
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a2e;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4A90E2;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7B68EE;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>

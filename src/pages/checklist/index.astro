@@ -1,0 +1,714 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Progress Checklist"
+  description="Interactive checklist to track your Hollow Knight: Silksong badge collection progress. Monitor achievements, tools, collectibles, and 100% completion."
+  keywords="silksong checklist, 100% completion tracker, achievement progress, badge tracker, hollow knight silksong"
+>
+  <!-- Header Section -->
+  <section class="py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+          <span class="gradient-text">Progress Checklist</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Track your journey to 100% completion with our interactive checklist
+        </p>
+
+        <!-- Progress Overview -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-silksong-gold mb-1" id="badges-progress">0/6</div>
+            <div class="text-gray-400 text-sm">Badges</div>
+          </div>
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-silksong-blue mb-1" id="achievements-progress">0/52</div>
+            <div class="text-gray-400 text-sm">Achievements</div>
+          </div>
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-silksong-purple mb-1" id="tools-progress">0/57</div>
+            <div class="text-gray-400 text-sm">Tools</div>
+          </div>
+          <div class="bg-silksong-dark rounded-lg p-4">
+            <div class="text-2xl font-bold text-green-400 mb-1" id="overall-progress">0%</div>
+            <div class="text-gray-400 text-sm">Overall</div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <button id="export-progress" class="btn-primary">Export Progress</button>
+          <button id="import-progress" class="btn-secondary">Import Progress</button>
+          <button id="reset-progress" class="btn-secondary text-red-400 hover:text-red-300">Reset All</button>
+        </div>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <button class="tab-btn active" data-tab="badges">Badges</button>
+        <button class="tab-btn" data-tab="achievements">Achievements</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+        <button class="tab-btn" data-tab="collectibles">Collectibles</button>
+        <button class="tab-btn" data-tab="misc">Miscellaneous</button>
+      </div>
+
+      <!-- Progress Sections -->
+      <div class="space-y-8">
+
+        <!-- Badges Section -->
+        <div class="tab-content active" id="badges-tab">
+          <div class="bg-silksong-dark/30 rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <span class="w-8 h-8 bg-silksong-gold rounded-lg flex items-center justify-center mr-3">
+                🏆
+              </span>
+              Badge Collection
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- In-Game Badges -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-silksong-blue">In-Game Badges</h3>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="badges" data-item="pin-badge" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Pin Badge</div>
+                    <div class="item-description">Defeat Pinstress boss in Mount Fay (Act 3)</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="badges" data-item="tool-collector" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Tool Collector Achievement</div>
+                    <div class="item-description">Collect all 57 tools</div>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Platform Badges -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-purple-400">Platform Badges</h3>
+
+                <label class="checklist-item expired">
+                  <input type="checkbox" data-category="badges" data-item="twitch-hornet" disabled />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Twitch Hornet Badge</div>
+                    <div class="item-description">Limited campaign (Sept 4-13, 2025) - EXPIRED</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="badges" data-item="steam-everbloom" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Steam Everbloom Badge</div>
+                    <div class="item-description">Craft from 9 trading cards</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="badges" data-item="discord-completion" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Discord Completion Badge</div>
+                    <div class="item-description">Verify 100% completion in official server</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="badges" data-item="physical-pin" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Official Physical Pin</div>
+                    <div class="item-description">Purchase from Fangamer or The Yetee</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="tab-content hidden" id="achievements-tab">
+          <div class="bg-silksong-dark/30 rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <span class="w-8 h-8 bg-silksong-blue rounded-lg flex items-center justify-center mr-3">
+                🎯
+              </span>
+              Achievements (52 Total)
+            </h2>
+
+            <!-- Missable Achievements Warning -->
+            <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-red-400 mb-4">⚠️ Missable Achievements - Complete First!</h3>
+              <div class="space-y-3">
+                <label class="checklist-item critical">
+                  <input type="checkbox" data-category="achievements" data-item="pharloom-welcome" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Pharloom's Welcome</div>
+                    <div class="item-description">Defeat Lace in Deep Docks before advancing story</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item critical">
+                  <input type="checkbox" data-category="achievements" data-item="twisted-child" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Twisted Child</div>
+                    <div class="item-description">Defeat Grand Mother Silk while cursed</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Achievement Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Story Achievements -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-green-400">Story Progress</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="achievements" data-item="first-steps" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">First Steps</div>
+                      <div class="item-description">Complete tutorial area</div>
+                    </div>
+                  </label>
+                  <!-- Add more story achievements here -->
+                </div>
+              </div>
+
+              <!-- Boss Achievements -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-red-400">Boss Defeats</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="achievements" data-item="pinstress-defeated" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">Pinstress Defeated</div>
+                      <div class="item-description">Defeat the Pinstress</div>
+                    </div>
+                  </label>
+                  <!-- Add more boss achievements here -->
+                </div>
+              </div>
+
+              <!-- Collection Achievements -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-purple-400">Collection</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="achievements" data-item="mask-collector" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">Mask Collector</div>
+                      <div class="item-description">Collect all Mask Shards</div>
+                    </div>
+                  </label>
+                  <!-- Add more collection achievements here -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenge Achievements -->
+            <div class="mt-8 bg-silksong-darker rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-yellow-400 mb-4">Challenge Achievements</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="achievements" data-item="steel-soul" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Steel Soul</div>
+                    <div class="item-description">Complete game in Steel Soul mode</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="achievements" data-item="steel-heart" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Steel Heart</div>
+                    <div class="item-description">100% completion in Steel Soul mode</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="achievements" data-item="speedrunner" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Speedrunner</div>
+                    <div class="item-description">Complete game under 5 hours</div>
+                  </div>
+                </label>
+
+                <label class="checklist-item">
+                  <input type="checkbox" data-category="achievements" data-item="speed-completion" />
+                  <span class="checkmark"></span>
+                  <div class="item-info">
+                    <div class="item-name">Speed Completion</div>
+                    <div class="item-description">100% completion under 30 hours</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="tab-content hidden" id="tools-tab">
+          <div class="bg-silksong-dark/30 rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <span class="w-8 h-8 bg-silksong-purple rounded-lg flex items-center justify-center mr-3">
+                🛠️
+              </span>
+              Tools Collection (57 Total)
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Blue Tools -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-blue-400">Blue Tools (Offensive)</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="tools" data-item="pin-badge-tool" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">Pin Badge</div>
+                      <div class="item-description">Reduces Needle Strike charge time</div>
+                    </div>
+                  </label>
+                  <!-- Add more blue tools here -->
+                </div>
+              </div>
+
+              <!-- Red Tools -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-red-400">Red Tools (Defensive)</h3>
+                <div class="space-y-2">
+                  <!-- Add red tools here -->
+                </div>
+              </div>
+
+              <!-- Yellow Tools -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-yellow-400">Yellow Tools (Utility)</h3>
+                <div class="space-y-2">
+                  <!-- Add yellow tools here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collectibles Section -->
+        <div class="tab-content hidden" id="collectibles-tab">
+          <div class="bg-silksong-dark/30 rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <span class="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center mr-3">
+                💎
+              </span>
+              Collectibles
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Mask Shards -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-green-400">Mask Shards (20 Total)</h3>
+                <div class="text-sm text-gray-400 mb-3">Collect 4 shards to create 1 full mask (5 masks total)</div>
+                <div class="progress-bar mb-4">
+                  <div class="progress-fill" id="mask-progress" style="width: 0%"></div>
+                </div>
+                <!-- Mask shard checkboxes would go here -->
+              </div>
+
+              <!-- Spool Fragments -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-purple-400">Spool Fragments (18 Total)</h3>
+                <div class="text-sm text-gray-400 mb-3">Collect 2 fragments to create 1 full spool (9 spools total)</div>
+                <div class="progress-bar mb-4">
+                  <div class="progress-fill" id="spool-progress" style="width: 0%"></div>
+                </div>
+                <!-- Spool fragment checkboxes would go here -->
+              </div>
+
+              <!-- Other Collectibles -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-blue-400">Other Items</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="collectibles" data-item="silk-hearts" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Silk Hearts (3)</div>
+                      <div class="item-description">Increase silk capacity</div>
+                    </div>
+                  </label>
+
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="collectibles" data-item="needle-upgrades" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Needle Upgrades (3)</div>
+                      <div class="item-description">Enhance needle damage</div>
+                    </div>
+                  </label>
+
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="collectibles" data-item="lost-fleas" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Lost Fleas (30)</div>
+                      <div class="item-description">Rescue all lost creatures</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Miscellaneous Section -->
+        <div class="tab-content hidden" id="misc-tab">
+          <div class="bg-silksong-dark/30 rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+              <span class="w-8 h-8 bg-gray-400 rounded-lg flex items-center justify-center mr-3">
+                📋
+              </span>
+              Miscellaneous Items
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Maps and Navigation -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-blue-400">Maps & Navigation</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="misc" data-item="all-maps" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Area Maps (28)</div>
+                      <div class="item-description">Purchase from Cordy</div>
+                    </div>
+                  </label>
+
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="misc" data-item="all-bellways" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Bellways (10)</div>
+                      <div class="item-description">Fast travel points</div>
+                    </div>
+                  </label>
+
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="misc" data-item="ventrica-stations" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">Citadel Ventrica Stations (6)</div>
+                      <div class="item-description">Citadel transport system</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Skills and Abilities -->
+              <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-purple-400">Skills & Abilities</h3>
+                <div class="space-y-2">
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="misc" data-item="all-silk-skills" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Silk Skills (6)</div>
+                      <div class="item-description">Bind all silk abilities</div>
+                    </div>
+                  </label>
+
+                  <label class="checklist-item">
+                    <input type="checkbox" data-category="misc" data-item="all-crests" />
+                    <span class="checkmark"></span>
+                    <div class="item-info">
+                      <div class="item-name">All Crests (7)</div>
+                      <div class="item-description">Equipment slots</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hidden file input for import -->
+  <input type="file" id="import-file" accept=".json" style="display: none;" />
+</BaseLayout>
+
+<style>
+  .tab-btn {
+    @apply px-4 py-2 rounded-lg bg-silksong-dark text-gray-300 hover:text-white hover:bg-silksong-blue transition-all duration-200 text-sm font-medium;
+  }
+
+  .tab-btn.active {
+    @apply bg-silksong-blue text-white;
+  }
+
+  .tab-content {
+    @apply transition-all duration-300;
+  }
+
+  .tab-content.hidden {
+    @apply opacity-0 pointer-events-none;
+  }
+
+  .checklist-item {
+    @apply flex items-start space-x-3 p-3 rounded-lg hover:bg-silksong-blue/10 transition-colors cursor-pointer;
+  }
+
+  .checklist-item.expired {
+    @apply opacity-50;
+  }
+
+  .checklist-item.critical {
+    @apply bg-red-500/10 border border-red-500/30 hover:bg-red-500/20;
+  }
+
+  .checklist-item input[type="checkbox"] {
+    @apply sr-only;
+  }
+
+  .checkmark {
+    @apply flex-shrink-0 w-5 h-5 bg-silksong-dark border-2 border-gray-600 rounded flex items-center justify-center transition-all duration-200;
+  }
+
+  .checklist-item input[type="checkbox"]:checked + .checkmark {
+    @apply bg-silksong-blue border-silksong-blue;
+  }
+
+  .checklist-item input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    @apply text-white text-sm font-bold;
+  }
+
+  .checklist-item input[type="checkbox"]:disabled + .checkmark {
+    @apply bg-gray-700 border-gray-600;
+  }
+
+  .item-info {
+    @apply flex-grow;
+  }
+
+  .item-name {
+    @apply font-medium text-white;
+  }
+
+  .item-description {
+    @apply text-sm text-gray-400;
+  }
+
+  .progress-bar {
+    @apply w-full bg-silksong-darker rounded-full h-2;
+  }
+
+  .progress-fill {
+    @apply bg-gradient-to-r from-silksong-blue to-silksong-purple h-2 rounded-full transition-all duration-300;
+  }
+</style>
+
+<script>
+  // Progress tracking functionality
+  class ProgressTracker {
+    constructor() {
+      this.data = this.loadProgress();
+      this.init();
+    }
+
+    init() {
+      this.bindEvents();
+      this.updateUI();
+      this.updateProgress();
+    }
+
+    bindEvents() {
+      // Tab switching
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const tab = e.target.dataset.tab;
+          this.switchTab(tab);
+        });
+      });
+
+      // Checkbox changes
+      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', (e) => {
+          const category = e.target.dataset.category;
+          const item = e.target.dataset.item;
+          this.toggleItem(category, item, e.target.checked);
+        });
+      });
+
+      // Export/Import/Reset buttons
+      document.getElementById('export-progress').addEventListener('click', () => this.exportProgress());
+      document.getElementById('import-progress').addEventListener('click', () => this.importProgress());
+      document.getElementById('reset-progress').addEventListener('click', () => this.resetProgress());
+      document.getElementById('import-file').addEventListener('change', (e) => this.handleFileImport(e));
+    }
+
+    switchTab(tabName) {
+      // Update tab buttons
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+
+      // Update tab content
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+      document.getElementById(`${tabName}-tab`).classList.remove('hidden');
+    }
+
+    toggleItem(category, item, checked) {
+      if (!this.data[category]) {
+        this.data[category] = {};
+      }
+      this.data[category][item] = checked;
+      this.saveProgress();
+      this.updateProgress();
+    }
+
+    updateUI() {
+      // Update checkboxes based on saved data
+      document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        const category = checkbox.dataset.category;
+        const item = checkbox.dataset.item;
+
+        if (this.data[category] && this.data[category][item]) {
+          checkbox.checked = true;
+        }
+      });
+    }
+
+    updateProgress() {
+      // Calculate progress for each category
+      const badges = this.calculateCategoryProgress('badges', 6);
+      const achievements = this.calculateCategoryProgress('achievements', 52);
+      const tools = this.calculateCategoryProgress('tools', 57);
+
+      // Update progress displays
+      document.getElementById('badges-progress').textContent = `${badges.completed}/${badges.total}`;
+      document.getElementById('achievements-progress').textContent = `${achievements.completed}/${achievements.total}`;
+      document.getElementById('tools-progress').textContent = `${tools.completed}/${tools.total}`;
+
+      // Calculate overall progress
+      const totalItems = badges.total + achievements.total + tools.total;
+      const completedItems = badges.completed + achievements.completed + tools.completed;
+      const overallPercent = Math.round((completedItems / totalItems) * 100);
+
+      document.getElementById('overall-progress').textContent = `${overallPercent}%`;
+
+      // Update specific progress bars
+      this.updateProgressBars();
+    }
+
+    calculateCategoryProgress(category, total) {
+      if (!this.data[category]) return { completed: 0, total };
+
+      const completed = Object.values(this.data[category]).filter(Boolean).length;
+      return { completed, total };
+    }
+
+    updateProgressBars() {
+      // Update mask progress (example)
+      const maskProgress = this.calculateCategoryProgress('mask-shards', 20);
+      const maskPercent = (maskProgress.completed / maskProgress.total) * 100;
+      const maskBar = document.getElementById('mask-progress');
+      if (maskBar) maskBar.style.width = `${maskPercent}%`;
+
+      // Update spool progress (example)
+      const spoolProgress = this.calculateCategoryProgress('spool-fragments', 18);
+      const spoolPercent = (spoolProgress.completed / spoolProgress.total) * 100;
+      const spoolBar = document.getElementById('spool-progress');
+      if (spoolBar) spoolBar.style.width = `${spoolPercent}%`;
+    }
+
+    loadProgress() {
+      const saved = localStorage.getItem('silksong-progress');
+      return saved ? JSON.parse(saved) : {};
+    }
+
+    saveProgress() {
+      localStorage.setItem('silksong-progress', JSON.stringify(this.data));
+    }
+
+    exportProgress() {
+      const dataStr = JSON.stringify(this.data, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'silksong-progress.json';
+      a.click();
+
+      URL.revokeObjectURL(url);
+    }
+
+    importProgress() {
+      document.getElementById('import-file').click();
+    }
+
+    handleFileImport(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const importedData = JSON.parse(e.target.result);
+          this.data = importedData;
+          this.saveProgress();
+          this.updateUI();
+          this.updateProgress();
+          alert('Progress imported successfully!');
+        } catch (error) {
+          alert('Invalid file format. Please select a valid progress file.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    resetProgress() {
+      if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+        this.data = {};
+        this.saveProgress();
+
+        // Uncheck all checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+          checkbox.checked = false;
+        });
+
+        this.updateProgress();
+        alert('Progress reset successfully!');
+      }
+    }
+  }
+
+  // Initialize progress tracker when page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    new ProgressTracker();
+  });
+</script>
