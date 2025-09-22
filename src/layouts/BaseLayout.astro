@@ -54,7 +54,7 @@ const fullTitle = title === 'Home' ? 'Silksong Badge Hub - Complete Badge Collec
     <meta name="author" content="Silksong Badge Hub" />
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" is:inline>
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -81,8 +81,8 @@ const fullTitle = title === 'Home' ? 'Silksong Badge Hub - Complete Badge Collec
     <Footer />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPY0XP1FB3"></script>
-    <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPY0XP1FB3" is:inline></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -91,13 +91,13 @@ const fullTitle = title === 'Home' ? 'Silksong Badge Hub - Complete Badge Collec
     </script>
 
     <!-- Plausible Analytics -->
-    <script defer data-domain="badgesilksong.pro" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="badgesilksong.pro" src="https://plausible.io/js/script.js" is:inline></script>
 
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4682727857509322" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4682727857509322" crossorigin="anonymous" is:inline></script>
 
     <!-- Performance monitoring -->
-    <script>
+    <script is:inline>
       // Monitor Core Web Vitals
       if ('loading' in HTMLImageElement.prototype) {
         // Browser supports native lazy loading

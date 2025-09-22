@@ -140,7 +140,7 @@ const query = url.searchParams.get('q') || '';
   </section>
 </BaseLayout>
 
-<script define:vars={{ query }}>
+<script define:vars={{ query }} is:inline>
   // Search data - in a real app this would come from an API or be generated at build time
   const searchData = [
     // Badges

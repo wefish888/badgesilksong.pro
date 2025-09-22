@@ -307,7 +307,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   }
 </style>
 
-<script>
+<script is:inline>
   // Filter functionality
   document.addEventListener('DOMContentLoaded', function() {
     const filterBtns = document.querySelectorAll('.filter-btn');
@@ -337,7 +337,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
         // Update counter
         if (totalBadgesCounter) {
-          totalBadgesCounter.textContent = filter === 'all' ? '6' : visibleCount;
+          totalBadgesCounter.textContent = filter === 'all' ? '6' : visibleCount.toString();
         }
       });
     });

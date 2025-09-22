@@ -483,7 +483,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 </BaseLayout>
 
-<script>
+<script is:inline>
   document.addEventListener('DOMContentLoaded', function() {
     // Issue card clicks
     const issueCards = document.querySelectorAll('[data-issue]');
@@ -515,13 +515,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const answer = item.querySelector('.faq-answer');
       const icon = item.querySelector('.faq-icon');
 
-      question.addEventListener('click', function() {
-        const isOpen = !answer.classList.contains('hidden');
+      if (question && answer && icon) {
+        question.addEventListener('click', function() {
+          const isOpen = !answer.classList.contains('hidden');
 
-        // Close all other FAQs
-        faqItems.forEach(otherItem => {
-          otherItem.querySelector('.faq-answer').classList.add('hidden');
-          otherItem.querySelector('.faq-icon').classList.remove('rotate-180');
+          // Close all other FAQs
+          faqItems.forEach(otherItem => {
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            const otherIcon = otherItem.querySelector('.faq-icon');
+            if (otherAnswer) otherAnswer.classList.add('hidden');
+            if (otherIcon) otherIcon.classList.remove('rotate-180');
         });
 
         // Toggle current FAQ
@@ -529,7 +532,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           answer.classList.remove('hidden');
           icon.classList.add('rotate-180');
         }
-      });
+        });
+      }
     });
 
     // Search functionality
@@ -540,18 +544,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
         // Simple search highlighting and filtering
         issueCards.forEach(card => {
-          const title = card.querySelector('h3').textContent.toLowerCase();
-          const description = card.querySelector('p').textContent.toLowerCase();
+          const titleEl = card.querySelector('h3');
+          const descEl = card.querySelector('p');
 
-          if (title.includes(query) || description.includes(query)) {
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
-          } else if (query.length > 2) {
-            card.style.opacity = '0.3';
-            card.style.transform = 'scale(0.95)';
-          } else {
-            card.style.opacity = '1';
-            card.style.transform = 'scale(1)';
+          if (titleEl && descEl) {
+            const title = titleEl.textContent?.toLowerCase() || '';
+            const description = descEl.textContent?.toLowerCase() || '';
+
+            if (title.includes(query) || description.includes(query)) {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            } else if (query.length > 2) {
+              card.style.opacity = '0.3';
+              card.style.transform = 'scale(0.95)';
+            } else {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }
           }
         });
       });
