@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "silksongbadge",
+  "name": "badgesilksong",
   // 更新为今天的日期
   "compatibility_date": "2025-09-22",
   "assets": {
