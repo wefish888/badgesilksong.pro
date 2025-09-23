@@ -1,0 +1,552 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Silksong Tools Database - Complete Equipment Guide";
+const description = "Comprehensive database of all tools and equipment in Hollow Knight: Silksong. Discover the 50+ crafted weapons, traps, and passive abilities that replace the charm system.";
+const keywords = "Silksong tools, equipment database, crafted weapons, tool system, crests, Hornet abilities, silk skills, passive bonuses";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/tool-pattern.svg'); background-size: 150px 150px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Silksong Tools Database</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Complete guide to the tool system that replaces charms. Discover 50+ crafted weapons, traps, and abilities across four specialized categories.
+        </p>
+
+        <!-- Stats Overview -->
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20">
+            <div class="text-blue-400 text-2xl font-bold mb-2">347</div>
+            <div class="text-gray-300">Total Database Entries</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20">
+            <div class="text-blue-400 text-2xl font-bold mb-2">50+</div>
+            <div class="text-gray-300">Unique Tools</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20">
+            <div class="text-blue-400 text-2xl font-bold mb-2">4</div>
+            <div class="text-gray-300">Tool Categories</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20">
+            <div class="text-blue-400 text-2xl font-bold mb-2">7</div>
+            <div class="text-gray-300">Crest Types</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool System Overview -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Tool System Overview</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-2xl font-bold text-blue-400 mb-6">System Features</h3>
+              <ul class="space-y-4 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🔄</span>
+                  <div>
+                    <strong>Replaces Charms:</strong> Complete replacement for the original charm system
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🔨</span>
+                  <div>
+                    <strong>Craftable Items:</strong> Weapons, traps, mechanisms, and passive bonuses
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">⚡</span>
+                  <div>
+                    <strong>Consumable Nature:</strong> Many tools have limited uses requiring strategic planning
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🛠️</span>
+                  <div>
+                    <strong>Rest Point Crafting:</strong> Use Shell Shards to craft and replenish at benches
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-blue-400 mb-6">Strategic Elements</h3>
+              <ul class="space-y-4 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🎯</span>
+                  <div>
+                    <strong>Strategic Preparation:</strong> Limited uses encourage thoughtful planning
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🔄</span>
+                  <div>
+                    <strong>Flexible Switching:</strong> Change loadouts based on situations
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">⚖️</span>
+                  <div>
+                    <strong>Resource Balance:</strong> Manage Shell Shards for optimal tool usage
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🎮</span>
+                  <div>
+                    <strong>Hornet Customization:</strong> Extensive ability customization options
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tool Categories -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Tool Categories</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <!-- White Tools -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/database/white_tools.avif" alt="White Tools" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-white">White Tools (Silk Skills)</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Type:</strong> Powerful "Weaver Skills"</p>
+              <p><strong>Resource:</strong> Consume Silk meter</p>
+              <p><strong>Usage:</strong> High-power special abilities for critical moments</p>
+
+              <div class="bg-white/10 p-4 rounded-lg mt-6">
+                <h4 class="text-lg font-semibold text-white mb-3">Key Features:</h4>
+                <ul class="space-y-2">
+                  <li>• Most powerful tools in the arsenal</li>
+                  <li>• Silk resource management required</li>
+                  <li>• Game-changing abilities</li>
+                  <li>• Strategic timing essential</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Red Tools -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/database/red_tools.avif" alt="Red Tools" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-red-400">Red Tools (Active/Attack)</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Type:</strong> Limited-use offensive items</p>
+              <p><strong>Function:</strong> Direct combat support</p>
+              <p><strong>Examples:</strong> Throwing weapons, explosive devices</p>
+
+              <div class="bg-red-500/10 p-4 rounded-lg mt-6">
+                <h4 class="text-lg font-semibold text-red-400 mb-3">Common Tools:</h4>
+                <ul class="space-y-2">
+                  <li>• Throwable Needles: Ranged piercing attacks</li>
+                  <li>• Explosive Traps: Area damage devices</li>
+                  <li>• Burst Seeds: Multi-hit projectiles</li>
+                  <li>• Silk Bombs: Crowd control weapons</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blue Tools -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/database/blue_tools.avif" alt="Blue Tools" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-blue-400">Blue Tools (Passive/Defense)</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Type:</strong> Continuously active bonuses</p>
+              <p><strong>Focus:</strong> Health and defense related</p>
+              <p><strong>Effect:</strong> Ongoing protective benefits</p>
+
+              <div class="bg-blue-500/10 p-4 rounded-lg mt-6">
+                <h4 class="text-lg font-semibold text-blue-400 mb-3">Defensive Options:</h4>
+                <ul class="space-y-2">
+                  <li>• Hardened Shell: Damage reduction</li>
+                  <li>• Regeneration Amulets: Health recovery</li>
+                  <li>• Shield Generators: Temporary barriers</li>
+                  <li>• Resistance Charms: Status immunity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yellow Tools -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/database/yellow_tools.avif" alt="Yellow Tools" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-yellow-400">Yellow Tools (Utility)</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Type:</strong> Navigation and resource improvements</p>
+              <p><strong>Function:</strong> Exploration assistance</p>
+              <p><strong>Purpose:</strong> Optimize gameplay experience and efficiency</p>
+
+              <div class="bg-yellow-500/10 p-4 rounded-lg mt-6">
+                <h4 class="text-lg font-semibold text-yellow-400 mb-3">Utility Functions:</h4>
+                <ul class="space-y-2">
+                  <li>• Movement Enhancers: Speed and agility boosts</li>
+                  <li>• Collection Aids: Resource gathering bonuses</li>
+                  <li>• Navigation Tools: Map and exploration helpers</li>
+                  <li>• Convenience Items: Quality of life improvements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Tools Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Featured Tools</span>
+        </h2>
+        <div class="space-y-8 max-w-6xl mx-auto">
+          <!-- Needle -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+              <div class="text-center">
+                <img src="/images/database/needle.avif" alt="Needle" class="w-32 h-32 rounded-lg mx-auto mb-4" />
+                <h3 class="text-2xl font-bold text-purple-400">Needle</h3>
+                <p class="text-gray-400">Primary Weapon</p>
+              </div>
+              <div class="md:col-span-2">
+                <h4 class="text-xl font-semibold text-purple-400 mb-4">Long Sewing Tool, Uniquely Balanced for Combat</h4>
+                <p class="text-gray-300 mb-4">
+                  Hornet's signature weapon, a specially crafted sewing needle designed for both precision and power.
+                  This versatile tool serves as the foundation for most combat encounters.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 class="font-semibold text-purple-400 mb-2">Features:</h5>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                      <li>• Perfect combat balance</li>
+                      <li>• Precision striking capability</li>
+                      <li>• Durable construction</li>
+                      <li>• Silk thread compatibility</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-purple-400 mb-2">Combat Use:</h5>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                      <li>• Primary melee attacks</li>
+                      <li>• Silk thread anchoring</li>
+                      <li>• Environmental interaction</li>
+                      <li>• Combo foundation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-6">
+              <a href="/database/tools/needle" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors">
+                View Detailed Guide →
+              </a>
+            </div>
+          </div>
+
+          <!-- Threadstorm -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+              <div class="text-center">
+                <img src="/images/database/threadstorm.avif" alt="Threadstorm" class="w-32 h-32 rounded-lg mx-auto mb-4" />
+                <h3 class="text-2xl font-bold text-red-400">Threadstorm</h3>
+                <p class="text-gray-400">Area Attack Tool</p>
+              </div>
+              <div class="md:col-span-2">
+                <h4 class="text-xl font-semibold text-red-400 mb-4">Devastating Silk Whirlwind Attack</h4>
+                <p class="text-gray-300 mb-4">
+                  Creates a spinning vortex of silk threads that damages all nearby enemies.
+                  Particularly effective against groups and provides excellent crowd control.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 class="font-semibold text-red-400 mb-2">Properties:</h5>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                      <li>• Area-of-effect damage</li>
+                      <li>• Silk resource consumption</li>
+                      <li>• Multi-hit capability</li>
+                      <li>• Knockback effect</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-red-400 mb-2">Best Used For:</h5>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                      <li>• Crowd control</li>
+                      <li>• Boss vulnerabilities</li>
+                      <li>• Emergency escapes</li>
+                      <li>• Combo finishers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-6">
+              <a href="/database/tools/threadstorm" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-colors">
+                View Detailed Guide →
+              </a>
+            </div>
+          </div>
+
+          <!-- Warding Bell -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+              <div class="text-center">
+                <img src="/images/database/warding_bell.avif" alt="Warding Bell" class="w-32 h-32 rounded-lg mx-auto mb-4" />
+                <h3 class="text-2xl font-bold text-blue-400">Warding Bell</h3>
+                <p class="text-gray-400">Defensive Tool</p>
+              </div>
+              <div class="md:col-span-2">
+                <h4 class="text-xl font-semibold text-blue-400 mb-4">Protective Barrier Generator</h4>
+                <p class="text-gray-300 mb-4">
+                  Creates a temporary protective barrier that deflects enemy attacks and projectiles.
+                  Essential for survival in challenging encounters and boss fights.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h5 class="font-semibold text-blue-400 mb-2">Defense Features:</h5>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                      <li>• Projectile deflection</li>
+                      <li>• Temporary invulnerability</li>
+                      <li>• Area protection</li>
+                      <li>• Quick activation</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-blue-400 mb-2">Strategic Use:</h5>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                      <li>• Boss attack negation</li>
+                      <li>• Safe healing windows</li>
+                      <li>• Emergency protection</li>
+                      <li>• Tactical positioning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-6">
+              <a href="/database/tools/warding-bell" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                View Detailed Guide →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acquisition Methods -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Tool Acquisition</span>
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20 text-center">
+            <img src="/images/ui/exploration_icon.avif" alt="Exploration" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-green-400 mb-3">Exploration</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• Hidden locations</li>
+              <li>• Secret areas</li>
+              <li>• Environmental puzzles</li>
+              <li>• Treasure chests</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20 text-center">
+            <img src="/images/ui/crafting_icon.avif" alt="Crafting" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-orange-400 mb-3">Crafting</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• Material collection</li>
+              <li>• Rest point crafting</li>
+              <li>• Shell Shard usage</li>
+              <li>• Recipe unlocks</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20 text-center">
+            <img src="/images/ui/merchant_icon.avif" alt="Purchase" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-purple-400 mb-3">Purchase</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• Merchant trades</li>
+              <li>• Currency exchange</li>
+              <li>• Special vendors</li>
+              <li>• Exclusive items</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 text-center">
+            <img src="/images/ui/quest_icon.avif" alt="Quests" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-yellow-400 mb-3">Quest Rewards</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• NPC questlines</li>
+              <li>• Main story progress</li>
+              <li>• Side missions</li>
+              <li>• Achievement rewards</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crest Integration -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Crest System Integration</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-2xl font-bold text-blue-400 mb-6">Color Coordination</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div class="w-6 h-6 bg-white rounded mr-4"></div>
+                  <div>
+                    <p class="font-semibold text-white">White Slots</p>
+                    <p class="text-gray-400 text-sm">Silk Skills - High-power abilities</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-6 h-6 bg-red-500 rounded mr-4"></div>
+                  <div>
+                    <p class="font-semibold text-red-400">Red Slots</p>
+                    <p class="text-gray-400 text-sm">Active Tools - Combat utilities</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-6 h-6 bg-blue-500 rounded mr-4"></div>
+                  <div>
+                    <p class="font-semibold text-blue-400">Blue Slots</p>
+                    <p class="text-gray-400 text-sm">Passive Tools - Defensive bonuses</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-6 h-6 bg-yellow-500 rounded mr-4"></div>
+                  <div>
+                    <p class="font-semibold text-yellow-400">Yellow Slots</p>
+                    <p class="text-gray-400 text-sm">Utility Tools - Navigation aids</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-blue-400 mb-6">Synergy Effects</h3>
+              <ul class="space-y-4 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🔗</span>
+                  <div>
+                    <strong>Tool Combinations:</strong> Certain tools work better together
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">⚡</span>
+                  <div>
+                    <strong>Enhanced Effects:</strong> Crests can amplify tool effectiveness
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🎯</span>
+                  <div>
+                    <strong>Strategic Planning:</strong> Build loadouts around specific goals
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">⚖️</span>
+                  <div>
+                    <strong>Balanced Design:</strong> Prevents overpowered combinations
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Strategy Guide -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Strategic Considerations</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20">
+            <h3 class="text-xl font-bold text-green-400 mb-4">Resource Management</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li>• <strong>Shell Shard Economy:</strong> Efficient usage planning</li>
+              <li>• <strong>Replenishment Timing:</strong> When to restock at benches</li>
+              <li>• <strong>Priority Tools:</strong> Which tools to craft first</li>
+              <li>• <strong>Long-term Planning:</strong> Preparing for difficult areas</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20">
+            <h3 class="text-xl font-bold text-orange-400 mb-4">Situational Adaptation</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li>• <strong>Enemy Weaknesses:</strong> Tools effective against specific foes</li>
+              <li>• <strong>Environment Factors:</strong> Area-specific tool advantages</li>
+              <li>• <strong>Boss Preparations:</strong> Loadouts for major encounters</li>
+              <li>• <strong>Exploration Needs:</strong> Tools for accessing secrets</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20">
+            <h3 class="text-xl font-bold text-purple-400 mb-4">Configuration Optimization</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li>• <strong>Synergy Building:</strong> Tools that complement each other</li>
+              <li>• <strong>Playstyle Matching:</strong> Aggressive vs defensive builds</li>
+              <li>• <strong>Progression Scaling:</strong> Evolving loadouts as you advance</li>
+              <li>• <strong>Flexibility Maintenance:</strong> Adapting to new challenges</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">
+          <span class="gradient-text">Explore Individual Tool Guides</span>
+        </h2>
+        <p class="text-gray-300 mb-6">
+          Dive deeper into specific tools with our detailed individual guides. Learn advanced strategies, combat applications, and mastery techniques.
+        </p>
+        <div class="space-x-4">
+          <a href="/database/tools/index" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+            Browse All Tools →
+          </a>
+          <a href="/database/crests" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            Explore Crests System
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8, #1e40af);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>

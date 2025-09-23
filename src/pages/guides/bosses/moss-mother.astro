@@ -1,0 +1,485 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "Moss Mother Boss Guide - Hollow Knight: Silksong";
+const description = "Complete strategy guide for Moss Mother, the introductory boss in Moss Grotto. Learn environmental awareness, swoop timing, and minion management.";
+const keywords = "Moss Mother boss, Silksong tutorial boss, Moss Grotto, environmental hazards, silk management, beginner boss guide";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/moss-pattern.svg'); background-size: 80px 80px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <div class="flex justify-center mb-8">
+          <img src="/images/bosses/moss_mother_1.avif" alt="Moss Mother Boss" class="w-48 h-48 rounded-lg shadow-2xl" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Moss Mother Guide</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Master the introductory boss that teaches fundamental combat mechanics. Learn environmental awareness, resource management, and timing basics.
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-green-500/20">
+            <div class="text-green-400 text-sm font-semibold uppercase tracking-wide mb-2">Location</div>
+            <div class="text-white font-bold">Old Church, Moss Grotto</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-green-500/20">
+            <div class="text-green-400 text-sm font-semibold uppercase tracking-wide mb-2">Difficulty</div>
+            <div class="text-white font-bold">★★☆☆☆</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-green-500/20">
+            <div class="text-green-400 text-sm font-semibold uppercase tracking-wide mb-2">Type</div>
+            <div class="text-white font-bold">Tutorial Boss</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-green-500/20">
+            <div class="text-green-400 text-sm font-semibold uppercase tracking-wide mb-2">Focus</div>
+            <div class="text-white font-bold">Learning Mechanics</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Boss Introduction</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img src="/images/bosses/moss_mother_2.avif" alt="Moss Mother Cocoon" class="w-full rounded-lg shadow-lg" />
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p class="text-lg">
+                <strong class="text-green-400">Moss Mother</strong> serves as Silksong's introductory boss, designed to teach fundamental combat mechanics to new players.
+              </p>
+              <p>
+                Emerging from a large plant-like cocoon in the Old Church, this matriarchal boss emphasizes the importance of environmental awareness alongside basic combat skills.
+              </p>
+              <p>
+                Unlike more complex bosses, Moss Mother focuses on teaching core mechanics: mobility, pattern recognition, and resource management through minion encounters.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attack Patterns Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Attack Patterns</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/moss_mother_swoop.avif" alt="Swoop Attack" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-xl font-bold text-orange-400">Swoop Attack</h3>
+            </div>
+            <div class="space-y-3 text-gray-300">
+              <p><strong>Damage:</strong> 1 mask</p>
+              <p><strong>Pattern:</strong> Coils mid-air, then dives sharply at player</p>
+              <p><strong>Telegraph:</strong> Coiling animation before dive</p>
+              <p><strong>Counter:</strong> Jump over boss as she hits the ground</p>
+              <div class="bg-orange-500/10 p-3 rounded-lg mt-4">
+                <p class="text-orange-300 text-sm"><strong>Tip:</strong> This creates your primary damage window!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/moss_mother_ceiling.avif" alt="Rock Drop" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-xl font-bold text-red-400">Rock Drop</h3>
+            </div>
+            <div class="space-y-3 text-gray-300">
+              <p><strong>Damage:</strong> 1 mask per stalactite</p>
+              <p><strong>Pattern:</strong> Slams ceiling, 3 stalactites fall</p>
+              <p><strong>Telegraph:</strong> Boss moves to ceiling position</p>
+              <p><strong>Counter:</strong> Stop attacking, focus on dodging</p>
+              <div class="bg-red-500/10 p-3 rounded-lg mt-4">
+                <p class="text-red-300 text-sm"><strong>Warning:</strong> Requires immediate defensive positioning!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/moss_worms.avif" alt="Moss Worms" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-xl font-bold text-green-400">Summon Minions</h3>
+            </div>
+            <div class="space-y-3 text-gray-300">
+              <p><strong>Spawns:</strong> 1-2 moss worms</p>
+              <p><strong>Damage:</strong> 1 mask contact damage</p>
+              <p><strong>Pattern:</strong> Periodic throughout fight</p>
+              <p><strong>Strategy:</strong> Use for Silk meter recovery</p>
+              <div class="bg-green-500/10 p-3 rounded-lg mt-4">
+                <p class="text-green-300 text-sm"><strong>Bonus:</strong> Great for resource management!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Battle Phases Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Battle Progression</span>
+        </h2>
+        <div class="space-y-8 max-w-4xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/moss_mother_emergence.avif" alt="Initial Phase" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-blue-400">Initial Phase: Learning Period</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+              <div>
+                <h4 class="text-lg font-semibold text-blue-400 mb-3">Characteristics:</h4>
+                <ul class="space-y-2">
+                  <li>• Boss emerges from plant-like cocoon</li>
+                  <li>• Regular swoop and minion spawn cycles</li>
+                  <li>• Predictable attack patterns</li>
+                  <li>• Time to adapt to mechanics</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-blue-400 mb-3">Focus:</h4>
+                <ul class="space-y-2">
+                  <li>• Learn swoop timing</li>
+                  <li>• Practice jumping over attacks</li>
+                  <li>• Understand minion utility</li>
+                  <li>• Establish rhythm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/moss_mother_escalation.avif" alt="Mid Fight" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-yellow-400">Mid-Fight: Escalation</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+              <div>
+                <h4 class="text-lg font-semibold text-yellow-400 mb-3">Characteristics:</h4>
+                <ul class="space-y-2">
+                  <li>• Increased ceiling attack frequency</li>
+                  <li>• More frequent worm spawns</li>
+                  <li>• Multiple hazards simultaneously</li>
+                  <li>• Higher pressure environment</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-yellow-400 mb-3">Strategy:</h4>
+                <ul class="space-y-2">
+                  <li>• Prioritize environmental awareness</li>
+                  <li>• Manage multiple threats</li>
+                  <li>• Use minions for Silk recovery</li>
+                  <li>• Stay mobile and patient</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/moss_mother_final.avif" alt="Final Phase" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-red-400">Final Phase: Desperation</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+              <div>
+                <h4 class="text-lg font-semibold text-red-400 mb-3">Characteristics:</h4>
+                <ul class="space-y-2">
+                  <li>• More aggressive swoop patterns</li>
+                  <li>• Frequent ceiling slams and debris</li>
+                  <li>• Environmental chaos</li>
+                  <li>• Brief vulnerability windows</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-red-400 mb-3">Opportunity:</h4>
+                <ul class="space-y-2">
+                  <li>• Stun opportunities for major damage</li>
+                  <li>• Apply learned patterns under pressure</li>
+                  <li>• Focus on survival first</li>
+                  <li>• Take advantage of openings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combat Strategies Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Combat Strategies</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20">
+            <h3 class="text-2xl font-bold text-green-400 mb-6">Core Strategy</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">🏃</span>
+                <div>
+                  <strong>Stay Mobile:</strong> Constant movement to avoid swoop attacks and position for counters
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">🏔️</span>
+                <div>
+                  <strong>Environmental Awareness:</strong> Watch ceiling for rock drops and falling debris
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">⚔️</span>
+                <div>
+                  <strong>Damage Windows:</strong> Attack after swoop attempts when boss is grounded
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">🛡️</span>
+                <div>
+                  <strong>Defensive Priorities:</strong> Focus on survival during ceiling attack phases
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">⚡</span>
+                <div>
+                  <strong>Resource Management:</strong> Use summoned worms to regenerate Silk meter
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20">
+            <h3 class="text-2xl font-bold text-purple-400 mb-6">Advanced Tactics</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🎯</span>
+                <div>
+                  <strong>Positioning:</strong> Stay away from ceiling edges during rock drop attacks
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">⏰</span>
+                <div>
+                  <strong>Timing:</strong> Learn swoop attack rhythm for consistent counter-jumping
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🧠</span>
+                <div>
+                  <strong>Silk Management:</strong> Prioritize minions for Silk over quick elimination
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">💥</span>
+                <div>
+                  <strong>Stun Opportunities:</strong> Maximum damage when boss is temporarily stunned
+                </div>
+              </li>
+            </ul>
+
+            <div class="bg-purple-500/10 p-4 rounded-lg mt-6">
+              <p class="text-purple-300 font-semibold">💡 Pro Tip:</p>
+              <p class="text-gray-300">This is a learning encounter - focus on mastering mechanics over speed!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unique Mechanics Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Teaching Elements</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <h3 class="text-2xl font-bold text-blue-400 mb-6">Environmental Integration</h3>
+            <div class="space-y-4 text-gray-300">
+              <div class="flex items-center">
+                <img src="/images/bosses/destructible_ceiling.avif" alt="Destructible Ceiling" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold">Destructible Elements</p>
+                  <p class="text-gray-400 text-sm">Ceiling stalactites create ongoing hazards</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/bosses/arena_modification.avif" alt="Arena Changes" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold">Arena Modification</p>
+                  <p class="text-gray-400 text-sm">Boss actively changes battlefield during fight</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/bosses/dual_threat.avif" alt="Dual Threats" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold">Dual Threat System</p>
+                  <p class="text-gray-400 text-sm">Manage boss attacks AND environmental dangers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20">
+            <h3 class="text-2xl font-bold text-yellow-400 mb-6">Fundamental Skills</h3>
+            <div class="space-y-4 text-gray-300">
+              <div class="flex items-center">
+                <img src="/images/abilities/mobility_training.avif" alt="Mobility" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold">Mobility Training</p>
+                  <p class="text-gray-400 text-sm">Introduces importance of constant movement</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/abilities/resource_management.avif" alt="Resource Management" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold">Resource Management</p>
+                  <p class="text-gray-400 text-sm">Teaches Silk meter management through minions</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/abilities/pattern_recognition.avif" alt="Pattern Recognition" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold">Pattern Recognition</p>
+                  <p class="text-gray-400 text-sm">Establishes attack telegraph reading fundamentals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Survival Tips Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Key Survival Tips</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-green-400 mb-4">Essential Techniques</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-3 mt-1">⏰</span>
+                  <span><strong>Jump Timing:</strong> Master timing to leap over swoop attacks</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-3 mt-1">👁️</span>
+                  <span><strong>Ceiling Awareness:</strong> Always watch for boss moving to ceiling position</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-400 mr-3 mt-1">🐛</span>
+                  <span><strong>Minion Utility:</strong> Use moss worms for Silk recovery, not just elimination</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-400 mb-4">Mindset</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🎓</span>
+                  <span><strong>Learning Focus:</strong> This is a teaching encounter - focus on mechanics over speed</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🏃</span>
+                  <span><strong>Movement Priority:</strong> Keep moving to avoid becoming an easy target</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🧘</span>
+                  <span><strong>Stay Patient:</strong> Don't rush - take time to learn patterns</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommended Loadout Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Recommended Setup</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-green-400 mb-4">Essential Abilities</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li>• Mobility Tools: Any movement enhancements</li>
+                <li>• Basic Combat: Standard attack capabilities</li>
+                <li>• Defensive Options: Dodging and jumping skills</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-400 mb-4">Helpful Equipment</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li>• Silk Recovery: Tools that enhance regeneration</li>
+                <li>• Basic Trinkets: Beginner-friendly defensive options</li>
+                <li>• Movement Aids: Equipment improving positioning</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-400 mb-4">Preparation</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li>• Practice basic movement mechanics</li>
+                <li>• Understand Silk meter management</li>
+                <li>• Learn attack and dodge timing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rewards Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Victory Rewards</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <img src="/images/quests/moss_grotto_access.avif" alt="Story Progression" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-green-400 mb-2">Story Progression</h3>
+              <p class="text-gray-300">Access to deeper Moss Grotto areas and continued exploration</p>
+            </div>
+            <div>
+              <img src="/images/ui/skill_development.avif" alt="Skill Development" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-green-400 mb-2">Skill Development</h3>
+              <p class="text-gray-300">Fundamental boss fighting experience and combat confidence</p>
+            </div>
+            <div>
+              <img src="/images/quests/old_church.avif" alt="Area Unlocks" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-green-400 mb-2">Area Unlocks</h3>
+              <p class="text-gray-300">Continued exploration of Old Church region and surrounding areas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #22c55e, #16a34a, #15803d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>

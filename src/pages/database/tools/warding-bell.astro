@@ -1,0 +1,356 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "Warding Bell - Defensive Tool | Silksong Tools Database";
+const description = "Master the Warding Bell, a protective barrier generator in Hollow Knight: Silksong. Learn defensive strategies, timing techniques, and tactical applications.";
+const keywords = "Warding Bell, defensive tool, barrier, protection, Silksong defense, tactical defense";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/bell-pattern.svg'); background-size: 100px 100px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="flex items-center justify-center mb-6">
+          <img src="/images/database/warding_bell.avif" alt="Warding Bell" class="w-24 h-24 rounded-lg mr-6" />
+          <div>
+            <h1 class="text-4xl md:text-5xl font-display font-bold">
+              <span class="gradient-text">Warding Bell</span>
+            </h1>
+            <p class="text-xl text-blue-400">Protective Barrier Generator</p>
+          </div>
+        </div>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+          Creates a temporary protective barrier that deflects enemy attacks and projectiles. Essential for survival in challenging encounters and boss fights.
+        </p>
+      </div>
+
+      <!-- Quick Stats -->
+      <section class="mb-12">
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20 text-center">
+            <div class="text-blue-400 text-xl font-bold mb-2">Blue</div>
+            <div class="text-gray-300 text-sm">Tool Category</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20 text-center">
+            <div class="text-blue-400 text-xl font-bold mb-2">Defense</div>
+            <div class="text-gray-300 text-sm">Primary Function</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20 text-center">
+            <div class="text-blue-400 text-xl font-bold mb-2">Limited</div>
+            <div class="text-gray-300 text-sm">Uses Per Rest</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-blue-500/20 text-center">
+            <div class="text-blue-400 text-xl font-bold mb-2">Medium</div>
+            <div class="text-gray-300 text-sm">Activation Time</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Description -->
+      <section class="mb-12">
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20 max-w-6xl mx-auto">
+          <h2 class="text-3xl font-display font-bold mb-6">
+            <span class="gradient-text">Barrier Mechanics</span>
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-blue-400 mb-4">Barrier Properties</h3>
+              <p class="text-gray-300 mb-4">
+                The Warding Bell creates a shimmering energy barrier around Hornet that actively deflects incoming attacks. The barrier has a distinctive bell-like resonance when struck.
+              </p>
+              <p class="text-gray-300">
+                Unlike simple damage reduction, the barrier completely negates attacks while active, making timing crucial for maximum effectiveness.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-400 mb-4">Activation Mechanics</h3>
+              <p class="text-gray-300 mb-4">
+                The bell requires a brief activation sequence during which Hornet is vulnerable. Once active, the barrier provides complete protection for its duration.
+              </p>
+              <p class="text-gray-300">
+                The barrier's strength and duration can be enhanced through various upgrades and crest combinations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Defensive Features -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Defensive Capabilities</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20">
+            <h3 class="text-xl font-bold text-blue-400 mb-4">Protection Types</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🛡️</span>
+                <div>
+                  <strong>Melee Deflection:</strong> Bounces back physical attacks
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🔮</span>
+                <div>
+                  <strong>Projectile Negation:</strong> Dissolves ranged attacks
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">⚡</span>
+                <div>
+                  <strong>Energy Absorption:</strong> Nullifies elemental damage
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🌊</span>
+                <div>
+                  <strong>Area Effects:</strong> Blocks splash and AoE damage
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-cyan-500/20">
+            <h3 class="text-xl font-bold text-cyan-400 mb-4">Strategic Benefits</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-cyan-400 mr-3 mt-1">⏱️</span>
+                <div>
+                  <strong>Healing Windows:</strong> Safe recovery opportunities
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-cyan-400 mr-3 mt-1">🎯</span>
+                <div>
+                  <strong>Positioning Aid:</strong> Move safely through danger zones
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-cyan-400 mr-3 mt-1">⚔️</span>
+                <div>
+                  <strong>Aggressive Defense:</strong> Counterattack while protected
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-cyan-400 mr-3 mt-1">🔄</span>
+                <div>
+                  <strong>Combo Protection:</strong> Maintain attack chains safely
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tactical Applications -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Tactical Applications</span>
+        </h2>
+        <div class="space-y-6 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">⚔️</span>
+              <h3 class="text-xl font-bold text-green-400">Boss Fight Strategies</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+              The Warding Bell excels in boss encounters where precise timing can negate devastating attacks and create opportunities for counteroffensives.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-green-500/10 p-3 rounded">
+                <h4 class="font-semibold text-green-400 mb-2">Telegraph Timing</h4>
+                <p class="text-gray-300 text-sm">Activate during boss attack telegraphs</p>
+              </div>
+              <div class="bg-green-500/10 p-3 rounded">
+                <h4 class="font-semibold text-green-400 mb-2">Combo Breakers</h4>
+                <p class="text-gray-300 text-sm">Interrupt boss combo sequences</p>
+              </div>
+              <div class="bg-green-500/10 p-3 rounded">
+                <h4 class="font-semibold text-green-400 mb-2">Phase Transitions</h4>
+                <p class="text-gray-300 text-sm">Protect during vulnerable moments</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">🌍</span>
+              <h3 class="text-xl font-bold text-purple-400">Environmental Hazards</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Navigate dangerous areas safely by using the Warding Bell to protect against environmental threats and area hazards.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-purple-500/10 p-3 rounded">
+                <h4 class="font-semibold text-purple-400 mb-2">Trap Negation</h4>
+                <p class="text-gray-300 text-sm">Pass through spike fields and traps</p>
+              </div>
+              <div class="bg-purple-500/10 p-3 rounded">
+                <h4 class="font-semibold text-purple-400 mb-2">Hazard Zones</h4>
+                <p class="text-gray-300 text-sm">Cross acid pools and energy fields</p>
+              </div>
+              <div class="bg-purple-500/10 p-3 rounded">
+                <h4 class="font-semibold text-purple-400 mb-2">Timed Sections</h4>
+                <p class="text-gray-300 text-sm">Rush through collapsing areas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timing and Mastery -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Mastery Techniques</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20">
+            <h3 class="text-xl font-bold text-yellow-400 mb-4">Perfect Timing</h3>
+            <p class="text-gray-300 mb-4">
+              Master the art of precise activation timing to maximize protection while minimizing vulnerability during activation.
+            </p>
+            <ul class="space-y-2 text-gray-300">
+              <li>• <strong>Predictive Activation:</strong> Anticipate incoming attacks</li>
+              <li>• <strong>Animation Reading:</strong> Watch enemy telegraph patterns</li>
+              <li>• <strong>Audio Cues:</strong> Listen for attack sound indicators</li>
+              <li>• <strong>Cancel Windows:</strong> Learn safe activation moments</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20">
+            <h3 class="text-xl font-bold text-orange-400 mb-4">Advanced Techniques</h3>
+            <p class="text-gray-300 mb-4">
+              Combine the Warding Bell with other abilities and tools for maximum defensive effectiveness.
+            </p>
+            <ul class="space-y-2 text-gray-300">
+              <li>• <strong>Healing Combinations:</strong> Use with recovery items</li>
+              <li>• <strong>Offensive Transitions:</strong> Attack immediately after</li>
+              <li>• <strong>Positioning Setups:</strong> Move to advantage points</li>
+              <li>• <strong>Resource Management:</strong> Optimize usage frequency</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Synergies and Upgrades -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Enhancements & Synergies</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-blue-400 mb-4">Crest Combinations</h3>
+              <div class="space-y-3 text-gray-300">
+                <div class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">💎</span>
+                  <div>
+                    <strong>Defender's Crest:</strong> Increases barrier duration
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">⚡</span>
+                  <div>
+                    <strong>Swift Crest:</strong> Faster activation time
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🔋</span>
+                  <div>
+                    <strong>Resilience Crest:</strong> Additional barrier charges
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-400 mb-4">Tool Synergies</h3>
+              <div class="space-y-3 text-gray-300">
+                <div class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🩹</span>
+                  <div>
+                    <strong>Healing Tools:</strong> Safe recovery combinations
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">🏃</span>
+                  <div>
+                    <strong>Movement Tools:</strong> Protected repositioning
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-blue-400 mr-3 mt-1">⚔️</span>
+                  <div>
+                    <strong>Offensive Tools:</strong> Protected aggression
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acquisition and Crafting -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Acquisition & Upgrades</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20 text-center">
+            <img src="/images/ui/merchant_icon.avif" alt="Merchant" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-green-400 mb-3">Purchase</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• Defensive tool merchants</li>
+              <li>• Shell Shard cost: 150</li>
+              <li>• Available mid-game</li>
+              <li>• Limited stock</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20 text-center">
+            <img src="/images/ui/crafting_icon.avif" alt="Crafting" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-orange-400 mb-3">Crafting</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• Resonant materials</li>
+              <li>• Requires bell fragments</li>
+              <li>• Advanced crafting station</li>
+              <li>• Recipe discovery needed</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20 text-center">
+            <img src="/images/ui/upgrade_icon.avif" alt="Upgrades" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-purple-400 mb-3">Upgrades</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• Duration extensions</li>
+              <li>• Activation speed boosts</li>
+              <li>• Additional charges</li>
+              <li>• Reflection damage</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <section class="text-center">
+        <div class="space-x-4">
+          <a href="/database/tools/threadstorm" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            ← Previous: Threadstorm
+          </a>
+          <a href="/database/tools" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+            Back to Tools Database
+          </a>
+          <a href="/database/tools/silk-dash" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            Next: Silk Dash →
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

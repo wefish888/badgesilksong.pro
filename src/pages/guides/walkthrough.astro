@@ -1,0 +1,472 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Silksong Walkthrough - Complete Progression Guide";
+const description = "Follow the comprehensive step-by-step walkthrough for Hollow Knight: Silksong. Navigate Pharloom's kingdoms, defeat bosses, and discover all secrets in this complete progression guide.";
+const keywords = "Silksong walkthrough, game progression, Pharloom guide, Act 1 walkthrough, Moss Grotto, boss progression, Hornet journey";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-teal-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/map-pattern.svg'); background-size: 250px 250px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Silksong Walkthrough</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Complete step-by-step progression guide through Hornet's journey in Pharloom. Perfect for first-time players and completionists alike.
+        </p>
+
+        <!-- Progress Overview -->
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-teal-500/20">
+            <div class="text-teal-400 text-2xl font-bold mb-2">3</div>
+            <div class="text-gray-300">Acts Covered</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-teal-500/20">
+            <div class="text-teal-400 text-2xl font-bold mb-2">15+</div>
+            <div class="text-gray-300">Major Areas</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-teal-500/20">
+            <div class="text-teal-400 text-2xl font-bold mb-2">44+</div>
+            <div class="text-gray-300">Boss Encounters</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-teal-500/20">
+            <div class="text-teal-400 text-2xl font-bold mb-2">100%</div>
+            <div class="text-gray-300">Completion Guide</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Walkthrough Introduction -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Journey Through Pharloom</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-teal-500/20 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img src="/images/walkthrough/pharloom_overview.avif" alt="Pharloom Map" class="w-full rounded-lg shadow-lg" />
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p class="text-lg">
+                <strong class="text-teal-400">This comprehensive walkthrough</strong> provides a step-by-step path through Hornet's adventure in the kingdom of Pharloom.
+              </p>
+              <p>
+                Designed especially for first-time players, this guide focuses on critical progression points, essential items, and boss encounters while maintaining story flow.
+              </p>
+              <p>
+                Whether you're seeking 100% completion or just want to experience the main story, this walkthrough will ensure you don't miss crucial upgrades and abilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Act 1 Walkthrough -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Act 1: The Beginning</span>
+        </h2>
+        <div class="space-y-8 max-w-6xl mx-auto">
+          <!-- Moss Grotto -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/walkthrough/moss_grotto.avif" alt="Moss Grotto" class="w-20 h-20 rounded-lg mr-6" />
+              <div>
+                <h3 class="text-2xl font-bold text-green-400">1. Moss Grotto</h3>
+                <p class="text-gray-400">Starting Location & Tutorial Area</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 class="text-lg font-semibold text-green-400 mb-4">Key Objectives</h4>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-green-400 mr-3 mt-1">🌿</span>
+                    <div>
+                      <strong>Explore Environment:</strong> Learn Hornet's basic movement and combat
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-400 mr-3 mt-1">⚔️</span>
+                    <div>
+                      <strong>First Combat:</strong> Master needle attacks and dodging mechanics
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-400 mr-3 mt-1">🎯</span>
+                    <div>
+                      <strong>Boss Battle:</strong> Defeat Moss Mother (tutorial boss)
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-400 mr-3 mt-1">📦</span>
+                    <div>
+                      <strong>Resource Collection:</strong> Gather initial Shell Shards and materials
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-green-400 mb-4">Important Discoveries</h4>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-center">
+                    <img src="/images/abilities/swift_step.avif" alt="Swift Step" class="w-8 h-8 rounded mr-3" />
+                    <span>Swift Step ability introduction</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/ui/bench.avif" alt="Rest Point" class="w-8 h-8 rounded mr-3" />
+                    <span>First rest point (Seamstress bench)</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/database/shell_shards.avif" alt="Shell Shards" class="w-8 h-8 rounded mr-3" />
+                    <span>Shell Shard collection tutorial</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/ui/silk_meter.avif" alt="Silk Meter" class="w-8 h-8 rounded mr-3" />
+                    <span>Silk meter and basic resource management</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-green-500/10 p-6 rounded-lg mt-6">
+              <h5 class="text-lg font-semibold text-green-300 mb-3">💡 First-Timer Tips:</h5>
+              <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm">
+                <li>• Take time to learn basic movement controls</li>
+                <li>• Practice jumping and needle combat on enemies</li>
+                <li>• Don't rush - this area teaches fundamental skills</li>
+                <li>• Collect every Shell Shard you find</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bone Bottom -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-gray-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/walkthrough/bone_bottom.avif" alt="Bone Bottom" class="w-20 h-20 rounded-lg mr-6" />
+              <div>
+                <h3 class="text-2xl font-bold text-gray-400">2. Bone Bottom</h3>
+                <p class="text-gray-400">Skeletal Graveyard & First Trading Hub</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 class="text-lg font-semibold text-gray-400 mb-4">Key Objectives</h4>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-gray-400 mr-3 mt-1">🛒</span>
+                    <div>
+                      <strong>Meet Pebb:</strong> First shopkeeper and trading introduction
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-gray-400 mr-3 mt-1">💎</span>
+                    <div>
+                      <strong>Upgrade Systems:</strong> Learn about Mask Shards and improvements
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-gray-400 mr-3 mt-1">📿</span>
+                    <div>
+                      <strong>Rosary Beads:</strong> Collect currency and learn economic system
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-gray-400 mr-3 mt-1">🗺️</span>
+                    <div>
+                      <strong>Area Navigation:</strong> Multiple paths and secret areas
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-400 mb-4">Important NPCs & Items</h4>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-center">
+                    <img src="/images/npcs/pebb.avif" alt="Pebb" class="w-8 h-8 rounded mr-3" />
+                    <span>Pebb the Shopkeeper (essential merchant)</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/database/mask_shard.avif" alt="Mask Shard" class="w-8 h-8 rounded mr-3" />
+                    <span>Mask Shards for health upgrades</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/database/rosary_beads.avif" alt="Rosary Beads" class="w-8 h-8 rounded mr-3" />
+                    <span>Rosary Beads (primary currency)</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/database/basic_tools.avif" alt="Tools" class="w-8 h-8 rounded mr-3" />
+                    <span>First purchasable tools and items</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-gray-500/10 p-6 rounded-lg mt-6">
+              <h5 class="text-lg font-semibold text-gray-300 mb-3">💰 Economy Tips:</h5>
+              <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm">
+                <li>• Save Rosary Beads for essential upgrades</li>
+                <li>• Prioritize Mask Shards for health increases</li>
+                <li>• Explore thoroughly for hidden currency caches</li>
+                <li>• Return to Pebb regularly for new inventory</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- The Marrow -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/walkthrough/the_marrow.avif" alt="The Marrow" class="w-20 h-20 rounded-lg mr-6" />
+              <div>
+                <h3 class="text-2xl font-bold text-orange-400">3. The Marrow</h3>
+                <p class="text-gray-400">Vertical Cavern & Platforming Challenges</p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 class="text-lg font-semibold text-orange-400 mb-4">Key Objectives</h4>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-orange-400 mr-3 mt-1">🗺️</span>
+                    <div>
+                      <strong>Meet Shakra:</strong> Map maker and cartography introduction
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-orange-400 mr-3 mt-1">🔧</span>
+                    <div>
+                      <strong>Tool Collection:</strong> Acquire Shard Pendant and other tools
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-orange-400 mr-3 mt-1">🧗</span>
+                    <div>
+                      <strong>Vertical Navigation:</strong> Master climbing and aerial movement
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-orange-400 mr-3 mt-1">🏛️</span>
+                    <div>
+                      <strong>Ancient Architecture:</strong> Discover area history and lore
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-orange-400 mb-4">Navigation Challenges</h4>
+                <ul class="space-y-3 text-gray-300">
+                  <li class="flex items-center">
+                    <img src="/images/abilities/cling_grip.avif" alt="Cling Grip" class="w-8 h-8 rounded mr-3" />
+                    <span>Cling Grip for wall traversal</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/ui/platforming.avif" alt="Platforming" class="w-8 h-8 rounded mr-3" />
+                    <span>Advanced platforming sequences</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/database/shard_pendant.avif" alt="Shard Pendant" class="w-8 h-8 rounded mr-3" />
+                    <span>Shard Pendant tool acquisition</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="/images/npcs/shakra.avif" alt="Shakra" class="w-8 h-8 rounded mr-3" />
+                    <span>Shakra's map services</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-orange-500/10 p-6 rounded-lg mt-6">
+              <h5 class="text-lg font-semibold text-orange-300 mb-3">🧗 Platforming Tips:</h5>
+              <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm">
+                <li>• Master Cling Grip before attempting vertical sections</li>
+                <li>• Use Shakra's maps to plan efficient routes</li>
+                <li>• Save progress frequently at rest points</li>
+                <li>• Practice wall-jumping in safe areas first</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progression Tips -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Essential Progression Tips</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20">
+            <h3 class="text-xl font-bold text-blue-400 mb-4">🎯 Critical Path Focus</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li>• Prioritize main story bosses and abilities</li>
+              <li>• Don't get lost in optional content early on</li>
+              <li>• Follow the guided progression for optimal flow</li>
+              <li>• Return to missed areas with new abilities</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20">
+            <h3 class="text-xl font-bold text-purple-400 mb-4">⚡ Ability Management</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li>• Test new abilities in safe environments</li>
+              <li>• Understand silk meter resource management</li>
+              <li>• Experiment with tool combinations</li>
+              <li>• Practice advanced techniques gradually</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20">
+            <h3 class="text-xl font-bold text-green-400 mb-4">📦 Collection Strategy</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li>• Collect all Mask Shards for health upgrades</li>
+              <li>• Gather Shell Shards for tool crafting</li>
+              <li>• Don't ignore environmental storytelling</li>
+              <li>• Keep detailed mental or physical notes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Boss Progression -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Boss Progression Timeline</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-teal-500/20 max-w-6xl mx-auto">
+          <div class="space-y-6">
+            <div class="flex items-center justify-between p-4 bg-green-500/10 rounded-lg">
+              <div class="flex items-center">
+                <img src="/images/bosses/moss_mother_small.avif" alt="Moss Mother" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-green-400">Moss Mother</p>
+                  <p class="text-gray-400 text-sm">Tutorial Boss - Moss Grotto</p>
+                </div>
+              </div>
+              <span class="text-green-400 font-semibold">Act 1 Start</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-purple-500/10 rounded-lg">
+              <div class="flex items-center">
+                <img src="/images/bosses/widow_small.avif" alt="Widow" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-purple-400">Widow</p>
+                  <p class="text-gray-400 text-sm">First Major Boss - Bellhart Tunnels</p>
+                </div>
+              </div>
+              <span class="text-purple-400 font-semibold">Early Act 1</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-orange-500/10 rounded-lg">
+              <div class="flex items-center">
+                <img src="/images/bosses/cogwork_dancers_small.avif" alt="Cogwork Dancers" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-orange-400">Cogwork Dancers</p>
+                  <p class="text-gray-400 text-sm">Duo Boss - Cogwork Core</p>
+                </div>
+              </div>
+              <span class="text-orange-400 font-semibold">Mid Act 1</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-red-500/10 rounded-lg">
+              <div class="flex items-center">
+                <img src="/images/bosses/fourth_chorus_small.avif" alt="Fourth Chorus" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-red-400">Fourth Chorus</p>
+                  <p class="text-gray-400 text-sm">Colossal Automaton - Far Fields</p>
+                </div>
+              </div>
+              <span class="text-red-400 font-semibold">Late Act 1</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 100% Completion Guide -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">100% Completion Checklist</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-teal-500/20">
+            <h3 class="text-2xl font-bold text-teal-400 mb-6">Core Requirements</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li class="flex items-center">
+                <span class="text-teal-400 mr-3">✓</span>
+                <span>All 44+ Boss defeats</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-teal-400 mr-3">✓</span>
+                <span>All 7 Ancestral Arts acquired</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-teal-400 mr-3">✓</span>
+                <span>All 3 Silk Skills mastered</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-teal-400 mr-3">✓</span>
+                <span>All 7 Crests obtained</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-teal-400 mr-3">✓</span>
+                <span>All side quests completed</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-teal-500/20">
+            <h3 class="text-2xl font-bold text-teal-400 mb-6">Optional Content</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li class="flex items-center">
+                <span class="text-yellow-400 mr-3">◦</span>
+                <span>All Mask Shards collected</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-yellow-400 mr-3">◦</span>
+                <span>Maximum tool collection</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-yellow-400 mr-3">◦</span>
+                <span>All areas fully explored</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-yellow-400 mr-3">◦</span>
+                <span>All NPCs encountered</span>
+              </li>
+              <li class="flex items-center">
+                <span class="text-yellow-400 mr-3">◦</span>
+                <span>All lore discoveries</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #14b8a6, #0891b2, #0284c7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>

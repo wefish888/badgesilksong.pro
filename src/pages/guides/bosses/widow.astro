@@ -1,0 +1,360 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "Widow Boss Guide - Hollow Knight: Silksong";
+const description = "Complete strategy guide for defeating Widow, the first major boss in Hollow Knight: Silksong. Learn attack patterns, recommended builds, and bell parrying techniques.";
+const keywords = "Widow boss, Silksong boss guide, bell parrying, Needolin skill, Bellhart Tunnels, Silksong strategy";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/silk-pattern.svg'); background-size: 100px 100px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <div class="flex justify-center mb-8">
+          <img src="/images/bosses/widow_1.avif" alt="Widow Boss" class="w-48 h-48 rounded-lg shadow-2xl" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Widow Boss Guide</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Master the first major boss encounter in Bellhart Tunnels. Learn silk telegraph reading, bell parrying, and phase management strategies.
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20">
+            <div class="text-purple-400 text-sm font-semibold uppercase tracking-wide mb-2">Location</div>
+            <div class="text-white font-bold">Bellhart Tunnels</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20">
+            <div class="text-purple-400 text-sm font-semibold uppercase tracking-wide mb-2">Difficulty</div>
+            <div class="text-white font-bold">★★★☆☆</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20">
+            <div class="text-purple-400 text-sm font-semibold uppercase tracking-wide mb-2">Key Mechanic</div>
+            <div class="text-white font-bold">Bell Parrying</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20">
+            <div class="text-purple-400 text-sm font-semibold uppercase tracking-wide mb-2">Reward</div>
+            <div class="text-white font-bold">Needolin Skill</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prerequisites Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Access Requirements</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-purple-400 mb-4">Prerequisites</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">✓</span>
+                  <div>
+                    <strong>Defeat Sister Splinter:</strong> Must complete this earlier boss
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">✓</span>
+                  <div>
+                    <strong>Acquire Cling Grip:</strong> Essential traversal ability
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">✓</span>
+                  <div>
+                    <strong>Create Shortcut:</strong> Destroy bell wall in Bellhart tunnels
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-purple-400 mb-4">Preparation Tips</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">⚡</span>
+                  <span>Practice bell parrying in safer areas</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">⚡</span>
+                  <span>Familiarize yourself with arena layout</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">⚡</span>
+                  <span>Ensure Cling Grip is equipped</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Battle Phases Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Battle Phases</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/widow_2.avif" alt="Widow Phase 1" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-blue-400">Phase 1: Learning Phase</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Focus:</strong> Pattern learning and resource conservation</p>
+              <p><strong>Pace:</strong> More predictable attack patterns</p>
+              <p><strong>Strategy:</strong> Study attack patterns and practice counters</p>
+              <div class="mt-6">
+                <h4 class="text-lg font-semibold text-blue-400 mb-3">Key Attacks:</h4>
+                <ul class="space-y-2">
+                  <li>• <strong>Bell Drop:</strong> Golden silk telegraphs drop locations</li>
+                  <li>• <strong>Dive & Slash:</strong> Two-part aerial attack combo</li>
+                  <li>• <strong>Bell Wave:</strong> Area control with multiple bells</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/widow_3.avif" alt="Widow Phase 2" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-red-400">Phase 2: Aggressive Phase</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Focus:</strong> Execution of learned patterns under pressure</p>
+              <p><strong>Pace:</strong> Faster, more aggressive attacks</p>
+              <p><strong>Strategy:</strong> Use Phase 1 knowledge to survive intensified attacks</p>
+              <div class="mt-6">
+                <h4 class="text-lg font-semibold text-red-400 mb-3">Key Attacks:</h4>
+                <ul class="space-y-2">
+                  <li>• <strong>Bell Roar:</strong> Multiple simultaneous bell drops</li>
+                  <li>• <strong>Charge Slash:</strong> Lightning-fast dash attack</li>
+                  <li>• <strong>Enhanced Patterns:</strong> All Phase 1 attacks but faster</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Special Mechanics Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Special Mechanics</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/abilities/bell_parry.png" alt="Bell Parrying" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-yellow-400">Bell Parrying System</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Timing:</strong> Requires precise needle slash timing</p>
+              <p><strong>Effect:</strong> Deflects bells and creates counterattack opportunities</p>
+              <p><strong>Mastery:</strong> Essential for higher-level play</p>
+              <p><strong>Practice:</strong> Can be practiced on environmental bells</p>
+
+              <div class="bg-yellow-500/10 p-4 rounded-lg mt-6">
+                <p class="text-yellow-300 font-semibold">💡 Pro Tip:</p>
+                <p class="text-gray-300">Time your needle slash just as the bell approaches. Successful parries turn the bell into a defensive tool!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/abilities/silk_telegraph.png" alt="Silk Telegraph" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-purple-400">Silk Thread Telegraph</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Visual:</strong> Golden silk threads appear before attacks</p>
+              <p><strong>Function:</strong> Shows exact locations of incoming bell drops</p>
+              <p><strong>Timing:</strong> Appears with enough time to reposition</p>
+              <p><strong>Importance:</strong> Primary defensive mechanic</p>
+
+              <div class="bg-purple-500/10 p-4 rounded-lg mt-6">
+                <p class="text-purple-300 font-semibold">⚡ Strategy:</p>
+                <p class="text-gray-300">Always watch for golden threads - they're your early warning system for incoming attacks!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommended Builds Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Recommended Loadouts</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <h3 class="text-2xl font-bold text-red-400 mb-6">Aggressive AoE Build</h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <img src="/images/abilities/threadstorm.avif" alt="Threadstorm" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-white">Primary Ability: Threadstorm</p>
+                  <p class="text-gray-400 text-sm">High area damage for close combat</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/crests/reaper_crest.avif" alt="Reaper Crest" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-white">Crest: Reaper Crest</p>
+                  <p class="text-gray-400 text-sm">Increased damage output</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/database/warding_bell.avif" alt="Warding Bell" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-white">Tool: Warding Bell</p>
+                  <p class="text-gray-400 text-sm">Defensive utility</p>
+                </div>
+              </div>
+              <div class="bg-red-500/10 p-4 rounded-lg mt-6">
+                <p class="text-red-300 font-semibold">⚔️ Strategy:</p>
+                <p class="text-gray-300">Close-range combat with high damage during openings. Risk vs reward playstyle.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <h3 class="text-2xl font-bold text-blue-400 mb-6">Patient Ranged Build</h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <img src="/images/abilities/silkspear.avif" alt="Silkspear" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-white">Primary Ability: Silkspear</p>
+                  <p class="text-gray-400 text-sm">Long-range piercing attacks</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/database/straight_pin.avif" alt="Straight Pin" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-white">Tool: Straight Pin</p>
+                  <p class="text-gray-400 text-sm">Ranged utility tool</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/database/pimpillo.avif" alt="Pimpillo" class="w-12 h-12 rounded-lg mr-4" />
+                <div>
+                  <p class="font-semibold text-white">Tool: Pimpillo</p>
+                  <p class="text-gray-400 text-sm">Additional ranged option</p>
+                </div>
+              </div>
+              <div class="bg-blue-500/10 p-4 rounded-lg mt-6">
+                <p class="text-blue-300 font-semibold">🎯 Strategy:</p>
+                <p class="text-gray-300">Maintain distance and chip damage. Safer positioning with consistent damage output.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combat Tips Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Key Survival Tips</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-purple-400 mb-4">Core Strategies</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">🎯</span>
+                  <span><strong>Master Silk Telegraphs:</strong> Golden threads are your primary warning system</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">⚔️</span>
+                  <span><strong>Bell Parry Timing:</strong> Well-timed needle slashes can deflect bells</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">📚</span>
+                  <span><strong>Phase 1 Preparation:</strong> Use easier phase to learn patterns and heal</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-purple-400 mr-3 mt-1">❤️</span>
+                  <span><strong>Phase 2 Readiness:</strong> Ensure full health before transition</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-purple-400 mb-4">Advanced Tactics</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">⚡</span>
+                  <span><strong>Vulnerability Windows:</strong> Attack during silk thread pulling animations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🛡️</span>
+                  <span><strong>Tool Management:</strong> Use abilities strategically, not frantically</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🏃</span>
+                  <span><strong>Mobility Priority:</strong> Maintain movement options over aggressive positioning</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🔄</span>
+                  <span><strong>Pattern Prediction:</strong> Anticipate Phase 2 attack sequences</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rewards Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Victory Rewards</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <img src="/images/abilities/needolin.avif" alt="Needolin Skill" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-purple-400 mb-2">Needolin Skill</h3>
+              <p class="text-gray-300">New combat ability unlock for future encounters</p>
+            </div>
+            <div class="text-center">
+              <img src="/images/ui/fanatic_achievement.png" alt="Fanatic Achievement" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-purple-400 mb-2">"Fanatic" Achievement</h3>
+              <p class="text-gray-300">Achievement completion for dedicated players</p>
+            </div>
+            <div class="text-center">
+              <img src="/images/quests/threadspun_town.avif" alt="Threadspun Town" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-purple-400 mb-2">Story Progression</h3>
+              <p class="text-gray-300">Completes Threadspun Town questline</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7, #c084fc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>

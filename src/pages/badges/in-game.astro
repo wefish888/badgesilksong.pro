@@ -13,205 +13,224 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <!-- Header -->
       <div class="text-center mb-12">
         <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
-          <span class="gradient-text">In-Game Badges & Tools</span>
+          <span class="gradient-text">In-Game Tools & Crests</span>
         </h1>
         <p class="text-xl text-gray-300 mb-8">
-          Complete collection of all 57 tools available in Hollow Knight: Silksong
+          Complete guide to Crests, Tools, and Ancestral Arts in Hollow Knight: Silksong
         </p>
+        <div class="flex justify-center mb-8">
+          <img src="/images/abilities/ability_abilities-and-moveset_4.avif" alt="Swift Step Ability" class="w-32 h-32 rounded-lg shadow-lg" />
+        </div>
       </div>
 
-      <!-- Tool Categories -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <!-- Crest Slot Types -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
 
-        <!-- Blue Tools -->
-        <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6">
-          <div class="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl">⚔️</span>
-          </div>
-          <h2 class="text-2xl font-bold text-center mb-4 text-blue-400">Blue Tools</h2>
-          <p class="text-center text-gray-300 mb-6">Offensive combat enhancements</p>
-          <div class="text-center">
-            <div class="text-3xl font-bold text-blue-400 mb-2">19</div>
-            <p class="text-sm text-gray-400">Available Tools</p>
-          </div>
-          <a href="/guides/tools#blue-tools" class="btn-primary w-full text-center mt-4">
-            View Blue Tools
-          </a>
-        </div>
-
-        <!-- Red Tools -->
+        <!-- Red Tools (Active) -->
         <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-6">
           <div class="w-16 h-16 bg-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl">🛡️</span>
+            <img src="/images/crests/crest_crests_3.png" alt="Red Tool Slot" class="w-8 h-8" />
           </div>
-          <h2 class="text-2xl font-bold text-center mb-4 text-red-400">Red Tools</h2>
-          <p class="text-center text-gray-300 mb-6">Defensive and survival tools</p>
+          <h2 class="text-xl font-bold text-center mb-4 text-red-400">Red Tools</h2>
+          <p class="text-center text-gray-300 mb-4 text-sm">Active weapon-oriented tools</p>
           <div class="text-center">
-            <div class="text-3xl font-bold text-red-400 mb-2">20</div>
-            <p class="text-sm text-gray-400">Available Tools</p>
+            <div class="text-2xl font-bold text-red-400 mb-2">Active</div>
+            <p class="text-xs text-gray-400">Combat Enhancement</p>
           </div>
-          <a href="/guides/tools#red-tools" class="btn-primary w-full text-center mt-4">
+          <a href="/guides/crests#red-tools" class="btn-primary w-full text-center mt-4 text-sm">
             View Red Tools
           </a>
         </div>
 
-        <!-- Yellow Tools -->
+        <!-- Blue Tools (Passive) -->
+        <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-6">
+          <div class="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <img src="/images/crests/crest_crests_4.png" alt="Blue Tool Slot" class="w-8 h-8" />
+          </div>
+          <h2 class="text-xl font-bold text-center mb-4 text-blue-400">Blue Tools</h2>
+          <p class="text-center text-gray-300 mb-4 text-sm">Passive defensive tools</p>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-blue-400 mb-2">Passive</div>
+            <p class="text-xs text-gray-400">Defense & Survival</p>
+          </div>
+          <a href="/guides/crests#blue-tools" class="btn-primary w-full text-center mt-4 text-sm">
+            View Blue Tools
+          </a>
+        </div>
+
+        <!-- Yellow Tools (Utility) -->
         <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
           <div class="w-16 h-16 bg-yellow-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl">⚡</span>
+            <img src="/images/crests/crest_crests_5.png" alt="Yellow Tool Slot" class="w-8 h-8" />
           </div>
-          <h2 class="text-2xl font-bold text-center mb-4 text-yellow-400">Yellow Tools</h2>
-          <p class="text-center text-gray-300 mb-6">Special abilities and magic</p>
+          <h2 class="text-xl font-bold text-center mb-4 text-yellow-400">Yellow Tools</h2>
+          <p class="text-center text-gray-300 mb-4 text-sm">Exploration & utility tools</p>
           <div class="text-center">
-            <div class="text-3xl font-bold text-yellow-400 mb-2">18</div>
-            <p class="text-sm text-gray-400">Available Tools</p>
+            <div class="text-2xl font-bold text-yellow-400 mb-2">Utility</div>
+            <p class="text-xs text-gray-400">Exploration Aid</p>
           </div>
-          <a href="/guides/tools#yellow-tools" class="btn-primary w-full text-center mt-4">
+          <a href="/guides/crests#yellow-tools" class="btn-primary w-full text-center mt-4 text-sm">
             View Yellow Tools
+          </a>
+        </div>
+
+        <!-- White Tools (Skills) -->
+        <div class="bg-white/10 border border-white/30 rounded-lg p-6">
+          <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center mx-auto mb-4">
+            <img src="/images/crests/crest_crests_6.png" alt="White Tool Slot" class="w-8 h-8" />
+          </div>
+          <h2 class="text-xl font-bold text-center mb-4 text-white">White Tools</h2>
+          <p class="text-center text-gray-300 mb-4 text-sm">Silk Skills & core modifications</p>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-white mb-2">Skills</div>
+            <p class="text-xs text-gray-400">Silk Abilities</p>
+          </div>
+          <a href="/guides/crests#white-tools" class="btn-primary w-full text-center mt-4 text-sm">
+            View White Tools
           </a>
         </div>
 
       </div>
 
-      <!-- Featured Tools -->
+      <!-- Ancestral Arts & Silk Skills -->
       <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-center">Featured Tools</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center">Ancestral Arts & Silk Skills</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <!-- Pin Badge -->
+          <!-- Swift Step -->
           <div class="bg-silksong-dark rounded-lg p-6 border border-blue-500/30">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">📌</span>
+                <img src="/images/abilities/ability_abilities-and-moveset_4.avif" alt="Swift Step" class="w-8 h-8 rounded" />
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-blue-400">Pin Badge</h3>
-                <p class="text-sm text-gray-400">Blue Tool - Legendary</p>
+                <h3 class="text-lg font-semibold text-blue-400">Swift Step</h3>
+                <p class="text-sm text-gray-400">Ancestral Art - Movement</p>
               </div>
             </div>
             <p class="text-gray-300 text-sm mb-4">
-              Reduces Needle Strike charge time by 50%. Essential for high-level play and speedruns.
-            </p>
-            <div class="flex justify-between text-sm mb-4">
-              <span class="text-gray-400">Location:</span>
-              <span>Mount Fay (Pinstress Boss)</span>
-            </div>
-            <a href="/guides/pin-badge" class="btn-primary w-full text-center">
-              View Guide
-            </a>
-          </div>
-
-          <!-- Quick Slash -->
-          <div class="bg-silksong-dark rounded-lg p-6 border border-blue-500/30">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">⚡</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-blue-400">Quick Slash</h3>
-                <p class="text-sm text-gray-400">Blue Tool - Essential</p>
-              </div>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              Increases nail attack speed by 40%. One of the most valuable tools for combat efficiency.
-            </p>
-            <div class="flex justify-between text-sm mb-4">
-              <span class="text-gray-400">Location:</span>
-              <span>Kingdom's Edge</span>
-            </div>
-            <a href="/guides/tools#quick-slash" class="btn-primary w-full text-center">
-              View Guide
-            </a>
-          </div>
-
-          <!-- Strength -->
-          <div class="bg-silksong-dark rounded-lg p-6 border border-blue-500/30">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">💪</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-blue-400">Strength</h3>
-                <p class="text-sm text-gray-400">Blue Tool - Core</p>
-              </div>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              Increases nail damage by 50%. Critical for boss fights and late-game enemies.
-            </p>
-            <div class="flex justify-between text-sm mb-4">
-              <span class="text-gray-400">Location:</span>
-              <span>Citadel Underground</span>
-            </div>
-            <a href="/guides/tools#strength" class="btn-primary w-full text-center">
-              View Guide
-            </a>
-          </div>
-
-          <!-- Quick Focus -->
-          <div class="bg-silksong-dark rounded-lg p-6 border border-red-500/30">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">❤️</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-red-400">Quick Focus</h3>
-                <p class="text-sm text-gray-400">Red Tool - Survival</p>
-              </div>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              Reduces focus casting time by 40%. Essential for healing during boss fights.
-            </p>
-            <div class="flex justify-between text-sm mb-4">
-              <span class="text-gray-400">Location:</span>
-              <span>Greymoor</span>
-            </div>
-            <a href="/guides/tools#quick-focus" class="btn-primary w-full text-center">
-              View Guide
-            </a>
-          </div>
-
-          <!-- Dash Master -->
-          <div class="bg-silksong-dark rounded-lg p-6 border border-red-500/30">
-            <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">💨</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-red-400">Dash Master</h3>
-                <p class="text-sm text-gray-400">Red Tool - Mobility</p>
-              </div>
-            </div>
-            <p class="text-gray-300 text-sm mb-4">
-              Enables additional dash without touching ground. Critical for advanced platforming.
+              Basic dash and sprint movement ability. Essential foundation for all traversal in Pharloom.
             </p>
             <div class="flex justify-between text-sm mb-4">
               <span class="text-gray-400">Location:</span>
               <span>Deep Docks</span>
             </div>
-            <a href="/guides/tools#dash-master" class="btn-primary w-full text-center">
+            <a href="/guides/abilities#swift-step" class="btn-primary w-full text-center">
               View Guide
             </a>
           </div>
 
-          <!-- Dream Wield -->
-          <div class="bg-silksong-dark rounded-lg p-6 border border-yellow-500/30">
+          <!-- Silk Spear -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-white/30">
             <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">✨</span>
+              <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                <img src="/images/abilities/ability_abilities-and-moveset_15.avif" alt="Silkspear" class="w-8 h-8 rounded" />
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-yellow-400">Dream Wield</h3>
-                <p class="text-sm text-gray-400">Yellow Tool - Magic</p>
+                <h3 class="text-lg font-semibold text-white">Silkspear</h3>
+                <p class="text-sm text-gray-400">Silk Skill - Ranged</p>
               </div>
             </div>
             <p class="text-gray-300 text-sm mb-4">
-              Reduces silk cost for spells by 33%. Enables powerful spell-focused builds.
+              Powerful ranged silk attack. Requires white crest slot and consumes silk meter for long-range combat.
+            </p>
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-gray-400">Type:</span>
+              <span>Silk Skill</span>
+            </div>
+            <a href="/guides/abilities#silkspear" class="btn-primary w-full text-center">
+              View Guide
+            </a>
+          </div>
+
+          <!-- Needolin -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-yellow-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
+                <img src="/images/abilities/ability_abilities-and-moveset_10.avif" alt="Needolin" class="w-8 h-8 rounded" />
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-yellow-400">Needolin</h3>
+                <p class="text-sm text-gray-400">Ancestral Art - Special</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Special movement ability obtained after defeating the Widow boss. Unlocks unique traversal options.
             </p>
             <div class="flex justify-between text-sm mb-4">
               <span class="text-gray-400">Location:</span>
-              <span>Coral Forest</span>
+              <span>Bellhart/Widow's Lair</span>
             </div>
-            <a href="/guides/tools#dream-wield" class="btn-primary w-full text-center">
+            <a href="/guides/abilities#needolin" class="btn-primary w-full text-center">
+              View Guide
+            </a>
+          </div>
+
+          <!-- Thread Storm -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-white/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                <img src="/images/abilities/ability_abilities-and-moveset_16.avif" alt="Thread Storm" class="w-8 h-8 rounded" />
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white">Thread Storm</h3>
+                <p class="text-sm text-gray-400">Silk Skill - AoE</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Area-of-effect silk ability that creates a storm of silk threads. Excellent for crowd control.
+            </p>
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-gray-400">Type:</span>
+              <span>Silk Skill</span>
+            </div>
+            <a href="/guides/abilities#thread-storm" class="btn-primary w-full text-center">
+              View Guide
+            </a>
+          </div>
+
+          <!-- Cross Stitch -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-white/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4">
+                <img src="/images/abilities/ability_abilities-and-moveset_17.avif" alt="Cross Stitch" class="w-8 h-8 rounded" />
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white">Cross Stitch</h3>
+                <p class="text-sm text-gray-400">Silk Skill - Precision</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Precise silk ability for targeted attacks. Requires white crest slot and good timing.
+            </p>
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-gray-400">Type:</span>
+              <span>Silk Skill</span>
+            </div>
+            <a href="/guides/abilities#cross-stitch" class="btn-primary w-full text-center">
+              View Guide
+            </a>
+          </div>
+
+          <!-- Drifter's Cloak -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-green-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                <img src="/images/abilities/ability_abilities-and-moveset_5.avif" alt="Drifter's Cloak" class="w-8 h-8 rounded" />
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-green-400">Drifter's Cloak</h3>
+                <p class="text-sm text-gray-400">Ancestral Art - Glide</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Air gliding ability obtained in Far Fields. Essential for traversing long gaps and aerial navigation.
+            </p>
+            <div class="flex justify-between text-sm mb-4">
+              <span class="text-gray-400">Location:</span>
+              <span>Far Fields</span>
+            </div>
+            <a href="/guides/abilities#drifters-cloak" class="btn-primary w-full text-center">
               View Guide
             </a>
           </div>
@@ -219,50 +238,81 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </div>
       </div>
 
-      <!-- Tool Combinations -->
+      <!-- Crest System Overview -->
       <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-8">Popular Tool Combinations</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 class="text-3xl font-bold mb-8">Crest System Overview</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
           <div class="bg-silksong-dark rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Speedrun Build</h3>
+            <div class="flex items-center mb-4">
+              <img src="/images/crests/crest_crests_7.jpg" alt="Crests Menu" class="w-16 h-16 rounded-lg mr-4" />
+              <div>
+                <h3 class="text-xl font-semibold text-silksong-gold">7 Unique Crests</h3>
+                <p class="text-gray-400">Each changes your playstyle</p>
+              </div>
+            </div>
             <div class="space-y-3 mb-4">
-              <div class="flex items-center">
-                <span class="w-4 h-4 bg-blue-500 rounded mr-3"></span>
-                <span>Pin Badge + Quick Slash</span>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_10.jpg" alt="Hunter Crest" class="w-6 h-6 rounded mr-2" />
+                  <span>Hunter Crest</span>
+                </span>
+                <span class="text-red-400">2 Red</span>
               </div>
-              <div class="flex items-center">
-                <span class="w-4 h-4 bg-red-500 rounded mr-3"></span>
-                <span>Dash Master + Sharp Shadow</span>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_14.jpg" alt="Reaper Crest" class="w-6 h-6 rounded mr-2" />
+                  <span>Reaper Crest</span>
+                </span>
+                <span class="text-blue-400">2 Blue</span>
               </div>
-              <div class="flex items-center">
-                <span class="w-4 h-4 bg-yellow-500 rounded mr-3"></span>
-                <span>Dream Wield</span>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_18.jpg" alt="Wanderer Crest" class="w-6 h-6 rounded mr-2" />
+                  <span>Wanderer Crest</span>
+                </span>
+                <span class="text-yellow-400">2 Yellow</span>
               </div>
             </div>
             <p class="text-gray-300 text-sm">
-              Optimized for fast movement and quick boss kills. Essential for Steel Soul runs.
+              Crests completely replace the charm system from the original Hollow Knight, determining both tool slots and combat style.
             </p>
           </div>
 
           <div class="bg-silksong-dark rounded-lg p-6">
-            <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Tank Build</h3>
-            <div class="space-y-3 mb-4">
-              <div class="flex items-center">
-                <span class="w-4 h-4 bg-blue-500 rounded mr-3"></span>
-                <span>Strength + Heavy Blow</span>
+            <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Tool Slot System</h3>
+            <div class="space-y-4 mb-4">
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_3.png" alt="Red Tool" class="w-6 h-6 mr-2" />
+                  <span>Red Tools</span>
+                </span>
+                <span class="text-gray-300">Active/Weapon</span>
               </div>
-              <div class="flex items-center">
-                <span class="w-4 h-4 bg-red-500 rounded mr-3"></span>
-                <span>Quick Focus + Shape of Unn</span>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_4.png" alt="Blue Tool" class="w-6 h-6 mr-2" />
+                  <span>Blue Tools</span>
+                </span>
+                <span class="text-gray-300">Passive/Defense</span>
               </div>
-              <div class="flex items-center">
-                <span class="w-4 h-4 bg-red-500 rounded mr-3"></span>
-                <span>Stalwart Shell</span>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_5.png" alt="Yellow Tool" class="w-6 h-6 mr-2" />
+                  <span>Yellow Tools</span>
+                </span>
+                <span class="text-gray-300">Utility/Exploration</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="flex items-center">
+                  <img src="/images/crests/crest_crests_6.png" alt="White Tool" class="w-6 h-6 mr-2" />
+                  <span>White Tools</span>
+                </span>
+                <span class="text-gray-300">Skills/Silk</span>
               </div>
             </div>
             <p class="text-gray-300 text-sm">
-              Maximum survivability for difficult boss encounters and exploration.
+              Each crest provides different combinations of tool slots, enabling diverse build strategies and playstyles.
             </p>
           </div>
 
@@ -271,16 +321,33 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
       <!-- Collection Progress -->
       <div class="bg-silksong-dark/50 rounded-lg p-6 mb-8">
-        <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Collection Tracker</h3>
+        <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Complete Your Collection</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-blue-400 mb-2">7</div>
+            <p class="text-sm text-gray-400">Ancestral Arts</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-white mb-2">3</div>
+            <p class="text-sm text-gray-400">Silk Skills</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-silksong-gold mb-2">7</div>
+            <p class="text-sm text-gray-400">Crests</p>
+          </div>
+        </div>
         <p class="text-gray-300 mb-4">
-          Track your tool collection progress and plan your builds with our interactive checklist.
+          Track your ability and crest collection progress with our comprehensive guides and interactive checklist.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="/checklist" class="btn-primary text-center">
             Track Your Progress
           </a>
-          <a href="/guides/tools" class="btn-secondary text-center">
-            Complete Tool Guide
+          <a href="/guides/abilities" class="btn-secondary text-center">
+            Abilities Guide
+          </a>
+          <a href="/guides/crests" class="btn-secondary text-center">
+            Crest System Guide
           </a>
         </div>
       </div>

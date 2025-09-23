@@ -1,0 +1,354 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "All Tools - Complete Database | Silksong Tools";
+const description = "Browse the complete collection of tools and equipment in Hollow Knight: Silksong. Detailed guides for every weapon, defensive tool, and utility item.";
+const keywords = "Silksong tools list, all tools, equipment database, complete tool guide, Silksong weapons";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/tool-grid-pattern.svg'); background-size: 200px 200px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Complete Tools Database</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Explore every tool and piece of equipment available in Hollow Knight: Silksong. Click on any tool for detailed strategies, usage guides, and upgrade information.
+        </p>
+
+        <!-- Quick Navigation -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="#red-tools" class="bg-red-600/20 hover:bg-red-600/30 px-4 py-2 rounded-lg border border-red-500/30 transition-colors">
+            Red Tools (Offensive)
+          </a>
+          <a href="#blue-tools" class="bg-blue-600/20 hover:bg-blue-600/30 px-4 py-2 rounded-lg border border-blue-500/30 transition-colors">
+            Blue Tools (Defensive)
+          </a>
+          <a href="#yellow-tools" class="bg-yellow-600/20 hover:bg-yellow-600/30 px-4 py-2 rounded-lg border border-yellow-500/30 transition-colors">
+            Yellow Tools (Utility)
+          </a>
+          <a href="#white-tools" class="bg-gray-600/20 hover:bg-gray-600/30 px-4 py-2 rounded-lg border border-gray-500/30 transition-colors">
+            White Tools (Skills)
+          </a>
+        </div>
+      </div>
+
+      <!-- Red Tools Section -->
+      <section id="red-tools" class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="text-red-400">Red Tools</span> - Offensive Equipment
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Needle -->
+          <a href="/database/tools/needle" class="block bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20 hover:border-red-500/40 transition-all hover:scale-105">
+            <div class="text-center">
+              <img src="/images/database/needle.avif" alt="Needle" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-red-400 mb-2">Needle</h3>
+              <p class="text-gray-300 text-sm mb-3">Primary Weapon</p>
+              <p class="text-gray-400 text-sm">Hornet's signature sewing tool, perfectly balanced for combat</p>
+            </div>
+          </a>
+
+          <!-- Threadstorm -->
+          <a href="/database/tools/threadstorm" class="block bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20 hover:border-red-500/40 transition-all hover:scale-105">
+            <div class="text-center">
+              <img src="/images/database/threadstorm.avif" alt="Threadstorm" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-red-400 mb-2">Threadstorm</h3>
+              <p class="text-gray-300 text-sm mb-3">Area Attack</p>
+              <p class="text-gray-400 text-sm">Devastating silk whirlwind for crowd control</p>
+            </div>
+          </a>
+
+          <!-- Burst Seeds -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/burst_seeds.avif" alt="Burst Seeds" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-red-400 mb-2">Burst Seeds</h3>
+              <p class="text-gray-300 text-sm mb-3">Projectile Weapon</p>
+              <p class="text-gray-400 text-sm">Multi-hit explosive projectiles</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Silk Bombs -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/silk_bombs.avif" alt="Silk Bombs" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-red-400 mb-2">Silk Bombs</h3>
+              <p class="text-gray-300 text-sm mb-3">Explosive Tool</p>
+              <p class="text-gray-400 text-sm">Area denial and trap devices</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Throwing Needles -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/throwing_needles.avif" alt="Throwing Needles" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-red-400 mb-2">Throwing Needles</h3>
+              <p class="text-gray-300 text-sm mb-3">Ranged Weapon</p>
+              <p class="text-gray-400 text-sm">Precise ranged piercing attacks</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Explosive Traps -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/explosive_traps.avif" alt="Explosive Traps" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-red-400 mb-2">Explosive Traps</h3>
+              <p class="text-gray-300 text-sm mb-3">Trap Device</p>
+              <p class="text-gray-400 text-sm">Deployable area damage devices</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blue Tools Section -->
+      <section id="blue-tools" class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="text-blue-400">Blue Tools</span> - Defensive Equipment
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Warding Bell -->
+          <a href="/database/tools/warding-bell" class="block bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 hover:border-blue-500/40 transition-all hover:scale-105">
+            <div class="text-center">
+              <img src="/images/database/warding_bell.avif" alt="Warding Bell" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-blue-400 mb-2">Warding Bell</h3>
+              <p class="text-gray-300 text-sm mb-3">Barrier Generator</p>
+              <p class="text-gray-400 text-sm">Protective barrier that deflects attacks</p>
+            </div>
+          </a>
+
+          <!-- Hardened Shell -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/hardened_shell.avif" alt="Hardened Shell" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-blue-400 mb-2">Hardened Shell</h3>
+              <p class="text-gray-300 text-sm mb-3">Damage Reduction</p>
+              <p class="text-gray-400 text-sm">Reduces incoming damage</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Regeneration Amulet -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/regen_amulet.avif" alt="Regeneration Amulet" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-blue-400 mb-2">Regeneration Amulet</h3>
+              <p class="text-gray-300 text-sm mb-3">Health Recovery</p>
+              <p class="text-gray-400 text-sm">Gradual health restoration over time</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Shield Generator -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/shield_generator.avif" alt="Shield Generator" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-blue-400 mb-2">Shield Generator</h3>
+              <p class="text-gray-300 text-sm mb-3">Temporary Barriers</p>
+              <p class="text-gray-400 text-sm">Creates short-term protective shields</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Resistance Charm -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/resistance_charm.avif" alt="Resistance Charm" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-blue-400 mb-2">Resistance Charm</h3>
+              <p class="text-gray-300 text-sm mb-3">Status Immunity</p>
+              <p class="text-gray-400 text-sm">Protection against status effects</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Healing Catalyst -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/healing_catalyst.avif" alt="Healing Catalyst" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-blue-400 mb-2">Healing Catalyst</h3>
+              <p class="text-gray-300 text-sm mb-3">Enhanced Recovery</p>
+              <p class="text-gray-400 text-sm">Improves effectiveness of healing</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Yellow Tools Section -->
+      <section id="yellow-tools" class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="text-yellow-400">Yellow Tools</span> - Utility Equipment
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Silk Dash -->
+          <a href="/database/tools/silk-dash" class="block bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 hover:border-yellow-500/40 transition-all hover:scale-105">
+            <div class="text-center">
+              <img src="/images/database/silk_dash.avif" alt="Silk Dash" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Silk Dash</h3>
+              <p class="text-gray-300 text-sm mb-3">Movement Tool</p>
+              <p class="text-gray-400 text-sm">High-speed silk-propelled movement</p>
+            </div>
+          </a>
+
+          <!-- Movement Enhancer -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/movement_enhancer.avif" alt="Movement Enhancer" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Movement Enhancer</h3>
+              <p class="text-gray-300 text-sm mb-3">Speed Boost</p>
+              <p class="text-gray-400 text-sm">Increases movement and agility</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Collection Aid -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/collection_aid.avif" alt="Collection Aid" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Collection Aid</h3>
+              <p class="text-gray-300 text-sm mb-3">Resource Bonus</p>
+              <p class="text-gray-400 text-sm">Enhanced resource gathering</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Navigation Tool -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/navigation_tool.avif" alt="Navigation Tool" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Navigation Tool</h3>
+              <p class="text-gray-300 text-sm mb-3">Map Helper</p>
+              <p class="text-gray-400 text-sm">Enhanced exploration capabilities</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Convenience Item -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/convenience_item.avif" alt="Convenience Item" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Convenience Item</h3>
+              <p class="text-gray-300 text-sm mb-3">Quality of Life</p>
+              <p class="text-gray-400 text-sm">Various gameplay improvements</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Silk Anchor -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/silk_anchor.avif" alt="Silk Anchor" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-yellow-400 mb-2">Silk Anchor</h3>
+              <p class="text-gray-300 text-sm mb-3">Grappling Tool</p>
+              <p class="text-gray-400 text-sm">Extended silk grappling range</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- White Tools Section -->
+      <section id="white-tools" class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="text-gray-300">White Tools</span> - Skill Enhancement
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Skill Amplifiers -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/skill_amplifier.avif" alt="Skill Amplifier" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-gray-300 mb-2">Skill Amplifier</h3>
+              <p class="text-gray-300 text-sm mb-3">Ability Enhancement</p>
+              <p class="text-gray-400 text-sm">Enhances existing silk skills</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Silk Catalyst -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/silk_catalyst.avif" alt="Silk Catalyst" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-gray-300 mb-2">Silk Catalyst</h3>
+              <p class="text-gray-300 text-sm mb-3">Silk Enhancement</p>
+              <p class="text-gray-400 text-sm">Improves silk abilities effectiveness</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Ancient Memory -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/ancient_memory.avif" alt="Ancient Memory" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-gray-300 mb-2">Ancient Memory</h3>
+              <p class="text-gray-300 text-sm mb-3">Knowledge Unlock</p>
+              <p class="text-gray-400 text-sm">Unlocks advanced techniques</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Master's Focus -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/masters_focus.avif" alt="Master's Focus" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-gray-300 mb-2">Master's Focus</h3>
+              <p class="text-gray-300 text-sm mb-3">Precision Boost</p>
+              <p class="text-gray-400 text-sm">Enhances skill accuracy and power</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Ancestral Echo -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/ancestral_echo.avif" alt="Ancestral Echo" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-gray-300 mb-2">Ancestral Echo</h3>
+              <p class="text-gray-300 text-sm mb-3">Legacy Power</p>
+              <p class="text-gray-400 text-sm">Connects to ancient abilities</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+
+          <!-- Silk Mastery -->
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-500/20 opacity-75">
+            <div class="text-center">
+              <img src="/images/database/silk_mastery.avif" alt="Silk Mastery" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-gray-300 mb-2">Silk Mastery</h3>
+              <p class="text-gray-300 text-sm mb-3">Ultimate Skill</p>
+              <p class="text-gray-400 text-sm">Complete silk manipulation control</p>
+              <span class="text-xs bg-orange-500/20 px-2 py-1 rounded text-orange-400 mt-2 inline-block">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">
+          <span class="gradient-text">More Tools Coming Soon</span>
+        </h2>
+        <p class="text-gray-300 mb-6">
+          We're continuously adding detailed guides for every tool in Silksong. Check back regularly for new additions to the database.
+        </p>
+        <div class="space-x-4">
+          <a href="/database/tools" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+            Back to Main Database
+          </a>
+          <a href="/database/crests" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            Explore Crests System
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

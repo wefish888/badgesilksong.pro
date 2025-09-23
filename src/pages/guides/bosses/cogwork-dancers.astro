@@ -1,0 +1,460 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "Cogwork Dancers Boss Guide - Hollow Knight: Silksong";
+const description = "Master the Cogwork Dancers duo boss fight with pattern recognition and silk telegraph reading. Learn rhythm-based combat in the Cogwork Core.";
+const keywords = "Cogwork Dancers boss, Silksong duo boss, pattern recognition, silk telegraphs, Ascendant's Grip, Cogwork Core, rhythm combat";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-orange-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/gear-pattern.svg'); background-size: 120px 120px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <div class="flex justify-center mb-8">
+          <img src="/images/bosses/cogwork_dancers_1.avif" alt="Cogwork Dancers" class="w-48 h-48 rounded-lg shadow-2xl" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Cogwork Dancers Guide</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Master the mechanical duo boss that tests pattern recognition and timing. Learn silk telegraph reading and rhythm-based combat strategies.
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-orange-500/20">
+            <div class="text-orange-400 text-sm font-semibold uppercase tracking-wide mb-2">Location</div>
+            <div class="text-white font-bold">Cogwork Core</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-orange-500/20">
+            <div class="text-orange-400 text-sm font-semibold uppercase tracking-wide mb-2">Difficulty</div>
+            <div class="text-white font-bold">★★★☆☆</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-orange-500/20">
+            <div class="text-orange-400 text-sm font-semibold uppercase tracking-wide mb-2">Type</div>
+            <div class="text-white font-bold">Duo Boss</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-orange-500/20">
+            <div class="text-orange-400 text-sm font-semibold uppercase tracking-wide mb-2">Focus</div>
+            <div class="text-white font-bold">Pattern Recognition</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boss Introduction Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Rhythm-Based Combat</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img src="/images/bosses/cogwork_dancers_2.avif" alt="Cogwork Dancers Arena" class="w-full rounded-lg shadow-lg" />
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p class="text-lg">
+                <strong class="text-orange-400">Cogwork Dancers</strong> represent a unique "rhythm game" encounter that prioritizes skill and pattern recognition over raw damage output.
+              </p>
+              <p>
+                This duo boss fight takes place in the mechanical chambers of the Cogwork Core, where synchronized attacks and predictable patterns create a dance-like combat experience.
+              </p>
+              <p>
+                Success depends on reading silk telegraph lines, understanding movement patterns, and positioning yourself strategically rather than aggressive combat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attack Patterns Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Attack Patterns</span>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/silk_dance.avif" alt="Silk Dance" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-xl font-bold text-yellow-400">Silk Dance</h3>
+            </div>
+            <div class="space-y-3 text-gray-300">
+              <p><strong>Type:</strong> Diagonal gliding attacks</p>
+              <p><strong>Telegraph:</strong> Golden silk lines show attack paths</p>
+              <p><strong>Pattern:</strong> Predictable movement along threads</p>
+              <p><strong>Counter:</strong> Use silk telegraphs for safe positioning</p>
+              <div class="bg-yellow-500/10 p-3 rounded-lg mt-4">
+                <p class="text-yellow-300 text-sm"><strong>Key:</strong> Read the silk lines for perfect positioning!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-green-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/meet_middle.avif" alt="Meet in the Middle" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-xl font-bold text-green-400">Meet in the Middle</h3>
+            </div>
+            <div class="space-y-3 text-gray-300">
+              <p><strong>Type:</strong> Convergence attack</p>
+              <p><strong>Movement:</strong> Both dancers move to center</p>
+              <p><strong>Damage:</strong> Small burst when they meet</p>
+              <p><strong>Opportunity:</strong> Best window for player attacks</p>
+              <div class="bg-green-500/10 p-3 rounded-lg mt-4">
+                <p class="text-green-300 text-sm"><strong>Tip:</strong> This is your primary damage window!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-red-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/silk_aoe.avif" alt="Silk Dance AoE" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-xl font-bold text-red-400">Silk Dance AoE</h3>
+            </div>
+            <div class="space-y-3 text-gray-300">
+              <p><strong>Type:</strong> Area-of-effect silk coverage</p>
+              <p><strong>Coverage:</strong> Floor and air areas with threads</p>
+              <p><strong>Counter:</strong> Wall-clinging with Ascendant's Grip</p>
+              <p><strong>Timing:</strong> Avoid during active AoE phase</p>
+              <div class="bg-red-500/10 p-3 rounded-lg mt-4">
+                <p class="text-red-300 text-sm"><strong>Warning:</strong> Cling to walls during this attack!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Battle Phases Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Battle Phases</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-blue-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/cogwork_sync.avif" alt="Synchronized Phase" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-blue-400">Initial Phases: Synchronization</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Coordination:</strong> Dancers move in perfectly coordinated patterns</p>
+              <p><strong>Predictability:</strong> High pattern consistency and timing</p>
+              <p><strong>Strategy:</strong> Learn and memorize movement sequences</p>
+
+              <div class="mt-6">
+                <h4 class="text-lg font-semibold text-blue-400 mb-3">Focus Areas:</h4>
+                <ul class="space-y-2">
+                  <li>• Observe attack timing and patterns</li>
+                  <li>• Learn silk telegraph interpretation</li>
+                  <li>• Practice safe positioning techniques</li>
+                  <li>• Identify damage window opportunities</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-500/10 p-4 rounded-lg mt-6">
+                <p class="text-blue-300 font-semibold">📚 Strategy:</p>
+                <p class="text-gray-300">Use this phase to learn patterns - memorization is key to success!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20">
+            <div class="flex items-center mb-6">
+              <img src="/images/bosses/cogwork_erratic.avif" alt="Erratic Phase" class="w-16 h-16 rounded-lg mr-4" />
+              <h3 class="text-2xl font-bold text-purple-400">Final Phase: Erratic Patterns</h3>
+            </div>
+            <div class="space-y-4 text-gray-300">
+              <p><strong>Trigger:</strong> After defeating one Dancer</p>
+              <p><strong>Behavior:</strong> Remaining Dancer becomes unpredictable</p>
+              <p><strong>Approach:</strong> Adapt to irregular attack timing</p>
+
+              <div class="mt-6">
+                <h4 class="text-lg font-semibold text-purple-400 mb-3">Adaptations Needed:</h4>
+                <ul class="space-y-2">
+                  <li>• Less predictable movement patterns</li>
+                  <li>• Irregular attack timing</li>
+                  <li>• Requires reactive positioning</li>
+                  <li>• Increased difficulty and pressure</li>
+                </ul>
+              </div>
+
+              <div class="bg-purple-500/10 p-4 rounded-lg mt-6">
+                <p class="text-purple-300 font-semibold">⚡ Challenge:</p>
+                <p class="text-gray-300">Apply learned fundamentals to unpredictable situations!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Essential Equipment Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Essential Equipment</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Critical Equipment -->
+            <div>
+              <h3 class="text-2xl font-bold text-orange-400 mb-6">Critical Equipment</h3>
+              <div class="space-y-6">
+                <div class="flex items-center bg-red-500/10 p-4 rounded-lg">
+                  <img src="/images/crests/ascendants_grip.avif" alt="Ascendant's Grip" class="w-16 h-16 rounded-lg mr-4" />
+                  <div>
+                    <p class="font-bold text-red-400 text-lg">Ascendant's Grip</p>
+                    <p class="text-gray-300">CRITICAL for wall-clinging during AoE attacks</p>
+                    <p class="text-red-300 text-sm font-semibold">This trinket is absolutely essential for survival!</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <img src="/images/abilities/threadstorm.avif" alt="Threadstorm" class="w-12 h-12 rounded-lg mr-4" />
+                  <div>
+                    <p class="font-semibold text-white">Primary Ability: Threadstorm</p>
+                    <p class="text-gray-400 text-sm">Area damage for convergence moments</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <img src="/images/crests/reaper_crest.avif" alt="Reaper Crest" class="w-12 h-12 rounded-lg mr-4" />
+                  <div>
+                    <p class="font-semibold text-white">Crest: Reaper Crest</p>
+                    <p class="text-gray-400 text-sm">Enhanced damage output</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Tools -->
+            <div>
+              <h3 class="text-2xl font-bold text-orange-400 mb-6">Recommended Tools</h3>
+              <div class="space-y-6">
+                <div class="flex items-center">
+                  <img src="/images/database/warding_bell.avif" alt="Warding Bell" class="w-12 h-12 rounded-lg mr-4" />
+                  <div>
+                    <p class="font-semibold text-white">Warding Bell</p>
+                    <p class="text-gray-400 text-sm">Defensive utility for emergencies</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <img src="/images/database/threefold_pins.avif" alt="Threefold Pins" class="w-12 h-12 rounded-lg mr-4" />
+                  <div>
+                    <p class="font-semibold text-white">Threefold Pins</p>
+                    <p class="text-gray-400 text-sm">Ranged damage option for safer attacks</p>
+                  </div>
+                </div>
+
+                <div class="bg-orange-500/10 p-4 rounded-lg mt-6">
+                  <p class="text-orange-300 font-semibold">🔧 Setup Note:</p>
+                  <p class="text-gray-300">Practice wall-clinging mechanics before the fight. This is not optional!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combat Strategies Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Combat Strategies</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20">
+            <h3 class="text-2xl font-bold text-orange-400 mb-6">Core Strategy</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-orange-400 mr-3 mt-1">🧠</span>
+                <div>
+                  <strong>Pattern Recognition:</strong> Focus on learning attack sequences and timing
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-orange-400 mr-3 mt-1">🕸️</span>
+                <div>
+                  <strong>Silk Telegraph Reading:</strong> Watch golden silk lines for attack paths
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-orange-400 mr-3 mt-1">📍</span>
+                <div>
+                  <strong>Positioning:</strong> Attack from sides, never from underneath
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-orange-400 mr-3 mt-1">🧘</span>
+                <div>
+                  <strong>Patience:</strong> Prioritize dodging over aggressive damage dealing
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20">
+            <h3 class="text-2xl font-bold text-purple-400 mb-6">Advanced Tactics</h3>
+            <ul class="space-y-4 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🧗</span>
+                <div>
+                  <strong>Wall-Clinging:</strong> Use during AoE attacks to avoid damage completely
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🎯</span>
+                <div>
+                  <strong>Center Attacks:</strong> Strike when Dancers meet in middle
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">📚</span>
+                <div>
+                  <strong>Pattern Memorization:</strong> Learn sequence timing for optimal positioning
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🔄</span>
+                <div>
+                  <strong>Phase Adaptation:</strong> Adjust strategy when patterns become erratic
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Mechanics Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Critical Mechanics</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <div class="flex items-center mb-6">
+                <img src="/images/abilities/silk_telegraph_reading.avif" alt="Silk Telegraphs" class="w-16 h-16 rounded-lg mr-4" />
+                <h3 class="text-xl font-bold text-yellow-400">Silk Telegraph System</h3>
+              </div>
+              <ul class="space-y-3 text-gray-300">
+                <li>• <strong>Golden Lines:</strong> Show exact attack paths</li>
+                <li>• <strong>Timing:</strong> Appear before each attack sequence</li>
+                <li>• <strong>Coverage:</strong> Indicate both dancer movements</li>
+                <li>• <strong>Strategy:</strong> Position between telegraph lines</li>
+              </ul>
+            </div>
+            <div>
+              <div class="flex items-center mb-6">
+                <img src="/images/abilities/wall_cling.avif" alt="Wall Clinging" class="w-16 h-16 rounded-lg mr-4" />
+                <h3 class="text-xl font-bold text-yellow-400">Wall-Clinging Survival</h3>
+              </div>
+              <ul class="space-y-3 text-gray-300">
+                <li>• <strong>AoE Defense:</strong> Only way to avoid silk AoE attacks</li>
+                <li>• <strong>Equipment:</strong> Requires Ascendant's Grip trinket</li>
+                <li>• <strong>Timing:</strong> Cling during AoE phases only</li>
+                <li>• <strong>Position:</strong> Use arena walls for escape routes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-yellow-500/10 p-6 rounded-lg mt-8">
+            <p class="text-yellow-300 font-semibold text-lg mb-3">🎯 Most Important Tactic:</p>
+            <p class="text-gray-300 text-lg">
+              <strong>"Read the Silk Telegraphs"</strong> - This is the single most crucial skill for this encounter. Everything else is secondary.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Survival Tips Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Key Survival Tips</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-orange-400 mb-4">Essential Skills</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-orange-400 mr-3 mt-1">🏆</span>
+                  <span><strong>Telegraph Priority:</strong> Reading silk telegraphs is the most crucial tactic</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-orange-400 mr-3 mt-1">🧗</span>
+                  <span><strong>Ascendant's Grip Usage:</strong> Essential for wall-clinging during AoE</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-orange-400 mr-3 mt-1">📍</span>
+                  <span><strong>Side Positioning:</strong> Always attack from sides, avoid being underneath</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-orange-400 mb-4">Mindset</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🎮</span>
+                  <span><strong>Skill Focus:</strong> This is a skill encounter, not a damage race</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">📚</span>
+                  <span><strong>Pattern Learning:</strong> Invest time in memorizing attack sequences</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🎵</span>
+                  <span><strong>Rhythm Approach:</strong> Think of it as a rhythm game, not traditional combat</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rewards Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Victory Rewards</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-orange-500/20 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <img src="/images/quests/act2_progression.avif" alt="Act 2 Quest" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-orange-400 mb-2">Story Progression</h3>
+              <p class="text-gray-300">Access to next Act 2 Quest and main story advancement</p>
+            </div>
+            <div>
+              <img src="/images/ui/elevator_activation.avif" alt="Elevator" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-orange-400 mb-2">Elevator Activation</h3>
+              <p class="text-gray-300">Activates elevator system in Cogwork Core for easier navigation</p>
+            </div>
+            <div>
+              <img src="/images/quests/choral_chambers.avif" alt="Choral Chambers" class="w-20 h-20 rounded-lg mx-auto mb-4" />
+              <h3 class="text-xl font-bold text-orange-400 mb-2">Area Access</h3>
+              <p class="text-gray-300">Progression in Choral Chambers and deeper Core areas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #ea580c, #f97316, #fb923c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>

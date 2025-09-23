@@ -1,0 +1,315 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "Silk Dash - Movement Tool | Silksong Tools Database";
+const description = "Master the Silk Dash, a high-speed movement ability in Hollow Knight: Silksong. Learn mobility techniques, traversal strategies, and combat applications.";
+const keywords = "Silk Dash, movement tool, mobility, traversal, Silksong movement, yellow tools";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-yellow-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/dash-pattern.svg'); background-size: 80px 80px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="flex items-center justify-center mb-6">
+          <img src="/images/database/silk_dash.avif" alt="Silk Dash" class="w-24 h-24 rounded-lg mr-6" />
+          <div>
+            <h1 class="text-4xl md:text-5xl font-display font-bold">
+              <span class="gradient-text">Silk Dash</span>
+            </h1>
+            <p class="text-xl text-yellow-400">High-Speed Movement Tool</p>
+          </div>
+        </div>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+          Propel Hornet forward at incredible speed using silk threads. Essential for traversal, combat mobility, and accessing otherwise unreachable areas.
+        </p>
+      </div>
+
+      <!-- Quick Stats -->
+      <section class="mb-12">
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-yellow-500/20 text-center">
+            <div class="text-yellow-400 text-xl font-bold mb-2">Yellow</div>
+            <div class="text-gray-300 text-sm">Tool Category</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-yellow-500/20 text-center">
+            <div class="text-yellow-400 text-xl font-bold mb-2">Mobility</div>
+            <div class="text-gray-300 text-sm">Primary Function</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-yellow-500/20 text-center">
+            <div class="text-yellow-400 text-xl font-bold mb-2">Multiple</div>
+            <div class="text-gray-300 text-sm">Daily Uses</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-yellow-500/20 text-center">
+            <div class="text-yellow-400 text-xl font-bold mb-2">Instant</div>
+            <div class="text-gray-300 text-sm">Activation</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Description -->
+      <section class="mb-12">
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20 max-w-6xl mx-auto">
+          <h2 class="text-3xl font-display font-bold mb-6">
+            <span class="gradient-text">Movement Mechanics</span>
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-yellow-400 mb-4">Silk Propulsion</h3>
+              <p class="text-gray-300 mb-4">
+                Silk Dash utilizes concentrated silk threads to launch Hornet forward at tremendous velocity. The dash creates a brief trail of silk particles that dissipate quickly.
+              </p>
+              <p class="text-gray-300">
+                The movement is so fast that Hornet becomes briefly intangible during the dash, allowing passage through certain attacks and obstacles.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-yellow-400 mb-4">Directional Control</h3>
+              <p class="text-gray-300 mb-4">
+                While primarily horizontal, the Silk Dash can be angled slightly up or down, making it versatile for various traversal situations.
+              </p>
+              <p class="text-gray-300">
+                The dash distance and speed can be modified through upgrades and crest combinations, adapting to different exploration needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Movement Applications -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Movement Applications</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20">
+            <h3 class="text-xl font-bold text-yellow-400 mb-4">Exploration & Traversal</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-yellow-400 mr-3 mt-1">🏃</span>
+                <div>
+                  <strong>Gap Crossing:</strong> Traverse large chasms and distances
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-400 mr-3 mt-1">⬆️</span>
+                <div>
+                  <strong>Platform Reaching:</strong> Access elevated areas quickly
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-400 mr-3 mt-1">⚡</span>
+                <div>
+                  <strong>Speed Sections:</strong> Navigate time-sensitive areas
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-yellow-400 mr-3 mt-1">🔄</span>
+                <div>
+                  <strong>Chain Movement:</strong> Link with other movement abilities
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20">
+            <h3 class="text-xl font-bold text-green-400 mb-4">Combat Mobility</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">🎯</span>
+                <div>
+                  <strong>Quick Repositioning:</strong> Instant position changes
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">💨</span>
+                <div>
+                  <strong>Evasive Maneuvers:</strong> Escape dangerous situations
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">⚔️</span>
+                <div>
+                  <strong>Aggressive Approach:</strong> Close distance rapidly
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-400 mr-3 mt-1">🌪️</span>
+                <div>
+                  <strong>Attack Canceling:</strong> Escape mid-animation
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advanced Techniques -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Advanced Techniques</span>
+        </h2>
+        <div class="space-y-6 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">🔗</span>
+              <h3 class="text-xl font-bold text-blue-400">Dash Chaining</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Master the art of linking multiple dashes with other movement abilities for extended traversal sequences and complex combat maneuvers.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-blue-500/10 p-3 rounded">
+                <h4 class="font-semibold text-blue-400 mb-2">Silk Grapple Combo</h4>
+                <p class="text-gray-300 text-sm">Dash into grapple for maximum distance</p>
+              </div>
+              <div class="bg-blue-500/10 p-3 rounded">
+                <h4 class="font-semibold text-blue-400 mb-2">Wall Jump Chain</h4>
+                <p class="text-gray-300 text-sm">Alternate dashes with wall movements</p>
+              </div>
+              <div class="bg-blue-500/10 p-3 rounded">
+                <h4 class="font-semibold text-blue-400 mb-2">Air Dash Sequences</h4>
+                <p class="text-gray-300 text-sm">Maintain altitude through dash timing</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">⚡</span>
+              <h3 class="text-xl font-bold text-red-400">Combat Integration</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Integrate Silk Dash into combat flows for dynamic fighting styles that emphasize mobility and positioning over static exchanges.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-red-500/10 p-3 rounded">
+                <h4 class="font-semibold text-red-400 mb-2">Dash Attacks</h4>
+                <p class="text-gray-300 text-sm">Strike immediately after dashing</p>
+              </div>
+              <div class="bg-red-500/10 p-3 rounded">
+                <h4 class="font-semibold text-red-400 mb-2">Escape Tactics</h4>
+                <p class="text-gray-300 text-sm">Emergency retreat from overwhelm</p>
+              </div>
+              <div class="bg-red-500/10 p-3 rounded">
+                <h4 class="font-semibold text-red-400 mb-2">Flanking Maneuvers</h4>
+                <p class="text-gray-300 text-sm">Circle around enemies quickly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upgrades and Modifications -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Enhancements & Upgrades</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20">
+            <h3 class="text-xl font-bold text-purple-400 mb-4">Distance & Speed</h3>
+            <p class="text-gray-300 mb-4">
+              Enhance the fundamental properties of the dash for greater utility and effectiveness.
+            </p>
+            <ul class="space-y-2 text-gray-300">
+              <li>• <strong>Extended Range:</strong> Increase maximum dash distance</li>
+              <li>• <strong>Velocity Boost:</strong> Higher movement speed during dash</li>
+              <li>• <strong>Multi-Dash:</strong> Chain multiple dashes in sequence</li>
+              <li>• <strong>Precision Control:</strong> Better directional accuracy</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-cyan-500/20">
+            <h3 class="text-xl font-bold text-cyan-400 mb-4">Special Properties</h3>
+            <p class="text-gray-300 mb-4">
+              Add unique characteristics to make the dash more versatile in various situations.
+            </p>
+            <ul class="space-y-2 text-gray-300">
+              <li>• <strong>Damage Trail:</strong> Dash damages enemies passed through</li>
+              <li>• <strong>Silk Trail:</strong> Leave silk threads for later use</li>
+              <li>• <strong>Phase Dash:</strong> Pass through walls temporarily</li>
+              <li>• <strong>Recovery Boost:</strong> Faster cooldown between uses</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secrets and Hidden Uses -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Secrets & Hidden Applications</span>
+        </h2>
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-yellow-500/20 max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-yellow-400 mb-4">Secret Areas</h3>
+              <div class="space-y-3 text-gray-300">
+                <div class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🗝️</span>
+                  <div>
+                    <strong>Hidden Passages:</strong> Access concealed areas requiring precise dashes
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">💎</span>
+                  <div>
+                    <strong>Treasure Rooms:</strong> Reach valuable items in hard-to-access locations
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🏆</span>
+                  <div>
+                    <strong>Challenge Rewards:</strong> Complete dash-based trials
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-yellow-400 mb-4">Environmental Interactions</h3>
+              <div class="space-y-3 text-gray-300">
+                <div class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🎯</span>
+                  <div>
+                    <strong>Switch Activation:</strong> Hit distant switches with dash momentum
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🚪</span>
+                  <div>
+                    <strong>Door Breaking:</strong> Force open certain barriers
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-yellow-400 mr-3 mt-1">🌀</span>
+                  <div>
+                    <strong>Momentum Puzzles:</strong> Solve physics-based challenges
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <section class="text-center">
+        <div class="space-x-4">
+          <a href="/database/tools/warding-bell" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            ← Previous: Warding Bell
+          </a>
+          <a href="/database/tools" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg transition-colors">
+            Back to Tools Database
+          </a>
+          <a href="/database/tools/index" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            View All Tools →
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

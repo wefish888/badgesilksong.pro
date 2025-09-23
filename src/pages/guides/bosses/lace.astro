@@ -1,0 +1,386 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Lace Boss Guide - Hollow Knight: Silksong"
+  description="Complete strategy guide for defeating Lace in Hollow Knight: Silksong. Learn her attack patterns, best tactics, and recommended tools."
+  keywords="lace boss guide, silksong lace strategy, lace boss fight, hollow knight silksong bosses"
+>
+  <section class="py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="flex justify-center mb-6">
+          <img src="/images/bosses/lace_3.avif" alt="Lace Boss" class="w-48 h-48 rounded-lg shadow-2xl" />
+        </div>
+        <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">
+          <span class="gradient-text">Lace Boss Guide</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Master the fight against one of Silksong's most challenging bosses
+        </p>
+
+        <!-- Boss Stats -->
+        <div class="bg-silksong-dark/50 rounded-lg p-6 max-w-2xl mx-auto">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-red-400">Very High</div>
+              <p class="text-sm text-gray-400">Difficulty</p>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-blue-400">Main Boss</div>
+              <p class="text-sm text-gray-400">Type</p>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-yellow-400">Late Game</div>
+              <p class="text-sm text-gray-400">Timing</p>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-green-400">Required</div>
+              <p class="text-sm text-gray-400">For Progress</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Strategy -->
+      <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-6 mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-red-400">⚠️ Quick Strategy Summary</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold mb-2 text-white">Key Tactics:</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>• Stay mobile and use dash frequently</li>
+              <li>• Attack during her recovery frames</li>
+              <li>• Watch for telegraph patterns</li>
+              <li>• Use ranged attacks when possible</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2 text-white">Avoid:</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>• Getting cornered against walls</li>
+              <li>• Trading damage unnecessarily</li>
+              <li>• Panic dodging without purpose</li>
+              <li>• Ignoring environmental hazards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Attack Patterns -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-8">Attack Patterns & Counters</h2>
+        <div class="space-y-6">
+
+          <!-- Attack Pattern 1 -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-purple-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">⚔️</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-purple-400">Needle Combo</h3>
+                <p class="text-sm text-gray-400">Fast multi-hit attack sequence</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Lace performs a series of quick needle strikes. This is her most common attack pattern and requires careful timing to avoid.
+            </p>
+            <div class="bg-purple-500/10 rounded p-4">
+              <h4 class="font-semibold text-purple-300 mb-2">Counter Strategy:</h4>
+              <p class="text-gray-300 text-sm">
+                Dash away or behind her during the combo. Attack immediately after the sequence ends during her brief recovery window.
+              </p>
+            </div>
+          </div>
+
+          <!-- Attack Pattern 2 -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-blue-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">💨</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-blue-400">Dash Attack</h3>
+                <p class="text-sm text-gray-400">Quick traversal with damage</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Lace dashes across the arena at high speed, dealing damage on contact. Can be chained with other attacks.
+            </p>
+            <div class="bg-blue-500/10 rounded p-4">
+              <h4 class="font-semibold text-blue-300 mb-2">Counter Strategy:</h4>
+              <p class="text-gray-300 text-sm">
+                Jump over her dash or dash in the opposite direction. Use the time while she's dashing to reposition for your counterattack.
+              </p>
+            </div>
+          </div>
+
+          <!-- Attack Pattern 3 -->
+          <div class="bg-silksong-dark rounded-lg p-6 border border-yellow-500/30">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-white text-xl">🌪️</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-yellow-400">Silk Storm</h3>
+                <p class="text-sm text-gray-400">Area denial attack</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Lace creates a storm of silk threads that cover a large area. This attack has good range and lasts for several seconds.
+            </p>
+            <div class="bg-yellow-500/10 rounded p-4">
+              <h4 class="font-semibold text-yellow-300 mb-2">Counter Strategy:</h4>
+              <p class="text-gray-300 text-sm">
+                Stay at the edges of the arena or use wall-cling to avoid the silk storm. Wait for it to dissipate before engaging.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Recommended Build -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-8">Recommended Build</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+          <!-- Crests -->
+          <div class="bg-silksong-dark rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Recommended Crest</h3>
+            <div class="flex items-center mb-4">
+              <img src="/images/crests/crest_crests_14.jpg" alt="Reaper Crest" class="w-16 h-16 rounded-lg mr-4" />
+              <div>
+                <h4 class="text-lg font-semibold text-blue-400">Reaper Crest</h4>
+                <p class="text-sm text-gray-400">Provides 2 Blue slots + 1 Yellow slot</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              The Reaper Crest offers excellent defensive options through its blue tool slots, which are crucial for surviving Lace's aggressive attacks.
+            </p>
+            <div class="space-y-2">
+              <div class="flex items-center">
+                <img src="/images/crests/crest_crests_4.png" alt="Blue Tool" class="w-4 h-4 mr-2" />
+                <span class="text-sm">2x Blue Tools (Defense/Passive)</span>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/crests/crest_crests_5.png" alt="Yellow Tool" class="w-4 h-4 mr-2" />
+                <span class="text-sm">1x Yellow Tool (Utility)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Abilities -->
+          <div class="bg-silksong-dark rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Essential Abilities</h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <img src="/images/abilities/ability_abilities-and-moveset_4.avif" alt="Swift Step" class="w-12 h-12 rounded mr-3" />
+                <div>
+                  <h4 class="font-semibold text-blue-400">Swift Step</h4>
+                  <p class="text-xs text-gray-400">Essential for dodging her attacks</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/abilities/ability_abilities-and-moveset_5.avif" alt="Drifter's Cloak" class="w-12 h-12 rounded mr-3" />
+                <div>
+                  <h4 class="font-semibold text-green-400">Drifter's Cloak</h4>
+                  <p class="text-xs text-gray-400">Aerial mobility advantage</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <img src="/images/abilities/ability_abilities-and-moveset_15.avif" alt="Silkspear" class="w-12 h-12 rounded mr-3" />
+                <div>
+                  <h4 class="font-semibold text-white">Silkspear</h4>
+                  <p class="text-xs text-gray-400">Ranged damage option</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Phase Guide -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-8">Phase-by-Phase Strategy</h2>
+        <div class="space-y-6">
+
+          <!-- Phase 1 -->
+          <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-green-400">Phase 1: Opening (100% - 60% HP)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold mb-2 text-white">Behavior:</h4>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                  <li>• Moderate aggression</li>
+                  <li>• Standard attack patterns</li>
+                  <li>• Predictable movement</li>
+                  <li>• Short recovery windows</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-white">Strategy:</h4>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                  <li>• Learn her attack patterns</li>
+                  <li>• Focus on safe damage</li>
+                  <li>• Conserve healing items</li>
+                  <li>• Position for next phase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-yellow-400">Phase 2: Escalation (60% - 25% HP)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold mb-2 text-white">Behavior:</h4>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                  <li>• Increased attack speed</li>
+                  <li>• New combo patterns</li>
+                  <li>• More silk attacks</li>
+                  <li>• Reduced recovery time</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-white">Strategy:</h4>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                  <li>• Stay more mobile</li>
+                  <li>• Use ranged attacks</li>
+                  <li>• Heal when safe</li>
+                  <li>• Avoid greed for damage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-red-400">Phase 3: Desperation (25% - 0% HP)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold mb-2 text-white">Behavior:</h4>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                  <li>• Maximum aggression</li>
+                  <li>• Constant attack chains</li>
+                  <li>• Unpredictable patterns</li>
+                  <li>• Environmental hazards</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-white">Strategy:</h4>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                  <li>• Prioritize survival</li>
+                  <li>• Hit-and-run tactics</li>
+                  <li>• Use all available tools</li>
+                  <li>• Stay patient for openings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tips and Tricks -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-8">Advanced Tips & Tricks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="bg-silksong-dark rounded-lg p-6">
+            <h3 class="text-lg font-semibold mb-4 text-blue-400">🎯 Combat Tips</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-2">•</span>
+                <span>Use wall-cling to avoid ground-based attacks and reposition quickly</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-2">•</span>
+                <span>Bait specific attacks by positioning yourself strategically</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-2">•</span>
+                <span>Combine Drifter's Cloak with dash for extended air mobility</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-2">•</span>
+                <span>Use Silkspear when she's across the arena for safe damage</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-silksong-dark rounded-lg p-6">
+            <h3 class="text-lg font-semibold mb-4 text-yellow-400">⚠️ Common Mistakes</h3>
+            <ul class="space-y-3 text-gray-300 text-sm">
+              <li class="flex items-start">
+                <span class="text-red-400 mr-2">×</span>
+                <span>Staying in one place for too long - always keep moving</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-400 mr-2">×</span>
+                <span>Panic healing at unsafe moments - wait for clear openings</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-400 mr-2">×</span>
+                <span>Ignoring her telegraph animations - they give crucial timing info</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-red-400 mr-2">×</span>
+                <span>Fighting too aggressively in final phase - patience is key</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Rewards -->
+      <div class="bg-silksong-dark/50 rounded-lg p-6 mb-8">
+        <h3 class="text-xl font-semibold mb-4 text-silksong-gold">Victory Rewards</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <div class="text-center">
+            <div class="text-2xl font-bold text-green-400 mb-2">Story Progress</div>
+            <p class="text-sm text-gray-400">Main quest advancement</p>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-blue-400">New Areas</div>
+            <p class="text-sm text-gray-400">Access to late-game content</p>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-yellow-400">Achievement</div>
+            <p class="text-sm text-gray-400">Boss completion badge</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-center">
+          Defeating Lace is a major milestone that unlocks significant story progression and new areas to explore.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col sm:flex-row justify-between gap-4">
+        <a href="/guides/bosses" class="btn-secondary text-center">
+          ← All Boss Guides
+        </a>
+        <a href="/checklist" class="btn-primary text-center">
+          Track Your Progress
+        </a>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #E94560 0%, #F16B6F 50%, #F99E4C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>

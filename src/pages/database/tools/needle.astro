@@ -1,0 +1,255 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = "Needle - Hornet's Primary Weapon | Silksong Tools Database";
+const description = "Complete guide to the Needle, Hornet's signature sewing tool designed for combat in Hollow Knight: Silksong. Learn about features, upgrades, and combat techniques.";
+const keywords = "Needle, Hornet weapon, primary weapon, sewing tool, Silksong combat, weapon guide";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-repeat" style="background-image: url('/images/ui/needle-pattern.svg'); background-size: 120px 120px;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <div class="flex items-center justify-center mb-6">
+          <img src="/images/database/needle.avif" alt="Needle" class="w-24 h-24 rounded-lg mr-6" />
+          <div>
+            <h1 class="text-4xl md:text-5xl font-display font-bold">
+              <span class="gradient-text">Needle</span>
+            </h1>
+            <p class="text-xl text-purple-400">Hornet's Primary Weapon</p>
+          </div>
+        </div>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+          Long sewing tool, uniquely balanced for combat. This versatile weapon serves as the foundation for all of Hornet's attacks and movement abilities.
+        </p>
+      </div>
+
+      <!-- Quick Stats -->
+      <section class="mb-12">
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20 text-center">
+            <div class="text-purple-400 text-xl font-bold mb-2">Primary</div>
+            <div class="text-gray-300 text-sm">Weapon Type</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20 text-center">
+            <div class="text-purple-400 text-xl font-bold mb-2">Melee</div>
+            <div class="text-gray-300 text-sm">Combat Range</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20 text-center">
+            <div class="text-purple-400 text-xl font-bold mb-2">Infinite</div>
+            <div class="text-gray-300 text-sm">Durability</div>
+          </div>
+          <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-purple-500/20 text-center">
+            <div class="text-purple-400 text-xl font-bold mb-2">Default</div>
+            <div class="text-gray-300 text-sm">Availability</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Description -->
+      <section class="mb-12">
+        <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20 max-w-6xl mx-auto">
+          <h2 class="text-3xl font-display font-bold mb-6">
+            <span class="gradient-text">Weapon Overview</span>
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-purple-400 mb-4">Design & Construction</h3>
+              <p class="text-gray-300 mb-4">
+                Hornet's Needle is a masterfully crafted sewing tool, perfectly balanced for both precision and power. Unlike traditional weapons, it maintains its original purpose as a sewing implement while excelling in combat situations.
+              </p>
+              <p class="text-gray-300">
+                The Needle's unique design allows for silk thread manipulation, making it an essential component of Hornet's movement and combat abilities.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-purple-400 mb-4">Combat Philosophy</h3>
+              <p class="text-gray-300 mb-4">
+                Built for speed and precision rather than brute force, the Needle encourages a mobile, tactical combat style. Its lightweight construction allows for rapid strikes and quick repositioning.
+              </p>
+              <p class="text-gray-300">
+                The weapon's integration with silk abilities makes it central to Hornet's unique fighting style, combining offense, defense, and mobility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combat Features -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Combat Features</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-purple-500/20">
+            <h3 class="text-xl font-bold text-purple-400 mb-4">Primary Attacks</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">⚔️</span>
+                <div>
+                  <strong>Basic Strikes:</strong> Fast, precise melee attacks with excellent reach
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🌪️</span>
+                <div>
+                  <strong>Combo Chains:</strong> Link multiple attacks for increased damage
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">🎯</span>
+                <div>
+                  <strong>Directional Attacks:</strong> Attack in multiple directions with precision
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-400 mr-3 mt-1">⚡</span>
+                <div>
+                  <strong>Quick Recovery:</strong> Minimal animation lag between attacks
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-blue-500/20">
+            <h3 class="text-xl font-bold text-blue-400 mb-4">Silk Integration</h3>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🕸️</span>
+                <div>
+                  <strong>Silk Anchor:</strong> Create silk threads for movement and attacks
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🎣</span>
+                <div>
+                  <strong>Grappling:</strong> Use silk threads to swing and traverse
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🔗</span>
+                <div>
+                  <strong>Tether Attacks:</strong> Attack enemies while connected via silk
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-400 mr-3 mt-1">🌐</span>
+                <div>
+                  <strong>Web Creation:</strong> Form protective or offensive silk constructs
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combat Techniques -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Advanced Techniques</span>
+        </h2>
+        <div class="space-y-6 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-red-500/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">🎯</span>
+              <h3 class="text-xl font-bold text-red-400">Precision Striking</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Master the art of precise needle strikes to target enemy weak points and interrupt attacks. Timing and positioning are crucial for maximum effectiveness.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-red-500/10 p-3 rounded">
+                <h4 class="font-semibold text-red-400 mb-2">Weak Point Targeting</h4>
+                <p class="text-gray-300 text-sm">Focus attacks on vulnerable areas for increased damage</p>
+              </div>
+              <div class="bg-red-500/10 p-3 rounded">
+                <h4 class="font-semibold text-red-400 mb-2">Attack Interruption</h4>
+                <p class="text-gray-300 text-sm">Time strikes to cancel enemy attacks mid-animation</p>
+              </div>
+              <div class="bg-red-500/10 p-3 rounded">
+                <h4 class="font-semibold text-red-400 mb-2">Critical Timing</h4>
+                <p class="text-gray-300 text-sm">Strike at precise moments for maximum impact</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-green-500/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">🌪️</span>
+              <h3 class="text-xl font-bold text-green-400">Mobility Combat</h3>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Combine needle attacks with silk-enhanced movement for dynamic combat encounters. Stay mobile while maintaining offensive pressure.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-green-500/10 p-3 rounded">
+                <h4 class="font-semibold text-green-400 mb-2">Aerial Strikes</h4>
+                <p class="text-gray-300 text-sm">Attack while airborne using silk movement</p>
+              </div>
+              <div class="bg-green-500/10 p-3 rounded">
+                <h4 class="font-semibold text-green-400 mb-2">Hit-and-Run</h4>
+                <p class="text-gray-300 text-sm">Strike quickly then reposition for safety</p>
+              </div>
+              <div class="bg-green-500/10 p-3 rounded">
+                <h4 class="font-semibold text-green-400 mb-2">Environmental Use</h4>
+                <p class="text-gray-300 text-sm">Use terrain and silk for tactical advantages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upgrades and Modifications -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">
+          <span class="gradient-text">Enhancements & Upgrades</span>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-500/20">
+            <h3 class="text-xl font-bold text-yellow-400 mb-4">Tool Synergies</h3>
+            <p class="text-gray-300 mb-4">
+              The Needle works best when combined with various tools and abilities that enhance its effectiveness.
+            </p>
+            <ul class="space-y-2 text-gray-300">
+              <li>• <strong>Silk Skills:</strong> Enhance thread manipulation abilities</li>
+              <li>• <strong>Crest Bonuses:</strong> Modify attack patterns and damage</li>
+              <li>• <strong>Red Tools:</strong> Add offensive capabilities to strikes</li>
+              <li>• <strong>Yellow Tools:</strong> Improve mobility and positioning</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20">
+            <h3 class="text-xl font-bold text-orange-400 mb-4">Mastery Benefits</h3>
+            <p class="text-gray-300 mb-4">
+              As you master the Needle, combat becomes more fluid and effective.
+            </p>
+            <ul class="space-y-2 text-gray-300">
+              <li>• <strong>Increased Speed:</strong> Faster attack animations</li>
+              <li>• <strong>Better Range:</strong> Extended reach for all attacks</li>
+              <li>• <strong>Combo Fluidity:</strong> Smoother transition between moves</li>
+              <li>• <strong>Silk Precision:</strong> More accurate thread placement</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <section class="text-center">
+        <div class="space-x-4">
+          <a href="/database/tools" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors">
+            ← Back to Tools Database
+          </a>
+          <a href="/database/tools/threadstorm" class="inline-block bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors">
+            Next: Threadstorm →
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
